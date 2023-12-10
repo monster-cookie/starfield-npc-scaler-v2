@@ -225,18 +225,14 @@ Function HandleStatScaling(Float base, Float scaleMin, Float scaleMax, Bool east
 
 
   ;; Some stats adjust by level difference
-  Float levelMult = (playerLevel/100) as Int
-  If (levelMult <= 0)
-    levelMult = 0.5
-  EndIf
+  ; Float levelMult = Math.Ceiling(playerLevel/100)
+  ; Float scaledAttackDamageMult = Math.sqrt(Math.sqrt(playerLevel)) * levelMult
+  ; message += "Adjusting my attack multiplier to " + scaledAttackDamageMult + " from " + myAttackDamageMult + " against the player's " + playerAttackDamageMult + ".\n"
+  ; RealMe.SetValue(AttackDamageMult, scaledAttackDamageMult)
 
-  Float scaledAttackDamageMult = Math.sqrt(Math.sqrt(playerLevel)) * levelMult
-  message += "Adjusting my attack multiplier to " + scaledAttackDamageMult + " from " + myAttackDamageMult + " against the player's " + playerAttackDamageMult + ".\n"
-  RealMe.SetValue(AttackDamageMult, scaledAttackDamageMult)
-
-  Float scaledCriticalHitDamageMult = (Math.sqrt(Math.sqrt(playerLevel))/2) * levelMult
-  message += "Adjusting my critical damage multiplier to " + scaledCriticalHitDamageMult + " from " + myCriticalHitDamageMult + " against the player's " + playerCriticalHitDamageMult + ".\n"
-  RealMe.SetValue(CriticalHitDamageMult, scaledCriticalHitDamageMult)
+  ; Float scaledCriticalHitDamageMult = (Math.sqrt(Math.sqrt(playerLevel))/2) * levelMult
+  ; message += "Adjusting my critical damage multiplier to " + scaledCriticalHitDamageMult + " from " + myCriticalHitDamageMult + " against the player's " + playerCriticalHitDamageMult + ".\n"
+  ; RealMe.SetValue(CriticalHitDamageMult, scaledCriticalHitDamageMult)
 
   message += "\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n\n"
   VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "HandleStatScaling", message, 0, Venpi_DebugEnabled.GetValueInt())
