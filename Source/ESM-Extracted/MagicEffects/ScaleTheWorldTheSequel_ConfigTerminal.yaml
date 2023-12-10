@@ -1,0 +1,134 @@
+FormKey: 000807:ScaleTheWorldTheSequel.esm
+EditorID: ScaleTheWorldTheSequel_ConfigTerminal
+VirtualMachineAdapter:
+  Scripts:
+  - Name: ScaleTheWorldTheSequel_ConfigTerminalScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_ConfigTerminal
+      Object: 000805:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_ConfigTerminal_MainMenu
+      Object: 000808:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Enabled
+      Object: 000806:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 000800:VenpiCore.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Legendary_ChanceToSpawn
+      Object: 000812:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Default_Base
+      Object: 000835:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Default_ScaleRangeMin
+      Object: 000836:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Default_ScaleRangeMax
+      Object: 000837:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Default_EasterEggMode
+      Object: 000849:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Critter_Enabled
+      Object: 00084E:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Critter_Base
+      Object: 00083B:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Critter_ScaleRangeMin
+      Object: 00083C:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Critter_ScaleRangeMax
+      Object: 00083D:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Critter_EasterEggMode
+      Object: 000844:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Creature_Enabled
+      Object: 00084F:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Creature_Base
+      Object: 000838:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Creature_ScaleRangeMin
+      Object: 000839:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Creature_ScaleRangeMax
+      Object: 00083A:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Creature_EasterEggMode
+      Object: 000846:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Human_Enabled
+      Object: 000850:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Human_Base
+      Object: 00083E:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Human_ScaleRangeMin
+      Object: 00083F:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Human_ScaleRangeMax
+      Object: 000840:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Human_EasterEggMode
+      Object: 000847:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Robot_Enabled
+      Object: 000851:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Robot_Base
+      Object: 000841:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Robot_ScaleRangeMin
+      Object: 000842:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Robot_ScaleRangeMax
+      Object: 000843:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Robot_EasterEggMode
+      Object: 000848:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_ConfigTerminal_Scaling_DefaultFallback
+      Object: 000853:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_ConfigTerminal_Scaling_Critters
+      Object: 000854:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_ConfigTerminal_Scaling_Creatures
+      Object: 000855:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_ConfigTerminal_Scaling_Humans
+      Object: 000856:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_ConfigTerminal_Scaling_Robots
+      Object: 000857:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_ConfigTerminal_Scaling_ScaleMin
+      Object: 000858:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_ConfigTerminal_Scaling_ScaleMax
+      Object: 000859:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_ConfigTerminal_Scaling_Base
+      Object: 00085A:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_HardMode_Level
+      Object: 00085B:ScaleTheWorldTheSequel.esm
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+UnkownInt2: 3
+CastType: FireAndForget
+UnkownInt3: 1065353216
+Flags:
+- HideInUI
+- Painless
+- NoHitEffect
+Unknown: 0x00000000000000000000000000000000000000000000

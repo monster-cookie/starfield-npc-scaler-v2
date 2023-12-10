@@ -1,0 +1,37 @@
+FormKey: 000803:ScaleTheWorldTheSequel.esm
+EditorID: ScaleTheWorldTheSequel_InitQuest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: VPI_Inject_InventoryItem
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 000800:VenpiCore.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ItemToInject
+      Object: 000805:ScaleTheWorldTheSequel.esm
+  - Name: VPI_Inject_SpellToPlayer
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 000800:VenpiCore.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpellToEnable
+      Object: 00080B:ScaleTheWorldTheSequel.esm
+  Script:
+    Name: ''
+Name:
+  TargetLanguage: English
+  Value: Scale The World - The Sequel Init Quest
+Data:
+  Flags:
+  - StartGameEnabled
+  - StartsEnabled
+  Unused: 0x000000
+UnusedConditions: []

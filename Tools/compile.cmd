@@ -12,6 +12,12 @@ rmdir /s /q "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist"
 mkdir "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist"
 REM mkdir "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist\textures\setdressing\terminals\splashscreens\"
 
+@REM Clear Dist-PeakPatch DIR
+@echo "Clearing and scafolding the Dist-PeakPatch dir"
+del /s /q "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist-PeakPatch\*.*"
+rmdir /s /q "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist-PeakPatch"
+mkdir "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist-PeakPatch"
+
 @REM Clear Dist-BA2-Main DIR
 @echo "Clearing and scafolding the Dist-BA2-Main dir"
 del /s /q "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist-BA2-Main\*.*"
@@ -36,11 +42,16 @@ mkdir "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist-BA2-Ma
   exit /b 1
 )
 
-
 @REM ESM is purely binary so need to pull from starfield dir where xedit has to have it 
 @echo "Copying the ESM from MO2 into the Dist folder"
 copy /y "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleTheWorldTheSequel.esm" "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Source\ESM"
 copy /y "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleTheWorldTheSequel.esm" "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist"
+
+copy /y "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-PeakEnemyAI-Patch\ScaleTheWorldTheSequel-PeakEnemyAI-Patch.esm" "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Source\ESM"
+copy /y "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-PeakEnemyAI-Patch\ScaleTheWorldTheSequel-PeakEnemyAI-Patch.esm" "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist-PeakPatch"
+
+@REM Use Spriggit to extract record from ESM
+"D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleTheWorldTheSequel.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Source\ESM-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
 
 @REM Create and copy the BA2 Textures Archive to Dist folder
 @REM @echo "Creating the BA2 Textures Archive"
