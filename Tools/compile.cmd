@@ -12,12 +12,6 @@ rmdir /s /q "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist"
 mkdir "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist"
 REM mkdir "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist\textures\setdressing\terminals\splashscreens\"
 
-@REM Clear Dist-PeakPatch DIR
-@echo "Clearing and scafolding the Dist-PeakPatch dir"
-del /s /q "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist-PeakPatch\*.*"
-rmdir /s /q "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist-PeakPatch"
-mkdir "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist-PeakPatch"
-
 @REM Clear Dist-BA2-Main DIR
 @echo "Clearing and scafolding the Dist-BA2-Main dir"
 del /s /q "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist-BA2-Main\*.*"
