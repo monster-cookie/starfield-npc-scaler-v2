@@ -47,9 +47,6 @@ mkdir "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist-BA2-Ma
 copy /y "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleTheWorldTheSequel.esm" "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Source\ESM"
 copy /y "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleTheWorldTheSequel.esm" "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist"
 
-copy /y "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-PeakEnemyAI-Patch\ScaleTheWorldTheSequel-PeakEnemyAI-Patch.esm" "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Source\ESM"
-copy /y "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-PeakEnemyAI-Patch\ScaleTheWorldTheSequel-PeakEnemyAI-Patch.esm" "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist-PeakPatch"
-
 @REM Use Spriggit to extract record from ESM
 "D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleTheWorldTheSequel.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Source\ESM-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
 

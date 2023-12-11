@@ -366,6 +366,15 @@ Function HandleStatScaling(Int preset)
   string message = "\n\n -=-=-=-=-= STAT DEBUG (" + Myself + ") =-=-=-=-=-\n\n"
   message += "I'm a " + GetNPCType() + " NPC with a race of " + RealMe.GetRace() + " and a calculated a stat adjustment factor of " + npcScalingAdjustmentToPlayer + ".\n"
 
+  If (RealMe.HasKeyword(ActorTypeLegendary))
+    ;;
+    ;; Won the lotto I become a legendary
+    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "HandleStatScaling",  Myself + "> has won the lotto and is now a legendary so skipping because the engine handle stat scaling for legendary NPCs fairly well.", 0, Venpi_DebugEnabled.GetValueInt())
+    LegendaryAliasQuest.MakeLegendary(RealMe)
+    ; DebugLevelScaling("FINAL")
+    return
+  EndIf
+
   If (RealMe.HasKeyword(CombatNPC_Miniboss))
     ;; Handle Resize
     RealMe.SetScale(npcScalingAdjustmentToPlayer)
@@ -374,31 +383,23 @@ Function HandleStatScaling(Int preset)
 
     ;; Handle Loot Injection
     RealMe.AddItem(LL_Loot_Legendary_Human as Form, 1, true)
-    If (RealMe.HasKeyword(ActorTypePirate))
+    If (RealMe.HasKeyword(ActorTypePirate) && Game.GetDieRollSuccess(30, 1, 100, -1, -1))
       message += "I'm a miniboss pirate so injecting 1 random contraband item.\n"
       RealMe.AddItem(LL_Contraband_Any as Form, 1, true)
-    ElseIf (RealMe.HasKeyword(ActorTypeZealot))
+    ElseIf (RealMe.HasKeyword(ActorTypeZealot) && Game.GetDieRollSuccess(30, 1, 100, -1, -1))
       message += "I'm a miniboss zealot so injecting 0-3 random Va'Ruun Pamphlet item(s).\n"
       RealMe.AddItem(Contraband_VaRuunHereticPamphlets as Form, Utility.RandomInt(0, 3), true)
-    ElseIf (RealMe.HasKeyword(ActorTypeGang))
+    ElseIf (RealMe.HasKeyword(ActorTypeGang) && Game.GetDieRollSuccess(30, 1, 100, -1, -1))
       message += "I'm a miniboss gang member so injecting 0-6 aurora item(s).\n"
       RealMe.AddItem(Chem_Aurora as Form, Utility.RandomInt(0, 6), true)
-    Else
     EndIf
-  ElseIf (RealMe.HasKeyword(CombatNPC_Legendary) || RealMe.HasKeyword(ActorTypeLegendary))
-    ;;
-    ;; Won the lotto I become a legendary
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "HandleStatScaling",  Myself + "> has won the lotto and is now a legendary so skipping because the engine handle stat scaling for legendary NPCs fairly well.", 0, Venpi_DebugEnabled.GetValueInt())
-    LegendaryAliasQuest.MakeLegendary(RealMe)
-    ; DebugLevelScaling("FINAL")
-    return
-  ElseIf(RealMe.HasKeyword(ActorTypePirate))
+  ElseIf(RealMe.HasKeyword(ActorTypePirate) && Game.GetDieRollSuccess(30, 1, 100, -1, -1))
     message += "I'm a " + GetNPCType() + " pirate so injecting 1 random contraband item.\n"
     RealMe.AddItem(LL_Contraband_Any as Form, 1, true)
-  ElseIf(RealMe.HasKeyword(ActorTypeZealot))
+  ElseIf(RealMe.HasKeyword(ActorTypeZealot) && Game.GetDieRollSuccess(30, 1, 100, -1, -1))
     message += "I'm a " + GetNPCType() + " zealot so injecting 0-3 random Va'Ruun Pamphlet item(s).\n"
     RealMe.AddItem(Contraband_VaRuunHereticPamphlets as Form, Utility.RandomInt(0, 3), true)
-  ElseIf(RealMe.HasKeyword(ActorTypeGang))
+  ElseIf(RealMe.HasKeyword(ActorTypeGang) && Game.GetDieRollSuccess(30, 1, 100, -1, -1))
     message += "I'm a " + GetNPCType() + " gang member so injecting 0-6 aurora item(s).\n"
     RealMe.AddItem(Chem_Aurora as Form, Utility.RandomInt(0, 6), true)
   EndIf

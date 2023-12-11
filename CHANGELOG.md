@@ -1,5 +1,8 @@
 # V1.1 Permutations
 
+## V1.1.1
+* Oops forgot the random dice roll on the loot injection 
+
 ## V1.1.0
 * There is no race customization, now there are just 5 presets (Story, Easy, Normal, Hard, Nightmare, and Apocalypse)
 * Mob types are back but controlled by random chance and difficulty level (See sticky)
