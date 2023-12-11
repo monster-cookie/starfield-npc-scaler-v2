@@ -45,7 +45,7 @@ This is the normal game play. All mobs are available at their base chance for th
 - Miniboss (base chance)
 - Legendary (base chance)
 
-### Hard Preset (3 - Default)
+### Hard Preset (3)
 This is like the normal game play but slightly harder. All mobs are start shifting to the bass/legendary end of the scope. 
 
 #### Scaling Rules
@@ -57,7 +57,7 @@ This is like the normal game play but slightly harder. All mobs are start shifti
 - Miniboss (base chance + 10)
 - Legendary (base chance)
 
-### Nightmare Preset (4 - Default)
+### Nightmare Preset (4)
 This is like the hard game play but much harder. All mobs are heavily shifting to the bass/legendary end of the scope.
 
 #### Scaling Rules
@@ -69,7 +69,7 @@ This is like the hard game play but much harder. All mobs are heavily shifting t
 - Miniboss (base chance + 20)
 - Legendary (base chance + 20)
 
-### Apocalypse Preset (4 - Default)
+### Apocalypse Preset (5)
 This is the kick your butt mode meant to be very challenging
 
 #### Scaling Rules
