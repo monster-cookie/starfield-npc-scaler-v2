@@ -16,6 +16,7 @@ Int Property CONST_PRESET_APOCOLYPSE=5 Auto Const Mandatory
 ;;; Global Variables
 ;;;
 GlobalVariable Property Venpi_DebugEnabled Auto Const Mandatory
+String Property Venpi_ModName  Auto Const Mandatory
 
 GlobalVariable Property ScaleTheWorldTheSequel_Enabled Auto Const Mandatory
 GlobalVariable Property ScaleTheWorldTheSequel_ActivePreset Auto Const Mandatory
@@ -88,7 +89,7 @@ Actor Property Player Auto
 ;;;
 
 Event OnEffectStart(ObjectReference akTarget, Actor akCaster, MagicEffect akBaseEffect, Float afMagnitude, Float afDuration)
-  ; VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart", "OnEffectStart triggered", 0, Venpi_DebugEnabled.GetValueInt())
+  ; VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart", "OnEffectStart triggered", 0, Venpi_DebugEnabled.GetValueInt())
   If (akTarget == None)
     Return
   EndIf
@@ -105,46 +106,46 @@ Event OnEffectStart(ObjectReference akTarget, Actor akCaster, MagicEffect akBase
   EndIf
 
   If (ScaleTheWorldTheSequel_Enabled.GetValueInt() == 0)
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart", "NPC Stat Scaling is currently disabled.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart", "NPC Stat Scaling is currently disabled.", 0, Venpi_DebugEnabled.GetValueInt())
     return
   EndIf
 
   ;; System Generated Legendary NPC we shouldn't mess with. 
   If (RealMe.HasKeyword(ActorTypeLegendary))
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "(" + RealMe.GetRace() + ")> is already a legendary so skipping because the engine handle stat scaling for legendary NPCs fairly well.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "(" + RealMe.GetRace() + ")> is already a legendary so skipping because the engine handle stat scaling for legendary NPCs fairly well.", 0, Venpi_DebugEnabled.GetValueInt())
     ; DebugLevelScaling("FINAL")
     Return
   EndIf
 
   If (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_STORY)
     ;; Story preset is active
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the story preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the story preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
     HandleStatScaling(CONST_PRESET_STORY)
   ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_EASY)
     ;; Easy preset is active
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the easy preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the easy preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
     HandleStatScaling(CONST_PRESET_EASY)
   ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_NORMAL)
     ;; Normal preset is active
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the normal preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the normal preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
     HandleStatScaling(CONST_PRESET_NORMAL)
   ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_HARD)
     ;; Hard preset is active
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the hard preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the hard preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
     HandleStatScaling(CONST_PRESET_HARD)
   ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_NIGHTMARE)
     ;; Nightmare preset is active
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the nightmare preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the nightmare preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
     HandleStatScaling(CONST_PRESET_NIGHTMARE)
   ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_APOCOLYPSE)
     ;; Apocolypse preset is active
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the apocolypse preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the apocolypse preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
     HandleStatScaling(CONST_PRESET_APOCOLYPSE)
   EndIf
 EndEvent
 
 Event OnEffectFinish(ObjectReference akTarget, Actor akCaster, MagicEffect akBaseEffect, Float afMagnitude, Float afDuration)
-  ; VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectFinish", "OnEffectFinish triggered", 0, Venpi_DebugEnabled.GetValueInt())
+  ; VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectFinish", "OnEffectFinish triggered", 0, Venpi_DebugEnabled.GetValueInt())
 EndEvent
 
 
@@ -369,7 +370,7 @@ Function HandleStatScaling(Int preset)
   If (RealMe.HasKeyword(ActorTypeLegendary))
     ;;
     ;; Won the lotto I become a legendary
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "HandleStatScaling",  Myself + "> has won the lotto and is now a legendary so skipping because the engine handle stat scaling for legendary NPCs fairly well.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "HandleStatScaling",  Myself + "> has won the lotto and is now a legendary so skipping because the engine handle stat scaling for legendary NPCs fairly well.", 0, Venpi_DebugEnabled.GetValueInt())
     LegendaryAliasQuest.MakeLegendary(RealMe)
     ; DebugLevelScaling("FINAL")
     return
@@ -444,7 +445,7 @@ Function HandleStatScaling(Int preset)
   RealMe.SetValue(CriticalHitDamageMult, scaledCriticalHitDamageMult)
 
   message += "\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n\n"
-  VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "HandleStatScaling", message, 0, Venpi_DebugEnabled.GetValueInt())
+  VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "HandleStatScaling", message, 0, Venpi_DebugEnabled.GetValueInt())
   DebugLevelScaling("FINAL")
 EndFunction
 
@@ -504,7 +505,7 @@ Function DebugLevelScaling(String scalingState)
   message += "My/Player Attack Damage Multiplier: " + myAttackDamageMult + " | " + playerAttackDamageMult + ".\n"
 
   message += "\n************************************************************\n\n"
-  VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "DebugLevelScaling-" + scalingState, message, 0, Venpi_DebugEnabled.GetValueInt())
+  VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "DebugLevelScaling-" + scalingState, message, 0, Venpi_DebugEnabled.GetValueInt())
 EndFunction
 
 String Function GetNPCType()

@@ -13,6 +13,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: ItemToInject
       Object: 000805:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptStringProperty
+      Name: Venpi_ModName
+      Data: ScaleTheWorldTheSequel
   - Name: VPI_Inject_SpellToPlayer
     Properties:
     - MutagenObjectType: ScriptObjectProperty
@@ -24,6 +27,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: SpellToEnable
       Object: 00080B:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptStringProperty
+      Name: Venpi_ModName
+      Data: ScaleTheWorldTheSequel
   Script:
     Name: ''
 Name:

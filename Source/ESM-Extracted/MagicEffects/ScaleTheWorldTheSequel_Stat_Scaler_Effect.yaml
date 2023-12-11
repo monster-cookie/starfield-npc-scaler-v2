@@ -130,6 +130,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: Chem_Aurora
       Object: 2C5884:Starfield.esm
+    - MutagenObjectType: ScriptStringProperty
+      Name: Venpi_ModName
+      Data: ScaleTheWorldTheSequel
 Name:
   TargetLanguage: English
   Value: ActorStatScalingEffect

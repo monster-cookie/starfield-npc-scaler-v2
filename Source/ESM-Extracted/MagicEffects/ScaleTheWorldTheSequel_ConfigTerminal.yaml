@@ -31,6 +31,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: ScaleTheWorldTheSequel_ConfigTerminal_ConfigureEasterEggs
       Object: 000863:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptStringProperty
+      Name: Venpi_ModName
+      Data: ScaleTheWorldTheSequel
 Archetype:
   MutagenObjectType: MagicEffectArchetype
   Type: Script

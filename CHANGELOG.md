@@ -1,5 +1,8 @@
 # V1.1 Permutations
 
+## V1.1.2
+* Now using user debug logs via Venpi Core v1.0.10
+
 ## V1.1.1
 * Oops forgot the random dice roll on the loot injection 
 
