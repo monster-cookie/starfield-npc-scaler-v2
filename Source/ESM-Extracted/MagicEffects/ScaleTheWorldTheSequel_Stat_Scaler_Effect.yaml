@@ -26,8 +26,8 @@ VirtualMachineAdapter:
       Name: EnergyResist
       Object: 0002EB:Starfield.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Creature_ScaleRangeMax
-      Object: 00083A:ScaleTheWorldTheSequel.esm
+      Name: ENV_Resist_Airborne
+      Object: 248D31:Starfield.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: ENV_Resist_Corrosive
       Object: 248D30:Starfield.esm
@@ -44,113 +44,92 @@ VirtualMachineAdapter:
       Name: LegendaryAliasQuest
       Object: 0308F5:Starfield.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Enabled
-      Object: 000806:ScaleTheWorldTheSequel.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Legendary_ChanceToSpawn
-      Object: 000812:ScaleTheWorldTheSequel.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Scaled
-      Object: 000810:ScaleTheWorldTheSequel.esm
-    - MutagenObjectType: ScriptObjectProperty
       Name: PlayerRef
       Object: 000014:Starfield.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: ReflectDamage
       Object: 00035F:Starfield.esm
     - MutagenObjectType: ScriptObjectProperty
+      Name: ScaleTheWorldTheSequel_Scaled
+      Object: 000810:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptObjectProperty
       Name: Venpi_DebugEnabled
       Object: 000800:VenpiCore.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Default_Base
-      Object: 000835:ScaleTheWorldTheSequel.esm
+      Name: ScaleTheWorldTheSequel_Enabled
+      Object: 000806:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Default_ScaleRangeMin
-      Object: 000836:ScaleTheWorldTheSequel.esm
+      Name: ScaleTheWorldTheSequel_ActivePreset
+      Object: 00085B:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Default_ScaleRangeMax
-      Object: 000837:ScaleTheWorldTheSequel.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Default_EasterEggMode
-      Object: 000849:ScaleTheWorldTheSequel.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Critter_Enabled
-      Object: 00084E:ScaleTheWorldTheSequel.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Critter_Base
-      Object: 00083B:ScaleTheWorldTheSequel.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Critter_ScaleRangeMin
-      Object: 00083C:ScaleTheWorldTheSequel.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Critter_ScaleRangeMax
-      Object: 00083D:ScaleTheWorldTheSequel.esm
-    - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Critter_EasterEggMode
+      Name: ScaleTheWorldTheSequel_EasterEggMode_Critter
       Object: 000844:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Creature_Enabled
-      Object: 00084F:ScaleTheWorldTheSequel.esm
+      Name: ScaleTheWorldTheSequel_ChanceToSpawn_Easy
+      Object: 00085D:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Creature_Base
-      Object: 000838:ScaleTheWorldTheSequel.esm
+      Name: ScaleTheWorldTheSequel_ChanceToSpawn_Hard
+      Object: 00085E:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Creature_ScaleRangeMin
-      Object: 000839:ScaleTheWorldTheSequel.esm
+      Name: ScaleTheWorldTheSequel_ChanceToSpawn_MiniBoss
+      Object: 00085F:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Creature_ScaleRangeMax
-      Object: 00083A:ScaleTheWorldTheSequel.esm
+      Name: ScaleTheWorldTheSequel_ChanceToSpawn_Legendary
+      Object: 000812:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Creature_EasterEggMode
-      Object: 000846:ScaleTheWorldTheSequel.esm
+      Name: ScaleTheWorldTheSequel_Preset_Story_Base
+      Object: 000864:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Human_Enabled
-      Object: 000850:ScaleTheWorldTheSequel.esm
+      Name: ScaleTheWorldTheSequel_Preset_Easy_Base
+      Object: 000865:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Human_Base
-      Object: 00083E:ScaleTheWorldTheSequel.esm
+      Name: ScaleTheWorldTheSequel_Preset_Normal_Base
+      Object: 000866:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Human_ScaleRangeMin
-      Object: 00083F:ScaleTheWorldTheSequel.esm
+      Name: ScaleTheWorldTheSequel_Preset_Hard_Base
+      Object: 000867:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Human_ScaleRangeMax
-      Object: 000840:ScaleTheWorldTheSequel.esm
+      Name: ScaleTheWorldTheSequel_Preset_Nightmare_Base
+      Object: 000868:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Human_EasterEggMode
-      Object: 000847:ScaleTheWorldTheSequel.esm
+      Name: ScaleTheWorldTheSequel_Preset_Apocalypse_Base
+      Object: 000869:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Robot_Enabled
-      Object: 000851:ScaleTheWorldTheSequel.esm
+      Name: ActorTypeGang
+      Object: 000861:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Robot_Base
-      Object: 000841:ScaleTheWorldTheSequel.esm
+      Name: ActorTypePirate
+      Object: 000860:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Robot_ScaleRangeMin
-      Object: 000842:ScaleTheWorldTheSequel.esm
+      Name: ActorTypeZealot
+      Object: 000862:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Robot_ScaleRangeMax
-      Object: 000843:ScaleTheWorldTheSequel.esm
+      Name: CombatNPC_Easy
+      Object: 00086C:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Robot_EasterEggMode
-      Object: 000848:ScaleTheWorldTheSequel.esm
+      Name: CombatNPC_Normal
+      Object: 00086D:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ActorIsCritter
-      Object: 000805:VenpiCore.esm
+      Name: CombatNPC_Hard
+      Object: 00086E:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ActorIsCreature
-      Object: 000804:VenpiCore.esm
+      Name: CombatNPC_Miniboss
+      Object: 00086B:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ActorIsHuman
-      Object: 000806:VenpiCore.esm
+      Name: CombatNPC_Legendary
+      Object: 00086F:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ActorIsRobot
-      Object: 000807:VenpiCore.esm
+      Name: LL_Loot_Legendary_Human
+      Object: 0C1F58:Starfield.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ENV_Resist_Airborne
-      Object: 248D31:Starfield.esm
+      Name: LL_Contraband_Any
+      Object: 150EE5:Starfield.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_HardMode_Level
-      Object: 00085B:ScaleTheWorldTheSequel.esm
+      Name: Contraband_VaRuunHereticPamphlets
+      Object: 15567D:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Chem_Aurora
+      Object: 2C5884:Starfield.esm
 Name:
   TargetLanguage: English
   Value: ActorStatScalingEffect

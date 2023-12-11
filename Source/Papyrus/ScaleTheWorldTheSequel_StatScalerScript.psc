@@ -4,10 +4,12 @@ Scriptname ScaleTheWorldTheSequel_StatScalerScript extends ActiveMagicEffect
 ;;;
 ;;; Constants
 ;;;
-Int Property CONST_SCALING_DIFFICULTY_NORMAL=0 Auto Const Mandatory
-Int Property CONST_SCALING_DIFFICULTY_HARD=1 Auto Const Mandatory
-Int Property CONST_SCALING_DIFFICULTY_NIGHTMARE=2 Auto Const Mandatory
-Int Property CONST_SCALING_DIFFICULTY_APOCOLYPSE=3 Auto Const Mandatory
+Int Property      CONST_PRESET_STORY=0 Auto Const Mandatory
+Int Property       CONST_PRESET_EASY=1 Auto Const Mandatory
+Int Property     CONST_PRESET_NORMAL=2 Auto Const Mandatory
+Int Property       CONST_PRESET_HARD=3 Auto Const Mandatory
+Int Property  CONST_PRESET_NIGHTMARE=4 Auto Const Mandatory
+Int Property CONST_PRESET_APOCOLYPSE=5 Auto Const Mandatory
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -16,48 +18,26 @@ Int Property CONST_SCALING_DIFFICULTY_APOCOLYPSE=3 Auto Const Mandatory
 GlobalVariable Property Venpi_DebugEnabled Auto Const Mandatory
 
 GlobalVariable Property ScaleTheWorldTheSequel_Enabled Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_HardMode_Level Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Legendary_ChanceToSpawn Auto Const Mandatory
+GlobalVariable Property ScaleTheWorldTheSequel_ActivePreset Auto Const Mandatory
+GlobalVariable Property ScaleTheWorldTheSequel_EasterEggMode_Critter Auto Const Mandatory
 
-GlobalVariable Property ScaleTheWorldTheSequel_Default_Base Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Default_ScaleRangeMin Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Default_ScaleRangeMax Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Default_EasterEggMode Auto Const Mandatory
+GlobalVariable Property ScaleTheWorldTheSequel_ChanceToSpawn_Easy Auto Const Mandatory
+GlobalVariable Property ScaleTheWorldTheSequel_ChanceToSpawn_Hard Auto Const Mandatory
+GlobalVariable Property ScaleTheWorldTheSequel_ChanceToSpawn_MiniBoss Auto Const Mandatory
+GlobalVariable Property ScaleTheWorldTheSequel_ChanceToSpawn_Legendary Auto Const Mandatory
 
-GlobalVariable Property ScaleTheWorldTheSequel_Critter_Enabled Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Critter_Base Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Critter_ScaleRangeMin Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Critter_ScaleRangeMax Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Critter_EasterEggMode Auto Const Mandatory
-
-GlobalVariable Property ScaleTheWorldTheSequel_Creature_Enabled Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Creature_Base Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Creature_ScaleRangeMin Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Creature_ScaleRangeMax Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Creature_EasterEggMode Auto Const Mandatory
-
-GlobalVariable Property ScaleTheWorldTheSequel_Human_Enabled Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Human_Base Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Human_ScaleRangeMin Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Human_ScaleRangeMax Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Human_EasterEggMode Auto Const Mandatory
-
-GlobalVariable Property ScaleTheWorldTheSequel_Robot_Enabled Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Robot_Base Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Robot_ScaleRangeMin Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Robot_ScaleRangeMax Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Robot_EasterEggMode Auto Const Mandatory
+GlobalVariable Property ScaleTheWorldTheSequel_Preset_Story_Base Auto Const Mandatory
+GlobalVariable Property ScaleTheWorldTheSequel_Preset_Easy_Base Auto Const Mandatory
+GlobalVariable Property ScaleTheWorldTheSequel_Preset_Normal_Base Auto Const Mandatory
+GlobalVariable Property ScaleTheWorldTheSequel_Preset_Hard_Base Auto Const Mandatory
+GlobalVariable Property ScaleTheWorldTheSequel_Preset_Nightmare_Base Auto Const Mandatory
+GlobalVariable Property ScaleTheWorldTheSequel_Preset_Apocalypse_Base Auto Const Mandatory
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Properties
 ;;;
 Keyword Property ScaleTheWorldTheSequel_Scaled Auto Const Mandatory
-
-ConditionForm Property ActorIsCritter Auto Const Mandatory
-ConditionForm Property ActorIsCreature Auto Const Mandatory
-ConditionForm Property ActorIsHuman Auto Const Mandatory
-ConditionForm Property ActorIsRobot Auto Const Mandatory
 
 ActorValue Property Health Auto Const Mandatory
 ActorValue Property DamageResist Auto Const Mandatory
@@ -71,6 +51,21 @@ ActorValue Property CriticalHitChance Auto Const Mandatory
 ActorValue Property CriticalHitDamageMult Auto Const Mandatory
 ActorValue Property AttackDamageMult Auto Const Mandatory
 ActorValue Property ReflectDamage Auto Const Mandatory
+
+Keyword Property ActorTypeGang Auto Const Mandatory
+Keyword Property ActorTypePirate Auto Const Mandatory
+Keyword Property ActorTypeZealot Auto Const Mandatory
+
+Keyword Property CombatNPC_Easy Auto Const Mandatory
+Keyword Property CombatNPC_Normal Auto Const Mandatory
+Keyword Property CombatNPC_Hard Auto Const Mandatory
+Keyword Property CombatNPC_Miniboss Auto Const Mandatory
+Keyword Property CombatNPC_Legendary Auto Const Mandatory
+
+LeveledItem Property LL_Loot_Legendary_Human Auto Const Mandatory
+LeveledItem Property LL_Contraband_Any Auto Const Mandatory
+MiscObject Property Contraband_VaRuunHereticPamphlets Auto Const Mandatory
+Potion Property Chem_Aurora Auto Const Mandatory
 
 Keyword Property ActorTypeLegendary Auto Const Mandatory
 ;; ActorValue Property LegendaryRank Auto Const Mandatory
@@ -121,21 +116,30 @@ Event OnEffectStart(ObjectReference akTarget, Actor akCaster, MagicEffect akBase
     Return
   EndIf
 
-  If (ScaleTheWorldTheSequel_Critter_Enabled.GetValueInt() == 1 && ActorIsCritter.IsTrue(Myself, PlayerRef))
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " so applying critter stat scaling rules.", 0, Venpi_DebugEnabled.GetValueInt())
-    HandleStatScaling(ScaleTheWorldTheSequel_Critter_Base.GetValue(), ScaleTheWorldTheSequel_Critter_ScaleRangeMin.GetValue(), ScaleTheWorldTheSequel_Critter_ScaleRangeMax.GetValue(), ScaleTheWorldTheSequel_Critter_EasterEggMode.GetValueInt() as Bool)
-  ElseIF (ScaleTheWorldTheSequel_Creature_Enabled.GetValueInt() == 1 && ActorIsCreature.IsTrue(Myself, PlayerRef))
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " so applying creature stat scaling rules.", 0, Venpi_DebugEnabled.GetValueInt())
-    HandleStatScaling(ScaleTheWorldTheSequel_Creature_Base.GetValue(), ScaleTheWorldTheSequel_Creature_ScaleRangeMin.GetValue(), ScaleTheWorldTheSequel_Creature_ScaleRangeMax.GetValue(), ScaleTheWorldTheSequel_Creature_EasterEggMode.GetValueInt() as Bool)
-  ElseIF (ScaleTheWorldTheSequel_Human_Enabled.GetValueInt() == 1 && ActorIsHuman.IsTrue(Myself, PlayerRef))
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " so applying human stat scaling rules.", 0, Venpi_DebugEnabled.GetValueInt())
-    HandleStatScaling(ScaleTheWorldTheSequel_Human_Base.GetValue(), ScaleTheWorldTheSequel_Human_ScaleRangeMin.GetValue(), ScaleTheWorldTheSequel_Human_ScaleRangeMax.GetValue(), ScaleTheWorldTheSequel_Human_EasterEggMode.GetValueInt() as Bool)
-  ElseIF (ScaleTheWorldTheSequel_Robot_Enabled.GetValueInt() == 1 && ActorIsRobot.IsTrue(Myself, PlayerRef))
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " so applying robot stat scaling rules.", 0, Venpi_DebugEnabled.GetValueInt())
-    HandleStatScaling(ScaleTheWorldTheSequel_Robot_Base.GetValue(), ScaleTheWorldTheSequel_Robot_ScaleRangeMin.GetValue(), ScaleTheWorldTheSequel_Robot_ScaleRangeMax.GetValue(), ScaleTheWorldTheSequel_Robot_EasterEggMode.GetValueInt() as Bool)
-  Else
-    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " so applying default stat scaling rules.", 0, Venpi_DebugEnabled.GetValueInt())
-    HandleStatScaling(ScaleTheWorldTheSequel_Default_Base.GetValue(), ScaleTheWorldTheSequel_Default_ScaleRangeMin.GetValue(), ScaleTheWorldTheSequel_Default_ScaleRangeMax.GetValue(), ScaleTheWorldTheSequel_Default_EasterEggMode.GetValueInt() as Bool)
+  If (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_STORY)
+    ;; Story preset is active
+    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the story preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    HandleStatScaling(CONST_PRESET_STORY)
+  ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_EASY)
+    ;; Easy preset is active
+    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the easy preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    HandleStatScaling(CONST_PRESET_EASY)
+  ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_NORMAL)
+    ;; Normal preset is active
+    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the normal preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    HandleStatScaling(CONST_PRESET_NORMAL)
+  ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_HARD)
+    ;; Hard preset is active
+    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the hard preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    HandleStatScaling(CONST_PRESET_HARD)
+  ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_NIGHTMARE)
+    ;; Nightmare preset is active
+    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the nightmare preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    HandleStatScaling(CONST_PRESET_NIGHTMARE)
+  ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_APOCOLYPSE)
+    ;; Apocolypse preset is active
+    VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the apocolypse preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    HandleStatScaling(CONST_PRESET_APOCOLYPSE)
   EndIf
 EndEvent
 
@@ -148,7 +152,180 @@ EndEvent
 ;;;
 ;;; Functions
 ;;;
-Function HandleStatScaling(Float base, Float scaleMin, Float scaleMax, Bool easterEggMode)
+Bool Function ShouldBecomeEasyNPC(int preset)
+  ;; Base chance for Easy NPCs is 30%
+  Int spawnChance = 0
+  If (preset == CONST_PRESET_STORY)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Easy.GetValueInt() + 25
+  ElseIf (preset == CONST_PRESET_EASY)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Easy.GetValueInt() + 10
+  ElseIf (preset == CONST_PRESET_NORMAL)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Easy.GetValueInt()
+  ElseIf (preset == CONST_PRESET_HARD)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Easy.GetValueInt() - 20
+  ElseIf (preset == CONST_PRESET_NIGHTMARE)
+    spawnChance = 0
+  ElseIf (preset == CONST_PRESET_APOCOLYPSE)
+    spawnChance = 0
+  EndIf
+
+  If (spawnChance > 100)
+    spawnChance = 100
+  ElseIf (spawnChance < 0)
+    spawnChance = 0
+  EndIf
+  return spawnChance == 100 || Game.GetDieRollSuccess(spawnChance, 1, 100, -1, -1)
+EndFunction
+
+Bool Function ShouldBecomeHardNPC(int preset)
+  ;; BAse chance for Hard NPCs is 30%
+  Int spawnChance = 0
+  If (preset == CONST_PRESET_STORY)
+    spawnChance = 0
+  ElseIf (preset == CONST_PRESET_EASY)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Hard.GetValueInt() - 10
+  ElseIf (preset == CONST_PRESET_NORMAL)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Hard.GetValueInt()
+  ElseIf (preset == CONST_PRESET_HARD)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Hard.GetValueInt() + 20 
+  ElseIf (preset == CONST_PRESET_NIGHTMARE)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Hard.GetValueInt() + 30
+  ElseIf (preset == CONST_PRESET_APOCOLYPSE)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Hard.GetValueInt() + 60
+  EndIf
+
+  If (spawnChance > 100)
+    spawnChance = 100
+  ElseIf (spawnChance < 0)
+    spawnChance = 0
+  EndIf
+  return spawnChance == 100 || Game.GetDieRollSuccess(spawnChance, 1, 100, -1, -1)
+EndFunction
+
+Bool Function ShouldBecomeMinibossNPC(int preset)
+  ;; BAse chance for Miniboss NPCs is 20%
+  Int spawnChance = 0
+  If (preset == CONST_PRESET_STORY)
+    spawnChance = 0
+  ElseIf (preset == CONST_PRESET_EASY)
+    spawnChance = 0
+  ElseIf (preset == CONST_PRESET_NORMAL)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_MiniBoss.GetValueInt()
+  ElseIf (preset == CONST_PRESET_HARD)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_MiniBoss.GetValueInt() + 10
+  ElseIf (preset == CONST_PRESET_NIGHTMARE)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_MiniBoss.GetValueInt() + 20
+  ElseIf (preset == CONST_PRESET_APOCOLYPSE)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_MiniBoss.GetValueInt() + 50
+  EndIf
+
+  If (spawnChance > 100)
+    spawnChance = 100
+  ElseIf (spawnChance < 0)
+    spawnChance = 0
+  EndIf
+  return spawnChance == 100 || Game.GetDieRollSuccess(spawnChance, 1, 100, -1, -1)
+EndFunction
+
+Bool Function ShouldBecomeLegendaryNPC(int preset)
+  ;; BAse chance for Miniboss NPCs is 10%
+  Int spawnChance = 0
+  If (preset == CONST_PRESET_STORY)
+    spawnChance = 0
+  ElseIf (preset == CONST_PRESET_EASY)
+    spawnChance = 0
+  ElseIf (preset == CONST_PRESET_NORMAL)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Legendary.GetValueInt()
+  ElseIf (preset == CONST_PRESET_HARD)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Legendary.GetValueInt() + 10 
+  ElseIf (preset == CONST_PRESET_NIGHTMARE)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Legendary.GetValueInt() + 20
+  ElseIf (preset == CONST_PRESET_APOCOLYPSE)
+    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Legendary.GetValueInt() + 40
+  EndIf
+
+  If (spawnChance > 100)
+    spawnChance = 100
+  ElseIf (spawnChance < 0)
+    spawnChance = 0
+  EndIf
+  return spawnChance == 100 || Game.GetDieRollSuccess(spawnChance, 1, 100, -1, -1)
+EndFunction
+
+Float Function GetScalingFactorForDifficulty(int preset)
+  Int iDifficulty = Game.GetDifficulty()
+
+  Float base=0
+  If (preset == CONST_PRESET_STORY)
+    base = ScaleTheWorldTheSequel_Preset_Story_Base.GetValue()
+  ElseIf (preset == CONST_PRESET_EASY)
+    base = ScaleTheWorldTheSequel_Preset_Easy_Base.GetValue()
+  ElseIf (preset == CONST_PRESET_NORMAL)
+    base = ScaleTheWorldTheSequel_Preset_Normal_Base.GetValue()
+  ElseIf (preset == CONST_PRESET_HARD)
+    base = ScaleTheWorldTheSequel_Preset_Hard_Base.GetValue()
+  ElseIf (preset == CONST_PRESET_NIGHTMARE)
+    base = ScaleTheWorldTheSequel_Preset_Nightmare_Base.GetValue()
+  ElseIf (preset == CONST_PRESET_APOCOLYPSE)
+    base = ScaleTheWorldTheSequel_Preset_Apocalypse_Base.GetValue()
+  Else
+    base = 100
+  EndIf
+
+  Float scaleMin = 1
+  Float scaleMax = 1
+  If (iDifficulty == 0)
+    ;; Very Easy Difficulty
+    scaleMin = 0.30 + base
+    scaleMax = 0.80 + base
+  ElseIf (iDifficulty == 1)
+    ;; Easy Difficulty
+    scaleMin = 0.40 + base
+    scaleMax = 0.90 + base
+  ElseIf (iDifficulty == 2)
+    ;; Normal Difficulty
+    scaleMin = 0.50 + base
+    scaleMax = 1.00 + base
+  ElseIf (iDifficulty == 3)
+    ;; Hard Difficulty
+    scaleMin = 0.60 + base
+    scaleMax = 1.10 + base
+  ElseIf (iDifficulty == 4)
+    ;; Very Hard Difficulty
+    scaleMin = 0.80 + base
+    scaleMax = 1.30 + base
+  Else 
+    ;; Really can only be survival/nightmare mode
+    scaleMin = 1.00 + base
+    scaleMax = 1.50 + base
+  EndIf
+
+  Float scaleFactor = Utility.RandomFloat(scaleMin, scaleMax)
+
+  If (ShouldBecomeEasyNPC(preset))
+    ;; Converting to easy NPC
+    scaleFactor = scaleFactor * 0.8
+    RealMe.AddKeyword(CombatNPC_Easy)
+  ElseIf (ShouldBecomeHardNPC(preset))
+    ;; converting to hard NPC
+    scaleFactor = scaleFactor * 1.1
+    RealMe.AddKeyword(CombatNPC_Hard)
+  ElseIf (ShouldBecomeMinibossNPC(preset))
+    ;; converting to miniboss NPC
+    scaleFactor = scaleFactor * 1.25
+    RealMe.AddKeyword(CombatNPC_Miniboss)
+  ElseIf (ShouldBecomeLegendaryNPC(preset))
+    ;; converting to legendary NPC
+    RealMe.AddKeyword(CombatNPC_Legendary)
+  Else
+    ;; leaving as normal npc
+    RealMe.AddKeyword(CombatNPC_Normal)
+  EndIf
+
+  Return scaleFactor;
+EndFunction
+
+Function HandleStatScaling(Int preset)
   int playerLevel = Player.GetLevel()
   int myLevel = RealMe.GetLeveledActorBase().GetLevel()
 
@@ -184,24 +361,47 @@ Function HandleStatScaling(Float base, Float scaleMin, Float scaleMax, Bool east
 
   ; DebugLevelScaling("INITIAL")
 
-  Int chanceLegendary = ScaleTheWorldTheSequel_Legendary_ChanceToSpawn.GetValueInt()
-  if (chanceLegendary <= 0)
-    chanceLegendary = 0
-  ElseIF (chanceLegendary >= 100)
-    chanceLegendary = 100
-  EndIf
-  If (chanceLegendary == 100 || Game.GetDieRollSuccess(chanceLegendary, 1, 100, -1, -1))
+  Float npcScalingAdjustmentToPlayer = GetScalingFactorForDifficulty(preset)
+
+  string message = "\n\n -=-=-=-=-= STAT DEBUG (" + Myself + ") =-=-=-=-=-\n\n"
+  message += "I'm a " + GetNPCType() + " NPC with a race of " + RealMe.GetRace() + " and a calculated a stat adjustment factor of " + npcScalingAdjustmentToPlayer + ".\n"
+
+  If (RealMe.HasKeyword(CombatNPC_Miniboss))
+    ;; Handle Resize
+    RealMe.SetScale(npcScalingAdjustmentToPlayer)
+
+    ;; Handle Glow Effect
+
+    ;; Handle Loot Injection
+    RealMe.AddItem(LL_Loot_Legendary_Human as Form, 1, true)
+    If (RealMe.HasKeyword(ActorTypePirate))
+      message += "I'm a miniboss pirate so injecting 1 random contraband item.\n"
+      RealMe.AddItem(LL_Contraband_Any as Form, 1, true)
+    ElseIf (RealMe.HasKeyword(ActorTypeZealot))
+      message += "I'm a miniboss zealot so injecting 0-3 random Va'Ruun Pamphlet item(s).\n"
+      RealMe.AddItem(Contraband_VaRuunHereticPamphlets as Form, Utility.RandomInt(0, 3), true)
+    ElseIf (RealMe.HasKeyword(ActorTypeGang))
+      message += "I'm a miniboss gang member so injecting 0-6 aurora item(s).\n"
+      RealMe.AddItem(Chem_Aurora as Form, Utility.RandomInt(0, 6), true)
+    Else
+    EndIf
+  ElseIf (RealMe.HasKeyword(CombatNPC_Legendary) || RealMe.HasKeyword(ActorTypeLegendary))
+    ;;
     ;; Won the lotto I become a legendary
     VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "HandleStatScaling",  Myself + "> has won the lotto and is now a legendary so skipping because the engine handle stat scaling for legendary NPCs fairly well.", 0, Venpi_DebugEnabled.GetValueInt())
     LegendaryAliasQuest.MakeLegendary(RealMe)
     ; DebugLevelScaling("FINAL")
     return
+  ElseIf(RealMe.HasKeyword(ActorTypePirate))
+    message += "I'm a " + GetNPCType() + " pirate so injecting 1 random contraband item.\n"
+    RealMe.AddItem(LL_Contraband_Any as Form, 1, true)
+  ElseIf(RealMe.HasKeyword(ActorTypeZealot))
+    message += "I'm a " + GetNPCType() + " zealot so injecting 0-3 random Va'Ruun Pamphlet item(s).\n"
+    RealMe.AddItem(Contraband_VaRuunHereticPamphlets as Form, Utility.RandomInt(0, 3), true)
+  ElseIf(RealMe.HasKeyword(ActorTypeGang))
+    message += "I'm a " + GetNPCType() + " gang member so injecting 0-6 aurora item(s).\n"
+    RealMe.AddItem(Chem_Aurora as Form, Utility.RandomInt(0, 6), true)
   EndIf
-
-  Float npcScalingAdjustmentToPlayer = GetScalingAdjustmentForDifficulty(base, scaleMin, scaleMax, easterEggMode)
-
-  string message = "\n\n -=-=-=-=-= STAT DEBUG (" + Myself + ") =-=-=-=-=-\n\n"
-  message += "Calculated a stat adjustment factor of " + npcScalingAdjustmentToPlayer + ".\n"
 
   int scaledHealth = Math.Round(playerHealth * npcScalingAdjustmentToPlayer)
   RealMe.SetValue(Health, scaledHealth)
@@ -224,61 +424,29 @@ Function HandleStatScaling(Float base, Float scaleMin, Float scaleMax, Bool east
   message += "Adjusting my EM Damage Resist stat to " + scaledCriticalHitChance + " from " + myCriticalHitChance + " using a scalig factor of " + npcScalingAdjustmentToPlayer  + " against the player's " + playerCriticalHitChance + " EM damage resist.\n"
 
 
-  ;; Some stats adjust by level difference
-  ; Float levelMult = Math.Ceiling(playerLevel/100)
-  ; Float scaledAttackDamageMult = Math.sqrt(Math.sqrt(playerLevel)) * levelMult
-  ; message += "Adjusting my attack multiplier to " + scaledAttackDamageMult + " from " + myAttackDamageMult + " against the player's " + playerAttackDamageMult + ".\n"
-  ; RealMe.SetValue(AttackDamageMult, scaledAttackDamageMult)
-
-  ; Float scaledCriticalHitDamageMult = (Math.sqrt(Math.sqrt(playerLevel))/2) * levelMult
-  ; message += "Adjusting my critical damage multiplier to " + scaledCriticalHitDamageMult + " from " + myCriticalHitDamageMult + " against the player's " + playerCriticalHitDamageMult + ".\n"
-  ; RealMe.SetValue(CriticalHitDamageMult, scaledCriticalHitDamageMult)
+  ;; These can't scale with the factor they do too much damage
+  Float scaledAttackDamageMult = 1
+  Float scaledCriticalHitDamageMult = 1
+  If (RealMe.HasKeyword(CombatNPC_Easy))
+    scaledAttackDamageMult = 0.80
+    scaledCriticalHitDamageMult = 0.80
+  ElseIf (RealMe.HasKeyword(CombatNPC_Hard))
+    scaledAttackDamageMult = 1.10
+    scaledCriticalHitDamageMult = 1.10
+  ElseIf (RealMe.HasKeyword(CombatNPC_Miniboss))
+    scaledAttackDamageMult = 1.50
+    scaledCriticalHitDamageMult = 1.25
+  EndIf
+  message += "Adjusting my attack multiplier to " + scaledAttackDamageMult + " from " + myAttackDamageMult + " against the player's " + playerAttackDamageMult + ".\n"
+  RealMe.SetValue(AttackDamageMult, scaledAttackDamageMult)
+  message += "Adjusting my critical damage multiplier to " + scaledCriticalHitDamageMult + " from " + myCriticalHitDamageMult + " against the player's " + playerCriticalHitDamageMult + ".\n"
+  RealMe.SetValue(CriticalHitDamageMult, scaledCriticalHitDamageMult)
 
   message += "\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n\n"
   VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "HandleStatScaling", message, 0, Venpi_DebugEnabled.GetValueInt())
   DebugLevelScaling("FINAL")
 EndFunction
 
-Float Function GetScalingAdjustmentForDifficulty(Float base, Float scaleMin, Float scaleMax, Bool easterEggMode)
-  Int iDifficulty = Game.GetDifficulty()
-
-  If (easterEggMode && Game.GetDieRollSuccess(5, 1, 100, -1, -1))
-    scaleMin = scaleMin * 1.25
-    scaleMax = scaleMax * 1.50
-  EndIf
-
-  Float adjustment = Utility.RandomFloat(scaleMin,scaleMin)
-  Float calculated = 1
-  If (iDifficulty == 0)
-    ;; Very Easy Difficulty
-    calculated = (base*0) + adjustment
-  ElseIf (iDifficulty == 1)
-    ;; Easy Difficulty
-    calculated = (base*1) + adjustment
-  ElseIf (iDifficulty == 2)
-    ;; Normal Difficulty
-    calculated = (base*3) + adjustment
-  ElseIf (iDifficulty == 3)
-    ;; Hard Difficulty
-    calculated = (base*6) + adjustment
-  ElseIf (iDifficulty == 4)
-    ;; Very Hard Difficulty
-    calculated = (base*12) + adjustment
-  Else 
-    ;; Really can only be survival/nightmare mode
-    calculated = (base*30) + adjustment
-  EndIf
-
-  If (ScaleTheWorldTheSequel_HardMode_Level.GetValueInt() == CONST_SCALING_DIFFICULTY_HARD)
-    calculated += 2
-  ElseIf (ScaleTheWorldTheSequel_HardMode_Level.GetValueInt() == CONST_SCALING_DIFFICULTY_NIGHTMARE)
-    calculated += 4
-  ElseIf (ScaleTheWorldTheSequel_HardMode_Level.GetValueInt() == CONST_SCALING_DIFFICULTY_APOCOLYPSE)
-    calculated += 8
-  EndIf
-
-  Return calculated
-EndFunction
 
 Function DebugLevelScaling(String scalingState)
   int playerLevel = Player.GetLevel()
@@ -336,4 +504,20 @@ Function DebugLevelScaling(String scalingState)
 
   message += "\n************************************************************\n\n"
   VPI_Debug.DebugMessage("ScaleTheWorldTheSequel_StatScalerScript", "DebugLevelScaling-" + scalingState, message, 0, Venpi_DebugEnabled.GetValueInt())
+EndFunction
+
+String Function GetNPCType()
+  If (RealMe.HasKeyword(CombatNPC_Easy))
+    Return "Easy"
+  ElseIf (RealMe.HasKeyword(CombatNPC_Normal))
+    Return "Normal"
+  ElseIf (RealMe.HasKeyword(CombatNPC_Hard))
+    Return "Hard"
+  ElseIf (RealMe.HasKeyword(CombatNPC_Miniboss))
+    Return "Miniboss"
+  ElseIf (RealMe.HasKeyword(CombatNPC_Legendary))
+    Return "Legendary"
+  Else
+    Return "Unknown"
+  EndIf
 EndFunction
