@@ -378,7 +378,7 @@ Function HandleStatScaling(Int preset)
 
   If (RealMe.HasKeyword(CombatNPC_Miniboss))
     ;; Handle Resize
-    RealMe.SetScale(npcScalingAdjustmentToPlayer)
+    RealMe.SetScale(1.10)
 
     ;; Handle Glow Effect
 
