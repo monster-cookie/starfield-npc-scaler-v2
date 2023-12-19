@@ -10,6 +10,9 @@ VirtualMachineAdapter:
     - MutagenObjectType: ScriptObjectProperty
       Name: AbilityToApply
       Object: 000811:ScaleTheWorldTheSequel.esm
+    - MutagenObjectType: ScriptStringProperty
+      Name: Venpi_ModName
+      Data: ScaleTheWorldTheSequel
 Name:
   TargetLanguage: English
   Value: ''

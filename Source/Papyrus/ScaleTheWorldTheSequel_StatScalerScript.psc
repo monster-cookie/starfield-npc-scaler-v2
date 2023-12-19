@@ -16,7 +16,7 @@ Int Property CONST_PRESET_APOCOLYPSE=5 Auto Const Mandatory
 ;;; Global Variables
 ;;;
 GlobalVariable Property Venpi_DebugEnabled Auto Const Mandatory
-String Property Venpi_ModName  Auto Const Mandatory
+String Property Venpi_ModName="ScaleTheWorldTheSequel" Auto Const Mandatory
 
 GlobalVariable Property ScaleTheWorldTheSequel_Enabled Auto Const Mandatory
 GlobalVariable Property ScaleTheWorldTheSequel_ActivePreset Auto Const Mandatory

@@ -1,5 +1,8 @@
 # V1.1 Permutations
 
+## V1.1.4
+* Clean up bug causing empty user log files to be created
+
 ## V1.1.3
 * Mini bosses are hard set back to 10% growth. Stupid me put the scaling factor there which cna be up to 6 times scaling. Sorry about that. 
 

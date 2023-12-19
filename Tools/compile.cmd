@@ -42,7 +42,7 @@ copy /y "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleT
 copy /y "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleTheWorldTheSequel.esm" "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist"
 
 @REM Use Spriggit to extract record from ESM
-"D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleTheWorldTheSequel.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Source\ESM-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
+"D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleTheWorldTheSequel.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Source\ESM-ScaleTheWorldTheSequel-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
 
 @REM Create and copy the BA2 Textures Archive to Dist folder
 @REM @echo "Creating the BA2 Textures Archive"
