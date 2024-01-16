@@ -2,6 +2,7 @@
 
 ## V1.1.5
 * CCT auto scaling missing templates fixed so creatures will have the correct level and death items.
+* Handle the shaw gang
 
 ## V1.1.4
 * Clean up bug causing empty user log files to be created
