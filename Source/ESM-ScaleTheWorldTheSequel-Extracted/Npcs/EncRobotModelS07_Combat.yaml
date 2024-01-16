@@ -1,0 +1,124 @@
+FormKey: 0CA19B:Starfield.esm
+EditorID: EncRobotModelS07_Combat
+ObjectBounds:
+  First: -0.55246174, -1.0104787, -4.7683716E-07
+  Second: 0.55246174, 0.8869324, 1.6147089
+ODTY: 0
+Flags:
+- Respawn
+- AutoCalcStats
+- 0x100
+XpValueOffset: 95
+Level:
+  MutagenObjectType: PcLevelMult
+  LevelMult: 1
+CalcMinLevel: 50
+CalcMaxLevel: 999
+DispositionBase: 35
+UseTemplateActors: 32703
+DeathItem: 25D996:Starfield.esm
+Voice: 2BCA58:Starfield.esm
+DefaultTemplate: 0CA190:Starfield.esm
+TemplateActors:
+  TraitTemplate: 0CA199:Starfield.esm
+  StatsTemplate: 12F055:Starfield.esm
+  FactionsTemplate: 0CA190:Starfield.esm
+  SpellListTemplate: 0CA190:Starfield.esm
+  AiDataTemplate: 0CA190:Starfield.esm
+  AiPackagesTemplate: 0CA190:Starfield.esm
+  BaseDataTemplate: 0CA190:Starfield.esm
+  InventoryTemplate: 0CA190:Starfield.esm
+  ScriptTemplate: 0CA190:Starfield.esm
+  DefPackListTemplate: 0CA190:Starfield.esm
+  AttackDataTemplate: 0CA190:Starfield.esm
+  KeywordsTemplate: 0CA190:Starfield.esm
+  Unknown1: 0CA190:Starfield.esm
+  Unknown2: 0CA190:Starfield.esm
+Race: 0130F0:Starfield.esm
+Skin: 01FEE3:Starfield.esm
+AttackRace: 0130F0:Starfield.esm
+CombatOverridePackageList: 0102ED:Starfield.esm
+Properties:
+- ActorValue: 0002DA:Starfield.esm
+  Value: 100
+- ActorValue: 0002D5:Starfield.esm
+  Value: 50
+- ActorValue: 0002D4:Starfield.esm
+  Value: 1410
+- ActorValue: 0002C8:Starfield.esm
+- ActorValue: 0002C7:Starfield.esm
+- ActorValue: 0002C6:Starfield.esm
+- ActorValue: 0002C5:Starfield.esm
+- ActorValue: 0002C4:Starfield.esm
+- ActorValue: 0002C3:Starfield.esm
+- ActorValue: 0002C2:Starfield.esm
+- ActorValue: 0002E3:Starfield.esm
+  Value: 400
+- ActorValue: 2102C3:Starfield.esm
+  Value: 8.71
+NativeTerminal: 1AE420:Starfield.esm
+Confidence: Foolhardy
+EnergyLevel: 50
+Responsibility: NoCrime
+Assistance: HelpsAllies
+UnknownAIDT: 1
+RDSAs:
+- UnknownInt: 2
+  UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0E7E:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt: 1
+  UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0EF4:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0EAF:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt: 3
+  UnknownInt2: 6
+  UnknownInt3: 32768
+  UnknownFloat2: 30
+  UnknownFloat3: 40
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CBD:Starfield.esm
+  UnknownLink3: 215CBC:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt: 1
+  UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CBA:Starfield.esm
+  UnknownLink3: 215CBB:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt: 2
+  UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CB8:Starfield.esm
+  UnknownLink3: 215CB9:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+Class: 010B2F:Starfield.esm
+CalculatedHealth: 20
+GearedUpWeapons: 1
+CombatStyle: 2AB1CE:Starfield.esm
+NAM5: 0xFF00
+HeightMin: 1
+HeightMax: 1
+Weight:
+  Thin: 0.4235
+  Muscular: 0.1329
+  Fat: 0.4435
+DefaultPackageList: 26F689:Starfield.esm
+Tints: []
+SkinToneIndex: 0
+Pronoun: Unspecified

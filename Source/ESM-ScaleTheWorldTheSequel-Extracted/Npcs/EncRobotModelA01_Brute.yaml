@@ -1,0 +1,129 @@
+FormKey: 2EC4F6:Starfield.esm
+EditorID: EncRobotModelA01_Brute
+ODTY: 0
+Components:
+- MutagenObjectType: SoundTagComponent
+  AnimationSound: 1A41AC:Starfield.esm
+Flags:
+- Respawn
+- AutoCalcStats
+- 0x100
+XpValueOffset: 15
+Level:
+  MutagenObjectType: PcLevelMult
+  LevelMult: 0.8
+CalcMinLevel: 1
+CalcMaxLevel: 999
+DispositionBase: 35
+UseTemplateActors: 11838
+DeathItem: 1312B5:Starfield.esm
+Voice: 2BCA57:Starfield.esm
+DefaultTemplate: 2C7C8A:Starfield.esm
+LegendaryChance: 0C55B7:Starfield.esm
+TemplateActors:
+  StatsTemplate: 2C7C8A:Starfield.esm
+  FactionsTemplate: 2C7C8A:Starfield.esm
+  SpellListTemplate: 2C7C8A:Starfield.esm
+  AiDataTemplate: 2C7C8A:Starfield.esm
+  AiPackagesTemplate: 2C7C8A:Starfield.esm
+  ScriptTemplate: 2C7C8A:Starfield.esm
+  DefPackListTemplate: 2C7C8A:Starfield.esm
+  AttackDataTemplate: 2C7C8A:Starfield.esm
+  Unknown1: 2C7C8A:Starfield.esm
+Race: 005629:Starfield.esm
+Skin: 319B3C:Starfield.esm
+CombatOverridePackageList: 0102ED:Starfield.esm
+Properties:
+- ActorValue: 0002C2:Starfield.esm
+- ActorValue: 0002C3:Starfield.esm
+- ActorValue: 0002C4:Starfield.esm
+- ActorValue: 0002C5:Starfield.esm
+- ActorValue: 0002C6:Starfield.esm
+- ActorValue: 0002C7:Starfield.esm
+- ActorValue: 0002C8:Starfield.esm
+- ActorValue: 0002D4:Starfield.esm
+  Value: 250
+- ActorValue: 0002D5:Starfield.esm
+- ActorValue: 0002DA:Starfield.esm
+  Value: 100
+- ActorValue: 0002E3:Starfield.esm
+  Value: 130
+- ActorValue: 2102C3:Starfield.esm
+  Value: 0.55
+NativeTerminal: 1AE420:Starfield.esm
+Items:
+- Item:
+    Item: 1DC415:Starfield.esm
+    Count: 1
+- Item:
+    Item: 1DC416:Starfield.esm
+    Count: 1
+Confidence: Foolhardy
+EnergyLevel: 50
+Responsibility: NoCrime
+Assistance: HelpsFriendsAndAllies
+UnknownAIDT: 1
+RDSAs:
+- UnknownInt: 2
+  UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0E7E:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt: 1
+  UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0EF4:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0EAF:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CBD:Starfield.esm
+  UnknownLink3: 215CBC:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt: 1
+  UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CBA:Starfield.esm
+  UnknownLink3: 215CBB:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt: 2
+  UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CB8:Starfield.esm
+  UnknownLink3: 215CB9:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+Keywords:
+- 2702C9:Starfield.esm
+- 3385B0:Starfield.esm
+ObjectTemplates:
+- IsEditorOnly: True
+  Default: True
+Class: 010B2F:Starfield.esm
+Name:
+  TargetLanguage: English
+  Value: Robot Model A Brute
+GearedUpWeapons: 1
+Unused: 63
+CombatStyle: 34CC6F:Starfield.esm
+NAM5: 0xFF00
+HeightMin: 1
+HeightMax: 1
+Weight: {}
+Sounds:
+- Sound:
+    Start: a19045db-087e-016a-72c2-7c7a0da0908e
+    Stop: 59c24233-40e6-2319-eb9f-7381f8ae7f86
+  CS3F: 0x01
+DefaultPackageList: 26F689:Starfield.esm
+Tints: []
+SkinToneIndex: 0
+Pronoun: Unspecified

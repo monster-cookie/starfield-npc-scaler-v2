@@ -1,5 +1,8 @@
 # V1.1 Permutations
 
+## V1.1.5
+* CCT auto scaling missing templates fixed so creatures will have the correct level and death items.
+
 ## V1.1.4
 * Clean up bug causing empty user log files to be created
 

@@ -1,0 +1,60 @@
+FormKey: 0F370C:Starfield.esm
+EditorID: EncMiniBotA06
+ObjectBounds:
+  First: -0.591797, -0.3623047, 0
+  Second: 0.59179676, 1.0341797, 1.2373047
+ODTY: 0
+Flags:
+- Respawn
+- AutoCalcStats
+- 0x100
+XpValueOffset: 100
+Level:
+  MutagenObjectType: PcLevelMult
+  LevelMult: 1.25
+CalcMinLevel: 100
+CalcMaxLevel: 999
+DispositionBase: 35
+UseTemplateActors: 32765
+DeathItem: 0C1F4D:Starfield.esm
+Voice: 0C1F51:Starfield.esm
+DefaultTemplate: 0C1F50:Starfield.esm
+Race: 227705:Starfield.esm
+Skin: 1AB006:Starfield.esm
+CombatOverridePackageList: 0102ED:Starfield.esm
+Properties:
+- ActorValue: 0002C2:Starfield.esm
+- ActorValue: 0002C3:Starfield.esm
+  Value: 5
+- ActorValue: 0002C4:Starfield.esm
+- ActorValue: 0002C5:Starfield.esm
+- ActorValue: 0002C6:Starfield.esm
+- ActorValue: 0002C7:Starfield.esm
+- ActorValue: 0002C8:Starfield.esm
+- ActorValue: 0002D4:Starfield.esm
+  Value: 90
+- ActorValue: 0002D5:Starfield.esm
+- ActorValue: 0002DA:Starfield.esm
+  Value: 100
+- ActorValue: 0002E3:Starfield.esm
+  Value: 345
+Aggression: Aggressive
+EnergyLevel: 50
+Responsibility: NoCrime
+Assistance: HelpsAllies
+Class: 002F64:Starfield.esm
+GearedUpWeapons: 1
+CombatStyle: 343C02:Starfield.esm
+NAM5: 0xFF00
+HeightMin: 1
+HeightMax: 1
+Weight: {}
+Sounds:
+- Sound:
+    Start: 47274592-6694-d0b8-b3b7-395b039a4786
+    Stop: d1454ae7-7b8e-c0db-703a-c27b22f7158b
+  CS3F: 0x00
+DefaultPackageList: 26F689:Starfield.esm
+Tints: []
+SkinToneIndex: 0
+Pronoun: Unspecified
