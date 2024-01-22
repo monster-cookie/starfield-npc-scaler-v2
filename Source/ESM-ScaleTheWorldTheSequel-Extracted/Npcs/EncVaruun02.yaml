@@ -54,7 +54,14 @@ Properties:
   Value: 15
 - ActorValue: 0002CD:Starfield.esm
   Value: 45
-Confidence: Brave
+- ActorValue: 0002E3:Starfield.esm
+  Value: 50
+- ActorValue: 0002EB:Starfield.esm
+  Value: 50
+- ActorValue: 000392:Starfield.esm
+  Value: 50
+Aggression: Aggressive
+Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsAllies
@@ -108,7 +115,7 @@ Keywords:
 - 12FF1F:Starfield.esm
 - 000862:ScaleTheWorldTheSequel.esm
 Class: 010B2F:Starfield.esm
-CalculatedHealth: 70
+CalculatedHealth: 185
 CalculatedActionPoints: 100
 GearedUpWeapons: 1
 Unused: 43

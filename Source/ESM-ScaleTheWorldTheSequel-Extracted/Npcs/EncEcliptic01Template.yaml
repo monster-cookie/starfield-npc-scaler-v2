@@ -43,11 +43,18 @@ Properties:
   Value: 15
 - ActorValue: 0002CD:Starfield.esm
   Value: 45
+- ActorValue: 0002E3:Starfield.esm
+  Value: 30
+- ActorValue: 0002EB:Starfield.esm
+  Value: 30
+- ActorValue: 000392:Starfield.esm
+  Value: 30
 Items:
 - Item:
     Item: 3D60AF:Starfield.esm
     Count: 1
-Confidence: Brave
+Aggression: Aggressive
+Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsAllies
@@ -97,11 +104,12 @@ RDSAs:
   UnknownFloat6: 1
 Keywords:
 - 12FF1F:Starfield.esm
+- 03818E:Starfield.esm
 Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Ecliptic Merc
-CalculatedHealth: 120
+CalculatedHealth: 125
 CalculatedActionPoints: 100
 GearedUpWeapons: 1
 Unused: 43

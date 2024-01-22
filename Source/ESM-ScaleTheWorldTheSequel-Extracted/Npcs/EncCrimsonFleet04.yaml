@@ -30,7 +30,7 @@ TemplateActors:
   AttackDataTemplate: 010B2E:Starfield.esm
   KeywordsTemplate: 010B2E:Starfield.esm
   Unknown1: 010B2E:Starfield.esm
-  Unknown2: 009CED:Starfield.esm
+  Unknown2: 010B2E:Starfield.esm
 Race: 00347D:Starfield.esm
 CombatOverridePackageList: 0102ED:Starfield.esm
 Properties:
@@ -60,7 +60,8 @@ Properties:
   Value: 40
 - ActorValue: 0002E3:Starfield.esm
   Value: 40
-Confidence: Brave
+Aggression: Aggressive
+Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsFriendsAndAllies
@@ -112,6 +113,7 @@ RDSAs:
 Keywords:
 - 03818E:Starfield.esm
 - 000860:ScaleTheWorldTheSequel.esm
+- 12FF1F:Starfield.esm
 AttachParentSlots:
 - 155703:Starfield.esm
 - 155704:Starfield.esm
@@ -119,7 +121,7 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Pirate Rover
-CalculatedHealth: 195
+CalculatedHealth: 130
 CalculatedActionPoints: 100
 GearedUpWeapons: 1
 Unused: 43

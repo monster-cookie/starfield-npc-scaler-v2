@@ -45,7 +45,8 @@ Items:
 - Item:
     Item: 01EB04:Starfield.esm
     Count: 1
-Confidence: Brave
+Aggression: Aggressive
+Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsAllies
@@ -94,11 +95,13 @@ RDSAs:
   UnknownLink5: 090313:Starfield.esm
   UnknownFloat5: 2
   UnknownFloat6: 1
+Keywords:
+- 03818E:Starfield.esm
 Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: 1st Cav Veteran
-CalculatedHealth: 120
+CalculatedHealth: 55
 CalculatedActionPoints: 100
 GearedUpWeapons: 1
 Unused: 43

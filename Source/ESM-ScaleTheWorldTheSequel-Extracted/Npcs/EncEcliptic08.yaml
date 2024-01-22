@@ -18,6 +18,7 @@ UseTemplateActors: 32573
 DeathItem: 27028B:Starfield.esm
 Voice: 2BCA4E:Starfield.esm
 DefaultTemplate: 27027E:Starfield.esm
+LegendaryChance: 0C55B8:Starfield.esm
 TemplateActors:
   TraitTemplate: 27027E:Starfield.esm
   FactionsTemplate: 27027E:Starfield.esm
@@ -60,7 +61,8 @@ Properties:
   Value: 260
 - ActorValue: 0002E3:Starfield.esm
   Value: 260
-Confidence: Brave
+Aggression: Aggressive
+Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsAllies
@@ -115,7 +117,7 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Ecliptic Commandant
-CalculatedHealth: 270
+CalculatedHealth: 660
 CalculatedActionPoints: 100
 GearedUpWeapons: 1
 Unused: 43

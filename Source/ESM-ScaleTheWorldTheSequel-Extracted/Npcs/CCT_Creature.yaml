@@ -46,12 +46,15 @@ Properties:
   Value: 50
 - ActorValue: 0002D5:Starfield.esm
 - ActorValue: 0002DA:Starfield.esm
-  Value: 100
+  Value: 110
 - ActorValue: 0002E3:Starfield.esm
-  Value: 50
+  Value: 75
 - ActorValue: 2102C3:Starfield.esm
+  Value: 0.25
 - ActorValue: 22A2B6:Starfield.esm
   Value: 1
+- ActorValue: 0002EB:Starfield.esm
+  Value: 10
 Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime

@@ -6,7 +6,7 @@ Flags:
 XpValueOffset: 1195
 Level:
   MutagenObjectType: PcLevelMult
-  LevelMult: 1.25
+  LevelMult: 1.5
 CalcMinLevel: 125
 CalcMaxLevel: 999
 DispositionBase: 35
@@ -43,9 +43,9 @@ Properties:
 - ActorValue: 0002DA:Starfield.esm
   Value: 100
 - ActorValue: 0002E3:Starfield.esm
-  Value: 1205
+  Value: 2410
 - ActorValue: 2102C3:Starfield.esm
-  Value: 15.12
+  Value: 30.24
 - ActorValue: 004213:Starfield.esm
   Value: 50
 Confidence: Foolhardy

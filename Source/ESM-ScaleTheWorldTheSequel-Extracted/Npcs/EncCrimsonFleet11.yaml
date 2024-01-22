@@ -30,7 +30,7 @@ TemplateActors:
   AttackDataTemplate: 010B2E:Starfield.esm
   KeywordsTemplate: 010B2E:Starfield.esm
   Unknown1: 010B2E:Starfield.esm
-  Unknown2: 009CED:Starfield.esm
+  Unknown2: 010B2E:Starfield.esm
 Race: 00347D:Starfield.esm
 CombatOverridePackageList: 0102ED:Starfield.esm
 Properties:
@@ -60,7 +60,8 @@ Properties:
   Value: 410
 - ActorValue: 000392:Starfield.esm
   Value: 410
-Confidence: Brave
+Aggression: Aggressive
+Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsFriendsAndAllies
@@ -120,7 +121,7 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Pirate Captain
-CalculatedHealth: 270
+CalculatedHealth: 645
 CalculatedActionPoints: 100
 GearedUpWeapons: 1
 Unused: 43

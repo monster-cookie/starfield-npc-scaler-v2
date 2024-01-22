@@ -19,8 +19,8 @@ Factions:
 - Faction: 27BB8C:Starfield.esm
 DeathItem: 27BB74:Starfield.esm
 Voice: 2A2C75:Starfield.esm
+LegendaryChance: 0C55B8:Starfield.esm
 Race: 00347D:Starfield.esm
-AttackRace: 00347D:Starfield.esm
 CombatOverridePackageList: 0102ED:Starfield.esm
 Properties:
 - ActorValue: 0002C2:Starfield.esm
@@ -47,10 +47,11 @@ Items:
 - Item:
     Item: 3D0946:Starfield.esm
     Count: 1
-Confidence: Brave
+Aggression: Aggressive
+Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime
-Assistance: HelpsAllies
+Assistance: HelpsFriendsAndAllies
 UnknownAIDT: 1
 RDSAs:
 - UnknownInt: 2
@@ -98,11 +99,13 @@ RDSAs:
   UnknownFloat6: 1
 Keywords:
 - 000860:ScaleTheWorldTheSequel.esm
+- 03818E:Starfield.esm
+- 12FF1F:Starfield.esm
 Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Spacer
-CalculatedHealth: 120
+CalculatedHealth: 50
 CalculatedActionPoints: 100
 GearedUpWeapons: 1
 Unused: 43

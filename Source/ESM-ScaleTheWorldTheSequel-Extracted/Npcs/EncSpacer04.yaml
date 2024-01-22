@@ -18,6 +18,7 @@ UseTemplateActors: 32573
 DeathItem: 27BB74:Starfield.esm
 Voice: 2A2C75:Starfield.esm
 DefaultTemplate: 270255:Starfield.esm
+LegendaryChance: 0C55B8:Starfield.esm
 TemplateActors:
   TraitTemplate: 270255:Starfield.esm
   FactionsTemplate: 270255:Starfield.esm
@@ -54,10 +55,17 @@ Properties:
   Value: 15
 - ActorValue: 0002CD:Starfield.esm
   Value: 45
-Confidence: Brave
+- ActorValue: 0002E3:Starfield.esm
+  Value: 40
+- ActorValue: 0002EB:Starfield.esm
+  Value: 40
+- ActorValue: 000392:Starfield.esm
+  Value: 40
+Aggression: Aggressive
+Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime
-Assistance: HelpsAllies
+Assistance: HelpsFriendsAndAllies
 UnknownAIDT: 1
 RDSAs:
 - UnknownInt: 2
@@ -106,11 +114,12 @@ RDSAs:
 Keywords:
 - 03818E:Starfield.esm
 - 000860:ScaleTheWorldTheSequel.esm
+- 12FF1F:Starfield.esm
 Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Spacer Scum
-CalculatedHealth: 270
+CalculatedHealth: 175
 CalculatedActionPoints: 100
 GearedUpWeapons: 1
 Unused: 43

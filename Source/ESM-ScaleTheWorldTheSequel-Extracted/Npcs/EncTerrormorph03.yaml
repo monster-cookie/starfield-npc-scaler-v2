@@ -49,6 +49,7 @@ Properties:
   Value: 341
 - ActorValue: 2102C3:Starfield.esm
   Value: 1.49
+Aggression: Aggressive
 Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime

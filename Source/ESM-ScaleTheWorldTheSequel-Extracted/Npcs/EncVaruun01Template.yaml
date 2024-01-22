@@ -46,7 +46,8 @@ Items:
 - Item:
     Item: 1BEF75:Starfield.esm
     Count: 1
-Confidence: Brave
+Aggression: Aggressive
+Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsAllies
@@ -97,6 +98,8 @@ RDSAs:
   UnknownFloat6: 1
 Keywords:
 - 000862:ScaleTheWorldTheSequel.esm
+- 03818E:Starfield.esm
+- 12FF1F:Starfield.esm
 Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
@@ -104,7 +107,7 @@ Name:
 LongName:
   TargetLanguage: English
   Value: Va'ruun
-CalculatedHealth: 120
+CalculatedHealth: 140
 CalculatedActionPoints: 100
 GearedUpWeapons: 1
 Unused: 43

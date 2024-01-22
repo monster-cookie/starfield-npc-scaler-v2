@@ -14,10 +14,24 @@ Level:
 CalcMinLevel: 1
 CalcMaxLevel: 999
 DispositionBase: 35
-UseTemplateActors: 32637
+UseTemplateActors: 32573
 DeathItem: 27028B:Starfield.esm
 Voice: 2BCA4E:Starfield.esm
 DefaultTemplate: 27027E:Starfield.esm
+LegendaryChance: 0C55B8:Starfield.esm
+TemplateActors:
+  TraitTemplate: 27027E:Starfield.esm
+  FactionsTemplate: 27027E:Starfield.esm
+  SpellListTemplate: 27027E:Starfield.esm
+  AiDataTemplate: 27027E:Starfield.esm
+  AiPackagesTemplate: 27027E:Starfield.esm
+  InventoryTemplate: 27027E:Starfield.esm
+  ScriptTemplate: 27027E:Starfield.esm
+  DefPackListTemplate: 27027E:Starfield.esm
+  AttackDataTemplate: 27027E:Starfield.esm
+  KeywordsTemplate: 27027E:Starfield.esm
+  Unknown1: 27027E:Starfield.esm
+  Unknown2: 27027E:Starfield.esm
 Race: 00347D:Starfield.esm
 CombatOverridePackageList: 0102ED:Starfield.esm
 Properties:
@@ -41,7 +55,14 @@ Properties:
   Value: 15
 - ActorValue: 0002CD:Starfield.esm
   Value: 45
-Confidence: Brave
+- ActorValue: 0002E3:Starfield.esm
+  Value: 20
+- ActorValue: 0002EB:Starfield.esm
+  Value: 20
+- ActorValue: 000392:Starfield.esm
+  Value: 20
+Aggression: Aggressive
+Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsAllies
@@ -91,11 +112,15 @@ RDSAs:
   UnknownFloat6: 1
 Keywords:
 - 12FF1F:Starfield.esm
+- 03818E:Starfield.esm
 Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Ecliptic
+CalculatedHealth: 65
+CalculatedActionPoints: 100
 GearedUpWeapons: 1
+Unused: 43
 HeadParts:
 - 062F07:Starfield.esm
 - 064D88:Starfield.esm

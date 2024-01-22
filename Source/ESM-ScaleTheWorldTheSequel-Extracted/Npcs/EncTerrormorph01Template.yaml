@@ -6,7 +6,7 @@ ObjectBounds:
 ODTY: 0
 Flags:
 - AutoCalcStats
-XpValueOffset: 95
+XpValueOffset: 145
 Level:
   MutagenObjectType: PcLevelMult
   LevelMult: 0.8
@@ -31,13 +31,14 @@ Properties:
 - ActorValue: 0002C7:Starfield.esm
 - ActorValue: 0002C8:Starfield.esm
 - ActorValue: 0002D4:Starfield.esm
-  Value: 1930
+  Value: 2145
 - ActorValue: 0002D5:Starfield.esm
 - ActorValue: 0002DA:Starfield.esm
   Value: 100
 - ActorValue: 0002E3:Starfield.esm
-  Value: 254
+  Value: 250
 - ActorValue: 2102C3:Starfield.esm
+  Value: 1.01
 Items:
 - Item:
     Item: 1941F6:Starfield.esm
@@ -57,6 +58,7 @@ Items:
 - Item:
     Item: 2197C1:Starfield.esm
     Count: 1
+Aggression: Aggressive
 Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime

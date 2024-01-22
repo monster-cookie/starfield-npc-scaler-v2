@@ -54,7 +54,14 @@ Properties:
   Value: 15
 - ActorValue: 0002CD:Starfield.esm
   Value: 45
-Confidence: Brave
+- ActorValue: 0002E3:Starfield.esm
+  Value: 15
+- ActorValue: 0002EB:Starfield.esm
+  Value: 15
+- ActorValue: 000392:Starfield.esm
+  Value: 15
+Aggression: Aggressive
+Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsFriendsAndAllies
@@ -106,6 +113,7 @@ RDSAs:
 Keywords:
 - 03818E:Starfield.esm
 - 000860:ScaleTheWorldTheSequel.esm
+- 12FF1F:Starfield.esm
 AttachParentSlots:
 - 155703:Starfield.esm
 - 155704:Starfield.esm
@@ -113,7 +121,7 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Pirate Brigand
-CalculatedHealth: 120
+CalculatedHealth: 55
 CalculatedActionPoints: 100
 GearedUpWeapons: 1
 Unused: 43
