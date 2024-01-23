@@ -1,5 +1,5 @@
 FormKey: 00080F:ScaleTheWorldTheSequel.esm
-EditorID: ScaleTheWorldTheSequel_InteractionApplier_Effect
+EditorID: STWTS_InteractionApplier_Effect
 VirtualMachineAdapter:
   Scripts:
   - Name: VPI_ApplySpellToTarget

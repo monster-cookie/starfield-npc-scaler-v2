@@ -1,8 +1,8 @@
 FormKey: 000804:ScaleTheWorldTheSequel.esm
-EditorID: co_Inventory_ScaleTheWorldTheSequel_ConfigTerminal
+EditorID: co_Inventory_STWTS_ConfigTerminal
 Description:
   TargetLanguage: English
-  Value: Scale the World - The Sequel Configuration Terminal
+  Value: Scale the World Configuration Terminal
 WorkbenchKeyword: 0AA209:Starfield.esm
 Conditions:
 - MutagenObjectType: ConditionFloat

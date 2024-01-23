@@ -1,10 +1,10 @@
 FormKey: 000805:ScaleTheWorldTheSequel.esm
-EditorID: ScaleTheWorldTheSequel_ConfigTerminal
+EditorID: STWTS_ConfigTerminal
 Transforms:
   Inventory: 000803:VenpiCore.esm
 Name:
   TargetLanguage: English
-  Value: Scale the World - The Sequel Config Terminal
+  Value: Scale the World Config Terminal
 Keywords:
 - 0F4AE7:Starfield.esm
 - 11A47A:Starfield.esm
@@ -19,7 +19,7 @@ CraftingSound:
   Start: 44ec43e3-b64d-b271-7871-a0812718b7b9
 Description:
   TargetLanguage: English
-  Value: Open Scale the World - The Sequel Config Menu
+  Value: Open Scale the World Config Menu
 Value: 1
 Flags:
 - NoAutoCalc

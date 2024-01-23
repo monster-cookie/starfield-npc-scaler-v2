@@ -1,5 +1,5 @@
 FormKey: 000803:ScaleTheWorldTheSequel.esm
-EditorID: ScaleTheWorldTheSequel_InitQuest
+EditorID: STWTS_InitQuest
 VirtualMachineAdapter:
   Scripts:
   - Name: VPI_Inject_InventoryItem
@@ -34,7 +34,7 @@ VirtualMachineAdapter:
     Name: ''
 Name:
   TargetLanguage: English
-  Value: Scale The World - The Sequel Init Quest
+  Value: Scale The World Init Quest
 Data:
   Flags:
   - StartGameEnabled

@@ -1,8 +1,8 @@
 FormKey: 00080D:ScaleTheWorldTheSequel.esm
-EditorID: ScaleTheWorldTheSequel_Stat_Scaler_Effect
+EditorID: STWTS_Stat_Scaler_Effect
 VirtualMachineAdapter:
   Scripts:
-  - Name: ScaleTheWorldTheSequel_StatScalerScript
+  - Name: STWTS_StatScalerScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: ActorTypeLegendary
@@ -50,49 +50,49 @@ VirtualMachineAdapter:
       Name: ReflectDamage
       Object: 00035F:Starfield.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Scaled
+      Name: STWTS_Scaled
       Object: 000810:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Venpi_DebugEnabled
       Object: 000800:VenpiCore.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Enabled
+      Name: STWTS_Enabled
       Object: 000806:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_ActivePreset
-      Object: 00085B:ScaleTheWorldTheSequel.esm
+      Name: STWTS_ActivePreset
+      Object: 000870:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_EasterEggMode_Critter
+      Name: STWTS_EasterEggMode_Critter
       Object: 000844:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_ChanceToSpawn_Easy
+      Name: STWTS_ChanceToSpawn_Easy
       Object: 00085D:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_ChanceToSpawn_Hard
+      Name: STWTS_ChanceToSpawn_Hard
       Object: 00085E:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_ChanceToSpawn_MiniBoss
+      Name: STWTS_ChanceToSpawn_MiniBoss
       Object: 00085F:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_ChanceToSpawn_Legendary
+      Name: STWTS_ChanceToSpawn_Legendary
       Object: 000812:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Preset_Story_Base
+      Name: STWTS_Preset_Story_Base
       Object: 000864:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Preset_Easy_Base
+      Name: STWTS_Preset_Easy_Base
       Object: 000865:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Preset_Normal_Base
+      Name: STWTS_Preset_Normal_Base
       Object: 000866:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Preset_Hard_Base
+      Name: STWTS_Preset_Hard_Base
       Object: 000867:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Preset_Nightmare_Base
+      Name: STWTS_Preset_Nightmare_Base
       Object: 000868:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Preset_Apocalypse_Base
+      Name: STWTS_Preset_Apocalypse_Base
       Object: 000869:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: ActorTypeGang

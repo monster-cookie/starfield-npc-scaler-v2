@@ -1,35 +1,35 @@
 FormKey: 000807:ScaleTheWorldTheSequel.esm
-EditorID: ScaleTheWorldTheSequel_ConfigTerminal
+EditorID: STWTS_ConfigTerminal
 VirtualMachineAdapter:
   Scripts:
-  - Name: ScaleTheWorldTheSequel_ConfigTerminalScript
+  - Name: STWTS_ConfigTerminalScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_ConfigTerminal
+      Name: STWTS_ConfigTerminal
       Object: 000805:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: PlayerRef
       Object: 000014:Starfield.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_ConfigTerminal_MainMenu
+      Name: STWTS_ConfigTerminal_MainMenu
       Object: 000808:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_EasterEggMode_Critter
+      Name: STWTS_EasterEggMode_Critter
       Object: 000844:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_ActivePreset
-      Object: 00085B:ScaleTheWorldTheSequel.esm
+      Name: STWTS_ActivePreset
+      Object: 000870:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_Enabled
+      Name: STWTS_Enabled
       Object: 000806:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
       Name: Venpi_DebugEnabled
       Object: 000800:VenpiCore.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_ConfigTerminal_ActivePreset
+      Name: STWTS_ConfigTerminal_ActivePreset
       Object: 00085C:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptObjectProperty
-      Name: ScaleTheWorldTheSequel_ConfigTerminal_ConfigureEasterEggs
+      Name: STWTS_ConfigTerminal_ConfigureEasterEggs
       Object: 000863:ScaleTheWorldTheSequel.esm
     - MutagenObjectType: ScriptStringProperty
       Name: Venpi_ModName

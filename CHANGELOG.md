@@ -1,5 +1,10 @@
 # Scale The World
 
+## Version 1.1.7
+* Moving to shared object via Venpi Core. 
+* At some point the configuration tool stop properly displaying the message box menu.
+* Added debug commands and help access using: CGF "STWTS_Help.Show" 
+
 ## Version 1.1.6
 * Compatibility with Starlit Mod List
 * Mod compatibility with Royal Aliens (Internal), Royal Terrormorphs (Patch), and Peak - Enemy AI (Internal)

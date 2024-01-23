@@ -1,15 +1,4 @@
-Scriptname ScaleTheWorldTheSequel_StatScalerScript extends ActiveMagicEffect  
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;; Constants
-;;;
-Int Property      CONST_PRESET_STORY=0 Auto Const Mandatory
-Int Property       CONST_PRESET_EASY=1 Auto Const Mandatory
-Int Property     CONST_PRESET_NORMAL=2 Auto Const Mandatory
-Int Property       CONST_PRESET_HARD=3 Auto Const Mandatory
-Int Property  CONST_PRESET_NIGHTMARE=4 Auto Const Mandatory
-Int Property CONST_PRESET_APOCOLYPSE=5 Auto Const Mandatory
+Scriptname STWTS_StatScalerScript extends ActiveMagicEffect  
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -18,27 +7,28 @@ Int Property CONST_PRESET_APOCOLYPSE=5 Auto Const Mandatory
 GlobalVariable Property Venpi_DebugEnabled Auto Const Mandatory
 String Property Venpi_ModName="ScaleTheWorldTheSequel" Auto Const Mandatory
 
-GlobalVariable Property ScaleTheWorldTheSequel_Enabled Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_ActivePreset Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_EasterEggMode_Critter Auto Const Mandatory
+GlobalVariable Property STWTS_Enabled Auto Const Mandatory
+GlobalVariable Property STWTS_ActivePreset Auto Const Mandatory
+GlobalVariable Property STWTS_EasterEggMode_Critter Auto Const Mandatory
 
-GlobalVariable Property ScaleTheWorldTheSequel_ChanceToSpawn_Easy Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_ChanceToSpawn_Hard Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_ChanceToSpawn_MiniBoss Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_ChanceToSpawn_Legendary Auto Const Mandatory
+GlobalVariable Property STWTS_ChanceToSpawn_Easy Auto Const Mandatory
+GlobalVariable Property STWTS_ChanceToSpawn_Hard Auto Const Mandatory
+GlobalVariable Property STWTS_ChanceToSpawn_MiniBoss Auto Const Mandatory
+GlobalVariable Property STWTS_ChanceToSpawn_Legendary Auto Const Mandatory
 
-GlobalVariable Property ScaleTheWorldTheSequel_Preset_Story_Base Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Preset_Easy_Base Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Preset_Normal_Base Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Preset_Hard_Base Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Preset_Nightmare_Base Auto Const Mandatory
-GlobalVariable Property ScaleTheWorldTheSequel_Preset_Apocalypse_Base Auto Const Mandatory
+GlobalVariable Property STWTS_Preset_Story_Base Auto Const Mandatory
+GlobalVariable Property STWTS_Preset_Easy_Base Auto Const Mandatory
+GlobalVariable Property STWTS_Preset_Normal_Base Auto Const Mandatory
+GlobalVariable Property STWTS_Preset_Hard_Base Auto Const Mandatory
+GlobalVariable Property STWTS_Preset_Nightmare_Base Auto Const Mandatory
+GlobalVariable Property STWTS_Preset_Apocalypse_Base Auto Const Mandatory
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Properties
 ;;;
-Keyword Property ScaleTheWorldTheSequel_Scaled Auto Const Mandatory
+Keyword Property STWTS_Scaled Auto Const Mandatory
+VPI_SharedObjectManager:DifficultyPresets Property EnumDifficultyPresets Auto
 
 ActorValue Property Health Auto Const Mandatory
 ActorValue Property DamageResist Auto Const Mandatory
@@ -89,63 +79,66 @@ Actor Property Player Auto
 ;;;
 
 Event OnEffectStart(ObjectReference akTarget, Actor akCaster, MagicEffect akBaseEffect, Float afMagnitude, Float afDuration)
-  ; VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart", "OnEffectStart triggered", 0, Venpi_DebugEnabled.GetValueInt())
+  ; VPI_Debug.DebugMessage(Venpi_ModName, "STWTS_StatScalerScript", "OnEffectStart", "OnEffectStart triggered", 0, Venpi_DebugEnabled.GetValueInt())
+
   If (akTarget == None)
     Return
   EndIf
+
+  EnumDifficultyPresets = VPI_SharedObjectManager.GetEnumDifficultyPresets()
 
   Myself = akTarget
   RealMe = akTarget.GetSelfAsActor()
   Player = PlayerRef.GetSelfAsActor()
 
-  ;; Have a race condition which shouldn't be possible but injecting a keyword to prevent reprossessing. 
-  If (Myself.HasKeyword(ScaleTheWorldTheSequel_Scaled)) 
+  ;; Have a race condition which shouldn't be possible but injecting a keyword to prevent scaling again. 
+  If (Myself.HasKeyword(STWTS_Scaled)) 
     return
   Else
-    RealMe.AddKeyword(ScaleTheWorldTheSequel_Scaled)
+    RealMe.AddKeyword(STWTS_Scaled)
   EndIf
 
-  If (ScaleTheWorldTheSequel_Enabled.GetValueInt() == 0)
-    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart", "NPC Stat Scaling is currently disabled.", 0, Venpi_DebugEnabled.GetValueInt())
+  If (STWTS_Enabled.GetValueInt() == 0)
+    VPI_Debug.DebugMessage(Venpi_ModName, "STWTS_StatScalerScript", "OnEffectStart", "NPC Stat Scaling is currently disabled.", 0, Venpi_DebugEnabled.GetValueInt())
     return
   EndIf
 
   ;; System Generated Legendary NPC we shouldn't mess with. 
   If (RealMe.HasKeyword(ActorTypeLegendary))
-    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "(" + RealMe.GetRace() + ")> is already a legendary so skipping because the engine handle stat scaling for legendary NPCs fairly well.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "STWTS_StatScalerScript", "OnEffectStart",  Myself + "(" + RealMe.GetRace() + ")> is already a legendary so skipping because the engine handle stat scaling for legendary NPCs fairly well.", 0, Venpi_DebugEnabled.GetValueInt())
     ; DebugLevelScaling("FINAL")
     Return
   EndIf
 
-  If (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_STORY)
+  If (STWTS_ActivePreset.GetValueInt() == EnumDifficultyPresets.Story)
     ;; Story preset is active
-    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the story preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
-    HandleStatScaling(CONST_PRESET_STORY)
-  ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_EASY)
+    VPI_Debug.DebugMessage(Venpi_ModName, "STWTS_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the story preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    HandleStatScaling(EnumDifficultyPresets.Story)
+  ElseIF (STWTS_ActivePreset.GetValueInt() == EnumDifficultyPresets.Easy)
     ;; Easy preset is active
-    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the easy preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
-    HandleStatScaling(CONST_PRESET_EASY)
-  ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_NORMAL)
+    VPI_Debug.DebugMessage(Venpi_ModName, "STWTS_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the easy preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    HandleStatScaling(EnumDifficultyPresets.Easy)
+  ElseIF (STWTS_ActivePreset.GetValueInt() == EnumDifficultyPresets.Normal)
     ;; Normal preset is active
-    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the normal preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
-    HandleStatScaling(CONST_PRESET_NORMAL)
-  ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_HARD)
+    VPI_Debug.DebugMessage(Venpi_ModName, "STWTS_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the normal preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    HandleStatScaling(EnumDifficultyPresets.Normal)
+  ElseIF (STWTS_ActivePreset.GetValueInt() == EnumDifficultyPresets.Hard)
     ;; Hard preset is active
-    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the hard preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
-    HandleStatScaling(CONST_PRESET_HARD)
-  ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_NIGHTMARE)
+    VPI_Debug.DebugMessage(Venpi_ModName, "STWTS_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the hard preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    HandleStatScaling(EnumDifficultyPresets.Hard)
+  ElseIF (STWTS_ActivePreset.GetValueInt() == EnumDifficultyPresets.Nightmare)
     ;; Nightmare preset is active
-    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the nightmare preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
-    HandleStatScaling(CONST_PRESET_NIGHTMARE)
-  ElseIF (ScaleTheWorldTheSequel_ActivePreset.GetValueInt() == CONST_PRESET_APOCOLYPSE)
-    ;; Apocolypse preset is active
-    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the apocolypse preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
-    HandleStatScaling(CONST_PRESET_APOCOLYPSE)
+    VPI_Debug.DebugMessage(Venpi_ModName, "STWTS_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the nightmare preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    HandleStatScaling(EnumDifficultyPresets.Nightmare)
+  ElseIF (STWTS_ActivePreset.GetValueInt() == EnumDifficultyPresets.Apocalypse)
+    ;; Apocalypse preset is active
+    VPI_Debug.DebugMessage(Venpi_ModName, "STWTS_StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the apocolypse preset scaling.", 0, Venpi_DebugEnabled.GetValueInt())
+    HandleStatScaling(EnumDifficultyPresets.Apocalypse)
   EndIf
 EndEvent
 
 Event OnEffectFinish(ObjectReference akTarget, Actor akCaster, MagicEffect akBaseEffect, Float afMagnitude, Float afDuration)
-  ; VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "OnEffectFinish", "OnEffectFinish triggered", 0, Venpi_DebugEnabled.GetValueInt())
+  ; VPI_Debug.DebugMessage(Venpi_ModName, "STWTS_StatScalerScript", "OnEffectFinish", "OnEffectFinish triggered", 0, Venpi_DebugEnabled.GetValueInt())
 EndEvent
 
 
@@ -156,17 +149,17 @@ EndEvent
 Bool Function ShouldBecomeEasyNPC(int preset)
   ;; Base chance for Easy NPCs is 30%
   Int spawnChance = 0
-  If (preset == CONST_PRESET_STORY)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Easy.GetValueInt() + 25
-  ElseIf (preset == CONST_PRESET_EASY)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Easy.GetValueInt() + 10
-  ElseIf (preset == CONST_PRESET_NORMAL)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Easy.GetValueInt()
-  ElseIf (preset == CONST_PRESET_HARD)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Easy.GetValueInt() - 20
-  ElseIf (preset == CONST_PRESET_NIGHTMARE)
+  If (preset == EnumDifficultyPresets.Story)
+    spawnChance = STWTS_ChanceToSpawn_Easy.GetValueInt() + 25
+  ElseIf (preset == EnumDifficultyPresets.Easy)
+    spawnChance = STWTS_ChanceToSpawn_Easy.GetValueInt() + 10
+  ElseIf (preset == EnumDifficultyPresets.Normal)
+    spawnChance = STWTS_ChanceToSpawn_Easy.GetValueInt()
+  ElseIf (preset == EnumDifficultyPresets.Hard)
+    spawnChance = STWTS_ChanceToSpawn_Easy.GetValueInt() - 20
+  ElseIf (preset == EnumDifficultyPresets.Nightmare)
     spawnChance = 0
-  ElseIf (preset == CONST_PRESET_APOCOLYPSE)
+  ElseIf (preset == EnumDifficultyPresets.Apocalypse)
     spawnChance = 0
   EndIf
 
@@ -181,18 +174,18 @@ EndFunction
 Bool Function ShouldBecomeHardNPC(int preset)
   ;; BAse chance for Hard NPCs is 30%
   Int spawnChance = 0
-  If (preset == CONST_PRESET_STORY)
+  If (preset == EnumDifficultyPresets.Story)
     spawnChance = 0
-  ElseIf (preset == CONST_PRESET_EASY)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Hard.GetValueInt() - 10
-  ElseIf (preset == CONST_PRESET_NORMAL)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Hard.GetValueInt()
-  ElseIf (preset == CONST_PRESET_HARD)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Hard.GetValueInt() + 20 
-  ElseIf (preset == CONST_PRESET_NIGHTMARE)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Hard.GetValueInt() + 30
-  ElseIf (preset == CONST_PRESET_APOCOLYPSE)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Hard.GetValueInt() + 60
+  ElseIf (preset == EnumDifficultyPresets.Easy)
+    spawnChance = STWTS_ChanceToSpawn_Hard.GetValueInt() - 10
+  ElseIf (preset == EnumDifficultyPresets.Normal)
+    spawnChance = STWTS_ChanceToSpawn_Hard.GetValueInt()
+  ElseIf (preset == EnumDifficultyPresets.Hard)
+    spawnChance = STWTS_ChanceToSpawn_Hard.GetValueInt() + 20 
+  ElseIf (preset == EnumDifficultyPresets.Nightmare)
+    spawnChance = STWTS_ChanceToSpawn_Hard.GetValueInt() + 30
+  ElseIf (preset == EnumDifficultyPresets.Apocalypse)
+    spawnChance = STWTS_ChanceToSpawn_Hard.GetValueInt() + 60
   EndIf
 
   If (spawnChance > 100)
@@ -206,18 +199,18 @@ EndFunction
 Bool Function ShouldBecomeMinibossNPC(int preset)
   ;; BAse chance for Miniboss NPCs is 20%
   Int spawnChance = 0
-  If (preset == CONST_PRESET_STORY)
+  If (preset == EnumDifficultyPresets.Story)
     spawnChance = 0
-  ElseIf (preset == CONST_PRESET_EASY)
+  ElseIf (preset == EnumDifficultyPresets.Easy)
     spawnChance = 0
-  ElseIf (preset == CONST_PRESET_NORMAL)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_MiniBoss.GetValueInt()
-  ElseIf (preset == CONST_PRESET_HARD)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_MiniBoss.GetValueInt() + 10
-  ElseIf (preset == CONST_PRESET_NIGHTMARE)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_MiniBoss.GetValueInt() + 20
-  ElseIf (preset == CONST_PRESET_APOCOLYPSE)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_MiniBoss.GetValueInt() + 50
+  ElseIf (preset == EnumDifficultyPresets.Normal)
+    spawnChance = STWTS_ChanceToSpawn_MiniBoss.GetValueInt()
+  ElseIf (preset == EnumDifficultyPresets.Hard)
+    spawnChance = STWTS_ChanceToSpawn_MiniBoss.GetValueInt() + 10
+  ElseIf (preset == EnumDifficultyPresets.Nightmare)
+    spawnChance = STWTS_ChanceToSpawn_MiniBoss.GetValueInt() + 20
+  ElseIf (preset == EnumDifficultyPresets.Apocalypse)
+    spawnChance = STWTS_ChanceToSpawn_MiniBoss.GetValueInt() + 50
   EndIf
 
   If (spawnChance > 100)
@@ -231,18 +224,18 @@ EndFunction
 Bool Function ShouldBecomeLegendaryNPC(int preset)
   ;; BAse chance for Miniboss NPCs is 10%
   Int spawnChance = 0
-  If (preset == CONST_PRESET_STORY)
+  If (preset == EnumDifficultyPresets.Story)
     spawnChance = 0
-  ElseIf (preset == CONST_PRESET_EASY)
+  ElseIf (preset == EnumDifficultyPresets.Easy)
     spawnChance = 0
-  ElseIf (preset == CONST_PRESET_NORMAL)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Legendary.GetValueInt()
-  ElseIf (preset == CONST_PRESET_HARD)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Legendary.GetValueInt() + 10 
-  ElseIf (preset == CONST_PRESET_NIGHTMARE)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Legendary.GetValueInt() + 20
-  ElseIf (preset == CONST_PRESET_APOCOLYPSE)
-    spawnChance = ScaleTheWorldTheSequel_ChanceToSpawn_Legendary.GetValueInt() + 40
+  ElseIf (preset == EnumDifficultyPresets.Normal)
+    spawnChance = STWTS_ChanceToSpawn_Legendary.GetValueInt()
+  ElseIf (preset == EnumDifficultyPresets.Hard)
+    spawnChance = STWTS_ChanceToSpawn_Legendary.GetValueInt() + 10 
+  ElseIf (preset == EnumDifficultyPresets.Nightmare)
+    spawnChance = STWTS_ChanceToSpawn_Legendary.GetValueInt() + 20
+  ElseIf (preset == EnumDifficultyPresets.Apocalypse)
+    spawnChance = STWTS_ChanceToSpawn_Legendary.GetValueInt() + 40
   EndIf
 
   If (spawnChance > 100)
@@ -257,18 +250,18 @@ Float Function GetScalingFactorForDifficulty(int preset)
   Int iDifficulty = Game.GetDifficulty()
 
   Float base=0
-  If (preset == CONST_PRESET_STORY)
-    base = ScaleTheWorldTheSequel_Preset_Story_Base.GetValue()
-  ElseIf (preset == CONST_PRESET_EASY)
-    base = ScaleTheWorldTheSequel_Preset_Easy_Base.GetValue()
-  ElseIf (preset == CONST_PRESET_NORMAL)
-    base = ScaleTheWorldTheSequel_Preset_Normal_Base.GetValue()
-  ElseIf (preset == CONST_PRESET_HARD)
-    base = ScaleTheWorldTheSequel_Preset_Hard_Base.GetValue()
-  ElseIf (preset == CONST_PRESET_NIGHTMARE)
-    base = ScaleTheWorldTheSequel_Preset_Nightmare_Base.GetValue()
-  ElseIf (preset == CONST_PRESET_APOCOLYPSE)
-    base = ScaleTheWorldTheSequel_Preset_Apocalypse_Base.GetValue()
+  If (preset == EnumDifficultyPresets.Story)
+    base = STWTS_Preset_Story_Base.GetValue()
+  ElseIf (preset == EnumDifficultyPresets.Easy)
+    base = STWTS_Preset_Easy_Base.GetValue()
+  ElseIf (preset == EnumDifficultyPresets.Normal)
+    base = STWTS_Preset_Normal_Base.GetValue()
+  ElseIf (preset == EnumDifficultyPresets.Hard)
+    base = STWTS_Preset_Hard_Base.GetValue()
+  ElseIf (preset == EnumDifficultyPresets.Nightmare)
+    base = STWTS_Preset_Nightmare_Base.GetValue()
+  ElseIf (preset == EnumDifficultyPresets.Apocalypse)
+    base = STWTS_Preset_Apocalypse_Base.GetValue()
   Else
     base = 100
   EndIf
@@ -370,7 +363,7 @@ Function HandleStatScaling(Int preset)
   If (RealMe.HasKeyword(ActorTypeLegendary))
     ;;
     ;; Won the lotto I become a legendary
-    VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "HandleStatScaling",  Myself + "> has won the lotto and is now a legendary so skipping because the engine handle stat scaling for legendary NPCs fairly well.", 0, Venpi_DebugEnabled.GetValueInt())
+    VPI_Debug.DebugMessage(Venpi_ModName, "STWTS_StatScalerScript", "HandleStatScaling",  Myself + "> has won the lotto and is now a legendary so skipping because the engine handle stat scaling for legendary NPCs fairly well.", 0, Venpi_DebugEnabled.GetValueInt())
     LegendaryAliasQuest.MakeLegendary(RealMe)
     ; DebugLevelScaling("FINAL")
     return
@@ -445,7 +438,7 @@ Function HandleStatScaling(Int preset)
   RealMe.SetValue(CriticalHitDamageMult, scaledCriticalHitDamageMult)
 
   message += "\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n\n"
-  VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "HandleStatScaling", message, 0, Venpi_DebugEnabled.GetValueInt())
+  VPI_Debug.DebugMessage(Venpi_ModName, "STWTS_StatScalerScript", "HandleStatScaling", message, 0, Venpi_DebugEnabled.GetValueInt())
   DebugLevelScaling("FINAL")
 EndFunction
 
@@ -505,7 +498,7 @@ Function DebugLevelScaling(String scalingState)
   message += "My/Player Attack Damage Multiplier: " + myAttackDamageMult + " | " + playerAttackDamageMult + ".\n"
 
   message += "\n************************************************************\n\n"
-  VPI_Debug.DebugMessage(Venpi_ModName, "ScaleTheWorldTheSequel_StatScalerScript", "DebugLevelScaling-" + scalingState, message, 0, Venpi_DebugEnabled.GetValueInt())
+  VPI_Debug.DebugMessage(Venpi_ModName, "STWTS_StatScalerScript", "DebugLevelScaling-" + scalingState, message, 0, Venpi_DebugEnabled.GetValueInt())
 EndFunction
 
 String Function GetNPCType()
