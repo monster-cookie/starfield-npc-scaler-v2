@@ -78,8 +78,8 @@ CalculatedHealth: 2145
 GearedUpWeapons: 1
 CombatStyle: 2B2292:Starfield.esm
 NAM5: 0xFF00
-HeightMin: 0.9
-HeightMax: 0.9
+HeightMin: 0.8
+HeightMax: 1.15
 Weight:
   Thin: 0.3333
   Muscular: 0.3333

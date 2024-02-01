@@ -9,7 +9,7 @@ Flags:
 XpValueOffset: 1195
 Level:
   MutagenObjectType: PcLevelMult
-  LevelMult: 1.25
+  LevelMult: 1.4
 CalcMinLevel: 100
 CalcMaxLevel: 999
 DispositionBase: 35
@@ -81,7 +81,7 @@ GearedUpWeapons: 1
 CombatStyle: 2B2292:Starfield.esm
 NAM5: 0xFF00
 HeightMin: 0.9
-HeightMax: 0.9
+HeightMax: 1.8
 Weight:
   Thin: 0.3333
   Muscular: 0.3333

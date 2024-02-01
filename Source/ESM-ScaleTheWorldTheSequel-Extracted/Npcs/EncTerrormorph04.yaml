@@ -9,7 +9,7 @@ Flags:
 XpValueOffset: 260
 Level:
   MutagenObjectType: PcLevelMult
-  LevelMult: 0.9
+  LevelMult: 1.1
 CalcMinLevel: 10
 CalcMaxLevel: 999
 DispositionBase: 35

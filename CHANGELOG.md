@@ -1,5 +1,8 @@
 # Scale The World
 
+## Version 1.1.8
+* Compatibility update with Royal Aliens and Terrormorphs
+
 ## Version 1.1.7
 * Moving to shared object via Venpi Core. 
 * At some point the configuration tool stop properly displaying the message box menu.

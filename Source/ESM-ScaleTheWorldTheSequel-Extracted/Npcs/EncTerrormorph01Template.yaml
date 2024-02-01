@@ -6,10 +6,10 @@ ObjectBounds:
 ODTY: 0
 Flags:
 - AutoCalcStats
-XpValueOffset: 145
+XpValueOffset: 190
 Level:
   MutagenObjectType: PcLevelMult
-  LevelMult: 0.8
+  LevelMult: 1.15
 CalcMinLevel: 1
 CalcMaxLevel: 999
 DispositionBase: 35
@@ -31,14 +31,13 @@ Properties:
 - ActorValue: 0002C7:Starfield.esm
 - ActorValue: 0002C8:Starfield.esm
 - ActorValue: 0002D4:Starfield.esm
-  Value: 2145
+  Value: 1930
 - ActorValue: 0002D5:Starfield.esm
 - ActorValue: 0002DA:Starfield.esm
-  Value: 100
+  Value: 130
 - ActorValue: 0002E3:Starfield.esm
-  Value: 250
+  Value: 508
 - ActorValue: 2102C3:Starfield.esm
-  Value: 1.01
 Items:
 - Item:
     Item: 1941F6:Starfield.esm
@@ -92,8 +91,8 @@ CalculatedHealth: 2145
 GearedUpWeapons: 1
 CombatStyle: 2B2292:Starfield.esm
 NAM5: 0xFF00
-HeightMin: 0.9
-HeightMax: 0.9
+HeightMin: 1.1
+HeightMax: 1.7
 Weight:
   Thin: 0.3333
   Muscular: 0.3333

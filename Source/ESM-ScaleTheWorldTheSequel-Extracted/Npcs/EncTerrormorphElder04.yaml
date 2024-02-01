@@ -9,7 +9,7 @@ Flags:
 XpValueOffset: 310
 Level:
   MutagenObjectType: PcLevelMult
-  LevelMult: 0.9
+  LevelMult: 1.15
 CalcMinLevel: 10
 CalcMaxLevel: 999
 DispositionBase: 35
@@ -47,14 +47,14 @@ Properties:
   Value: 5020
 - ActorValue: 0002D5:Starfield.esm
 - ActorValue: 0002DA:Starfield.esm
-  Value: 100
+  Value: 130
 - ActorValue: 0002E3:Starfield.esm
   Value: 592
 - ActorValue: 2102C3:Starfield.esm
   Value: 0.91
 Aggression: Aggressive
 Confidence: Foolhardy
-EnergyLevel: 50
+EnergyLevel: 100
 Responsibility: NoCrime
 Assistance: HelpsFriendsAndAllies
 UnknownAIDT: 1
@@ -84,7 +84,7 @@ GearedUpWeapons: 1
 CombatStyle: 2B2292:Starfield.esm
 NAM5: 0xFF00
 HeightMin: 0.9
-HeightMax: 0.9
+HeightMax: 1.3
 Weight:
   Thin: 0.3333
   Muscular: 0.3333

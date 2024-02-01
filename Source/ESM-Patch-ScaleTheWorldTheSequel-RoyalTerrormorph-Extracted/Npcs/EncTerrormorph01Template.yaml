@@ -6,10 +6,10 @@ ObjectBounds:
 ODTY: 0
 Flags:
 - AutoCalcStats
-XpValueOffset: 145
+XpValueOffset: 190
 Level:
   MutagenObjectType: PcLevelMult
-  LevelMult: 0.8
+  LevelMult: 1.25
 CalcMinLevel: 1
 CalcMaxLevel: 999
 DispositionBase: 35
@@ -31,14 +31,14 @@ Properties:
 - ActorValue: 0002C7:Starfield.esm
 - ActorValue: 0002C8:Starfield.esm
 - ActorValue: 0002D4:Starfield.esm
-  Value: 2145
+  Value: 5709
 - ActorValue: 0002D5:Starfield.esm
 - ActorValue: 0002DA:Starfield.esm
-  Value: 100
+  Value: 130
 - ActorValue: 0002E3:Starfield.esm
-  Value: 250
+  Value: 508
 - ActorValue: 2102C3:Starfield.esm
-  Value: 1.01
+  Value: 0.01
 Items:
 - Item:
     Item: 1941F6:Starfield.esm
@@ -58,8 +58,9 @@ Items:
 - Item:
     Item: 2197C1:Starfield.esm
     Count: 1
+Aggression: Aggressive
 Confidence: Foolhardy
-EnergyLevel: 50
+EnergyLevel: 100
 Responsibility: NoCrime
 Assistance: HelpsFriendsAndAllies
 UnknownAIDT: 1
@@ -87,12 +88,12 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Terrormorph
-CalculatedHealth: 2145
+CalculatedHealth: 6435
 GearedUpWeapons: 1
 CombatStyle: 2B2292:Starfield.esm
 NAM5: 0xFF00
-HeightMin: 0.9
-HeightMax: 0.9
+HeightMin: 1.4
+HeightMax: 1.9
 Weight:
   Thin: 0.3333
   Muscular: 0.3333
