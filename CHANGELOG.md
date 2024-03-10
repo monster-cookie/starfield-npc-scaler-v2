@@ -1,5 +1,8 @@
 # Scale The World
 
+## Version 1.1.9
+* Added RTFP configuration files please feel free to customize them to your liking.
+
 ## Version 1.1.8
 * Compatibility update with Royal Aliens and Terrormorphs
 
