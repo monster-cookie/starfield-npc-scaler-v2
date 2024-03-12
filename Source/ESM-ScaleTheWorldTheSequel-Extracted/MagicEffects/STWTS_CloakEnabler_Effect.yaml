@@ -1,0 +1,12 @@
+FormKey: 00080C:ScaleTheWorldTheSequel.esm
+EditorID: STWTS_CloakEnabler_Effect
+Name:
+  TargetLanguage: English
+  Value: CloakEffect
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 00080E:ScaleTheWorldTheSequel.esm
+Flags:
+- NoHitEvent
+- HideInUI
+Unknown: 0x00000000000000000000000000000000000000000000

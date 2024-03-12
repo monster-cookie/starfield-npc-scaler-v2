@@ -1,0 +1,75 @@
+FormKey: 0F1EFF:Starfield.esm
+EditorID: EncTurretCompact04
+ObjectBounds:
+  First: -0.4978376, -0.4065881, -4.7683716E-07
+  Second: 0.4978376, 0.46624044, 1.4222577
+ODTY: 0
+Flags:
+- Respawn
+- AutoCalcStats
+XpValueOffset: 35
+Level:
+  MutagenObjectType: PcLevelMult
+  LevelMult: 0.9
+CalcMinLevel: 10
+CalcMaxLevel: 999
+DispositionBase: 35
+UseTemplateActors: 32637
+DeathItem: 3EC047:Starfield.esm
+DefaultTemplate: 113D5D:Starfield.esm
+Race: 1EA1DB:Starfield.esm
+Skin: 113D5E:Starfield.esm
+Properties:
+- ActorValue: 0002C2:Starfield.esm
+- ActorValue: 0002C3:Starfield.esm
+- ActorValue: 0002C4:Starfield.esm
+- ActorValue: 0002C5:Starfield.esm
+- ActorValue: 0002C6:Starfield.esm
+- ActorValue: 0002C7:Starfield.esm
+- ActorValue: 0002C8:Starfield.esm
+- ActorValue: 0002D4:Starfield.esm
+  Value: 90
+- ActorValue: 0002D5:Starfield.esm
+- ActorValue: 0002DA:Starfield.esm
+  Value: 100
+- ActorValue: 0002E3:Starfield.esm
+  Value: 245
+- ActorValue: 0002EB:Starfield.esm
+  Value: 245
+- ActorValue: 2102C3:Starfield.esm
+  Value: 3.42
+NativeTerminal: 1AE416:Starfield.esm
+Confidence: Foolhardy
+EnergyLevel: 50
+Responsibility: NoCrime
+Assistance: HelpsFriendsAndAllies
+UnknownAIDT: 1
+RDSAs:
+- UnknownInt: 2
+  UnknownInt2: 6
+  UnknownInt3: 32769
+  UnknownLink2: 0242F7:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+Class: 123E22:Starfield.esm
+Name:
+  TargetLanguage: English
+  Value: Tick Turret Mk.IV
+ShortName:
+  TargetLanguage: English
+  Value: Turret
+FarAwayModelDistance: 200
+GearedUpWeapons: 1
+Unused: 128
+CombatStyle: 0E60AF:Starfield.esm
+NAM5: 0xFF00
+HeightMin: 1
+HeightMax: 1
+Weight:
+  Thin: 0.5
+  Muscular: 0.5
+InheritsSoundsFrom: 3266DE:Starfield.esm
+DefaultPackageList: 31B5B3:Starfield.esm
+Tints: []
+SkinToneIndex: 0
+Pronoun: Unspecified

@@ -40,8 +40,8 @@ copy /y "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleT
 copy /y "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleTheWorldTheSequel.esm" "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Dist"
 
 @REM @REM Use Spriggit to extract record from ESM
-@REM @echo "Running Spriggit to extract record from ESM"
-@REM "D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleTheWorldTheSequel.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Source\ESM-ScaleTheWorldTheSequel-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
+@echo "Running Spriggit to extract record from ESM"
+"D:\Program Files\Spriggit\Spriggit.CLI.exe" serialize --InputPath "D:\MO2Staging\Starfield\mods\ScaleTheWorldTheSequel-Experimental\ScaleTheWorldTheSequel.esm" --OutputPath "C:\Repositories\Public\Starfield Mods\starfield-npc-scaler-v2\Source\ESM-ScaleTheWorldTheSequel-Extracted" --GameRelease Starfield --PackageName Spriggit.Yaml
 
 @REM Create and copy the BA2 Main Archive to Dist folder
 @echo "Creating the BA2 Main Archive"

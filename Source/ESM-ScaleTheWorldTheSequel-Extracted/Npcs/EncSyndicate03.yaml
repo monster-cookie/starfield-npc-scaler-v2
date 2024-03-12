@@ -1,0 +1,208 @@
+FormKey: 270271:Starfield.esm
+EditorID: EncSyndicate03
+ObjectBounds:
+  First: -0.31000048, -0.31000048, -4.7683716E-07
+  Second: 0.31000048, 0.31000048, 1.8000004
+ODTY: 0
+Flags:
+- Respawn
+- AutoCalcStats
+XpValueOffset: 40
+Level:
+  MutagenObjectType: PcLevelMult
+  LevelMult: 1
+CalcMinLevel: 25
+CalcMaxLevel: 999
+DispositionBase: 35
+UseTemplateActors: 32573
+DeathItem: 270269:Starfield.esm
+Voice: 2BCA52:Starfield.esm
+DefaultTemplate: 270273:Starfield.esm
+TemplateActors:
+  TraitTemplate: 270273:Starfield.esm
+  FactionsTemplate: 270273:Starfield.esm
+  SpellListTemplate: 270273:Starfield.esm
+  AiDataTemplate: 270273:Starfield.esm
+  AiPackagesTemplate: 270273:Starfield.esm
+  InventoryTemplate: 270273:Starfield.esm
+  ScriptTemplate: 270273:Starfield.esm
+  DefPackListTemplate: 270273:Starfield.esm
+  AttackDataTemplate: 270273:Starfield.esm
+  KeywordsTemplate: 270273:Starfield.esm
+  Unknown1: 270273:Starfield.esm
+  Unknown2: 270273:Starfield.esm
+Race: 00347D:Starfield.esm
+CombatOverridePackageList: 0102ED:Starfield.esm
+Properties:
+- ActorValue: 0002C2:Starfield.esm
+- ActorValue: 0002C3:Starfield.esm
+  Value: 5
+- ActorValue: 0002C4:Starfield.esm
+- ActorValue: 0002C5:Starfield.esm
+  Value: 5
+- ActorValue: 0002C6:Starfield.esm
+- ActorValue: 0002C7:Starfield.esm
+  Value: 5
+- ActorValue: 0002C8:Starfield.esm
+- ActorValue: 0002D4:Starfield.esm
+  Value: 145
+- ActorValue: 0002D5:Starfield.esm
+  Value: 50
+- ActorValue: 0002DA:Starfield.esm
+  Value: 100
+- ActorValue: 0002CC:Starfield.esm
+  Value: 15
+- ActorValue: 0002CD:Starfield.esm
+  Value: 45
+- ActorValue: 0002EB:Starfield.esm
+  Value: 50
+- ActorValue: 000392:Starfield.esm
+  Value: 50
+- ActorValue: 0002E3:Starfield.esm
+  Value: 50
+Confidence: Brave
+EnergyLevel: 50
+Responsibility: NoCrime
+Assistance: HelpsAllies
+UnknownAIDT: 1
+RDSAs:
+- UnknownInt: 2
+  UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0E7E:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt: 1
+  UnknownInt2: 6
+  UnknownLink1: 090311:Starfield.esm
+  UnknownInt3: 34920
+  UnknownLink5: 090313:Starfield.esm
+  UnknownFloat5: 2
+  UnknownLink7: 0F0EF4:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt2: 6
+  UnknownLink1: 090311:Starfield.esm
+  UnknownInt3: 34920
+  UnknownLink5: 090313:Starfield.esm
+  UnknownFloat5: 2
+  UnknownLink7: 0F0EAF:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt: 2
+  UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CB8:Starfield.esm
+  UnknownLink3: 215CB9:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt: 1
+  UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CBA:Starfield.esm
+  UnknownLink3: 215CBB:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt2: 6
+  UnknownInt3: 34827
+  UnknownLink2: 215CBD:Starfield.esm
+  UnknownLink3: 215CBC:Starfield.esm
+  UnknownLink5: 090313:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+Keywords:
+- 03818E:Starfield.esm
+- 000861:ScaleTheWorldTheSequel.esm
+Class: 010B2F:Starfield.esm
+Name:
+  TargetLanguage: English
+  Value: Syndicate Hitman
+CalculatedHealth: 195
+CalculatedActionPoints: 100
+GearedUpWeapons: 1
+Unused: 43
+HeadParts:
+- 062F07:Starfield.esm
+- 064D88:Starfield.esm
+- 137001:Starfield.esm
+- 24A022:Starfield.esm
+- 24A023:Starfield.esm
+- 24A03D:Starfield.esm
+- 253FA3:Starfield.esm
+- 253FA5:Starfield.esm
+- 3A681E:Starfield.esm
+- 3BE58D:Starfield.esm
+CombatStyle: 2C563B:Starfield.esm
+NAM5: 0xFF00
+HeightMin: 1
+HeightMax: 1
+Weight: {}
+DefaultOutfit: 0061FD:Starfield.esm
+DefaultPackageList: 2C55CA:Starfield.esm
+Tints:
+- TintType: SimpleGroup
+  TintGroup: Dermaesthetic
+  TintName: African_Female_ol1_Sk3
+  TintTexture: textures/actors/human/faces/chargen/postblenddetails/dermaesthetic/female_af_ol1_sk3_derm.dds
+  TintColor: '#00000000'
+  TintIntensity: 64
+- TintType: SimpleGroup
+  TintGroup: Lipstick1
+  TintName: Lipstick_Soft
+  TintTexture: textures/actors/human/faces/chargen/postblenddetails/lipstick1/testlipstick02_mask.dds
+  TintColor: '#94FF252D'
+  TintIntensity: 64
+FaceDialPositions:
+- Index: 24
+  Position: 1
+- Index: 35
+  Position: -1
+- Index: 54
+  Position: 1
+- Index: 69
+  Position: 0.74
+- Index: 70
+  Position: 0.59
+- Index: 71
+  Position: 1
+- Index: 76
+  Position: 0.53
+FaceMorphs:
+- Index: 40
+  MorphGroups:
+  - MorphGroup: Cheeks
+    BlendIntensity: 0.3531152
+  - MorphGroup: Chin
+    BlendIntensity: 0.47810486
+  - MorphGroup: Ears
+    BlendIntensity: 0.46465507
+  - MorphGroup: Eyes
+    BlendIntensity: 0.3718863
+  - MorphGroup: Forehead
+    BlendIntensity: 0.09201352
+  - MorphGroup: Jaw
+    BlendIntensity: 0.7843538
+  - MorphGroup: Mouth
+    BlendIntensity: 0.7129874
+  - MorphGroup: Neck
+    BlendIntensity: 0.590773
+  - MorphGroup: Nose
+    BlendIntensity: 0.32377592
+MorphBlends:
+- BlendName: male_af_ol1_Chin
+  Intensity: 0.47810486
+- BlendName: male_af_ol1_Ears
+  Intensity: 0.46465507
+- BlendName: male_af_ol1_Forehead
+  Intensity: 0.09201352
+- BlendName: male_af_ol1_Jaw
+  Intensity: 0.7843538
+- BlendName: male_af_ol1_Neck
+  Intensity: 0.590773
+- BlendName: male_as_md1_Eyes
+  Intensity: 1
+- BlendName: male_eu_md2_Cheeks
+  Intensity: 1
+- BlendName: male_eu_md2_Nose
+  Intensity: 0.17
+SkinToneIndex: 0
+EyeColor: Green
+Pronoun: Unspecified

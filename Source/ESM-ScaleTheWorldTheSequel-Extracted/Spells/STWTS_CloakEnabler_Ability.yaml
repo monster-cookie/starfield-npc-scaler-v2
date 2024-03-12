@@ -1,0 +1,14 @@
+FormKey: 00080B:ScaleTheWorldTheSequel.esm
+EditorID: STWTS_CloakEnabler_Ability
+Name:
+  TargetLanguage: English
+  Value: CloakAbility
+Description:
+  TargetLanguage: English
+  Value: ''
+Type:
+- Ability
+Effects:
+- BaseEffect: 00080C:ScaleTheWorldTheSequel.esm
+  Data:
+    Magnitude: 1500

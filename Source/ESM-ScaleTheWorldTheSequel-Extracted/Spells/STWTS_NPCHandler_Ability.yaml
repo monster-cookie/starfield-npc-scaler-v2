@@ -1,0 +1,13 @@
+FormKey: 000811:ScaleTheWorldTheSequel.esm
+EditorID: STWTS_NPCHandler_Ability
+Name:
+  TargetLanguage: English
+  Value: ActorSpell
+Description:
+  TargetLanguage: English
+  Value: ''
+Type:
+- Ability
+Effects:
+- BaseEffect: 00080D:ScaleTheWorldTheSequel.esm
+  Data: {}
