@@ -1,5 +1,6 @@
 FormKey: 010B2E:Starfield.esm
 EditorID: EncCrimsonFleet01Template
+FormVersion: 558
 ObjectBounds:
   First: -0.31000048, -0.31000048, -4.7683716E-07
   Second: 0.31000048, 0.31000048, 1.8000004
@@ -41,13 +42,18 @@ Properties:
 - ActorValue: 0002CD:Starfield.esm
   Value: 45
 - ActorValue: 0002D4:Starfield.esm
-  Value: 25
+  Value: 75
+- ActorValue: 0002E3:Starfield.esm
+  Value: 20
+- ActorValue: 0002EB:Starfield.esm
+  Value: 20
+- ActorValue: 000392:Starfield.esm
+  Value: 20
 Items:
 - Item:
     Item: 3E8654:Starfield.esm
     Count: 1
-Aggression: Aggressive
-Confidence: Foolhardy
+Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsFriendsAndAllies
@@ -99,7 +105,6 @@ RDSAs:
 Keywords:
 - 03818E:Starfield.esm
 - 2AD3EC:Starfield.esm
-- 000860:ScaleTheWorldTheSequel.esm
 AttachParentSlots:
 - 155703:Starfield.esm
 - 155704:Starfield.esm
@@ -107,8 +112,8 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Pirate
-CalculatedHealth: 20
-CalculatedActionPoints: 50
+CalculatedHealth: 75
+CalculatedActionPoints: 100
 GearedUpWeapons: 1
 Unused: 43
 HeadParts:

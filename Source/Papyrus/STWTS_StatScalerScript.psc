@@ -72,7 +72,6 @@ Actor Property RealMe Auto
 ObjectReference Property PlayerRef Auto Const Mandatory
 Actor Property Player Auto
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Events

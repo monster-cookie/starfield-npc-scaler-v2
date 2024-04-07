@@ -1,5 +1,6 @@
 FormKey: 009CEE:Starfield.esm
 EditorID: EncCrimsonFleet05
+FormVersion: 558
 ObjectBounds:
   First: -0.31000048, -0.31000048, -4.7683716E-07
   Second: 0.31000048, 0.31000048, 1.8000004
@@ -7,7 +8,7 @@ ODTY: 0
 Flags:
 - Respawn
 - AutoCalcStats
-XpValueOffset: 40
+XpValueOffset: 55
 Level:
   MutagenObjectType: PcLevelMult
   LevelMult: 1
@@ -45,7 +46,7 @@ Properties:
   Value: 5
 - ActorValue: 0002C8:Starfield.esm
 - ActorValue: 0002D4:Starfield.esm
-  Value: 180
+  Value: 275
 - ActorValue: 0002D5:Starfield.esm
   Value: 50
 - ActorValue: 0002DA:Starfield.esm
@@ -55,13 +56,12 @@ Properties:
 - ActorValue: 0002CD:Starfield.esm
   Value: 45
 - ActorValue: 000392:Starfield.esm
-  Value: 45
+  Value: 40
 - ActorValue: 0002EB:Starfield.esm
-  Value: 45
+  Value: 40
 - ActorValue: 0002E3:Starfield.esm
-  Value: 45
-Aggression: Aggressive
-Confidence: Foolhardy
+  Value: 40
+Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsFriendsAndAllies
@@ -112,8 +112,6 @@ RDSAs:
   UnknownFloat6: 1
 Keywords:
 - 03818E:Starfield.esm
-- 000860:ScaleTheWorldTheSequel.esm
-- 12FF1F:Starfield.esm
 AttachParentSlots:
 - 155703:Starfield.esm
 - 155704:Starfield.esm
@@ -121,7 +119,7 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Pirate Marauder
-CalculatedHealth: 180
+CalculatedHealth: 275
 CalculatedActionPoints: 100
 GearedUpWeapons: 1
 Unused: 43

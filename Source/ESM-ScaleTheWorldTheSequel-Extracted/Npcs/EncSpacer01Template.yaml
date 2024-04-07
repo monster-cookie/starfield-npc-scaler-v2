@@ -47,8 +47,7 @@ Items:
 - Item:
     Item: 3D0946:Starfield.esm
     Count: 1
-Aggression: Aggressive
-Confidence: Foolhardy
+Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsFriendsAndAllies

@@ -46,8 +46,7 @@ Items:
 - Item:
     Item: 1BEF75:Starfield.esm
     Count: 1
-Aggression: Aggressive
-Confidence: Foolhardy
+Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsAllies
@@ -97,9 +96,8 @@ RDSAs:
   UnknownFloat5: 2
   UnknownFloat6: 1
 Keywords:
-- 000862:ScaleTheWorldTheSequel.esm
-- 03818E:Starfield.esm
 - 12FF1F:Starfield.esm
+- 000862:ScaleTheWorldTheSequel.esm
 Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English

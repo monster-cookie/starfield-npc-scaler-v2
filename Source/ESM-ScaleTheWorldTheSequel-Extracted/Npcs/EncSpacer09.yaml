@@ -61,8 +61,7 @@ Properties:
   Value: 280
 - ActorValue: 0002E3:Starfield.esm
   Value: 280
-Aggression: Aggressive
-Confidence: Foolhardy
+Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsFriendsAndAllies

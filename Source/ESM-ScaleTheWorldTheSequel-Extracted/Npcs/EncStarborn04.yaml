@@ -71,7 +71,7 @@ Properties:
 Confidence: Foolhardy
 EnergyLevel: 50
 Responsibility: NoCrime
-Assistance: HelpsAllies
+Assistance: HelpsFriendsAndAllies
 UnknownAIDT: 1
 RDSAs:
 - UnknownInt: 2

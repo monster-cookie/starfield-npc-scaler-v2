@@ -1,5 +1,6 @@
 FormKey: 12D02F:Starfield.esm
 EditorID: EncCrimsonFleet11
+FormVersion: 558
 ObjectBounds:
   First: -0.31000048, -0.31000048, -4.7683716E-07
   Second: 0.31000048, 0.31000048, 1.8000004
@@ -10,7 +11,7 @@ Flags:
 XpValueOffset: 130
 Level:
   MutagenObjectType: PcLevelMult
-  LevelMult: 1.25
+  LevelMult: 1
 CalcMinLevel: 100
 CalcMaxLevel: 999
 DispositionBase: 35
@@ -45,7 +46,7 @@ Properties:
   Value: 5
 - ActorValue: 0002C8:Starfield.esm
 - ActorValue: 0002D4:Starfield.esm
-  Value: 645
+  Value: 625
 - ActorValue: 0002D5:Starfield.esm
   Value: 50
 - ActorValue: 0002DA:Starfield.esm
@@ -60,8 +61,7 @@ Properties:
   Value: 410
 - ActorValue: 000392:Starfield.esm
   Value: 410
-Aggression: Aggressive
-Confidence: Foolhardy
+Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsFriendsAndAllies
@@ -113,7 +113,6 @@ RDSAs:
 Keywords:
 - 03818E:Starfield.esm
 - 12FF1F:Starfield.esm
-- 000860:ScaleTheWorldTheSequel.esm
 AttachParentSlots:
 - 155703:Starfield.esm
 - 155704:Starfield.esm
@@ -121,7 +120,7 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Pirate Captain
-CalculatedHealth: 645
+CalculatedHealth: 625
 CalculatedActionPoints: 100
 GearedUpWeapons: 1
 Unused: 43

@@ -63,7 +63,7 @@ Properties:
 Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime
-Assistance: HelpsAllies
+Assistance: HelpsFriendsAndAllies
 UnknownAIDT: 1
 RDSAs:
 - UnknownInt: 2
@@ -109,7 +109,6 @@ RDSAs:
   UnknownFloat5: 2
   UnknownFloat6: 1
 Keywords:
-- 03818E:Starfield.esm
 - 000861:ScaleTheWorldTheSequel.esm
 Class: 010B2F:Starfield.esm
 Name:

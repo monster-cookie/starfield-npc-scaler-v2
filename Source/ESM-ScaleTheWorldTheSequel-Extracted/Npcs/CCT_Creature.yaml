@@ -6,7 +6,7 @@ ObjectBounds:
 ODTY: 0
 Flags:
 - AutoCalcStats
-XpValueOffset: 100
+XpValueOffset: 50
 Level:
   MutagenObjectType: PcLevelMult
   LevelMult: 1
@@ -17,7 +17,7 @@ UseTemplateActors: 12290
 DeathItem: 077833:Starfield.esm
 LegendaryChance: 14AFD4:Starfield.esm
 TemplateActors:
-  StatsTemplate: 1661E4:Starfield.esm
+  StatsTemplate: 000931:VenworksFactionOverhaul.esm
   KeywordsTemplate: 0080AB:Starfield.esm
   Unknown1: 2C192E:Starfield.esm
 Race: 1BB965:Starfield.esm
@@ -53,8 +53,6 @@ Properties:
   Value: 0.25
 - ActorValue: 22A2B6:Starfield.esm
   Value: 1
-- ActorValue: 0002EB:Starfield.esm
-  Value: 10
 Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime

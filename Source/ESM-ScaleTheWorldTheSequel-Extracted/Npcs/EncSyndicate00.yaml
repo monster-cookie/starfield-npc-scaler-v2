@@ -35,10 +35,14 @@ Properties:
 - ActorValue: 0002D5:Starfield.esm
 - ActorValue: 0002DA:Starfield.esm
   Value: 100
+- ActorValue: 0002CC:Starfield.esm
+  Value: 15
+- ActorValue: 0002CD:Starfield.esm
+  Value: 45
 Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime
-Assistance: HelpsAllies
+Assistance: HelpsFriendsAndAllies
 UnknownAIDT: 1
 RDSAs:
 - UnknownInt: 2

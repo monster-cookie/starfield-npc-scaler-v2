@@ -49,7 +49,7 @@ Items:
 Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime
-Assistance: HelpsAllies
+Assistance: HelpsFriendsAndAllies
 UnknownAIDT: 1
 RDSAs:
 - UnknownInt: 2
@@ -94,6 +94,8 @@ RDSAs:
   UnknownLink5: 090313:Starfield.esm
   UnknownFloat5: 2
   UnknownFloat6: 1
+Keywords:
+- 000861:ScaleTheWorldTheSequel.esm
 Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English

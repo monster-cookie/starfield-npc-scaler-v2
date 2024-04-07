@@ -55,11 +55,10 @@ Properties:
   Value: 15
 - ActorValue: 0002CD:Starfield.esm
   Value: 45
-Aggression: Aggressive
-Confidence: Foolhardy
+Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime
-Assistance: HelpsAllies
+Assistance: HelpsFriendsAndAllies
 UnknownAIDT: 1
 RDSAs:
 - UnknownInt: 2
@@ -105,8 +104,6 @@ RDSAs:
   UnknownLink5: 090313:Starfield.esm
   UnknownFloat5: 2
   UnknownFloat6: 1
-Keywords:
-- 03818E:Starfield.esm
 Class: 010B2F:Starfield.esm
 CalculatedHealth: 95
 CalculatedActionPoints: 100

@@ -61,11 +61,10 @@ Properties:
   Value: 75
 - ActorValue: 000392:Starfield.esm
   Value: 75
-Aggression: Aggressive
-Confidence: Foolhardy
+Confidence: Brave
 EnergyLevel: 50
 Responsibility: NoCrime
-Assistance: HelpsAllies
+Assistance: HelpsFriendsAndAllies
 UnknownAIDT: 1
 RDSAs:
 - UnknownInt: 2
