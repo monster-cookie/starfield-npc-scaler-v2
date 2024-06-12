@@ -1,13 +1,48 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"cSpell.words": [
-			"STWTS",
-			"Terrormorphs"
-		]
-	}
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "cSpell.words": [
+      "Aldumite",
+      "Biosuppressant",
+      "caelumite",
+      "Carboxylic",
+      "Chlorosilanes",
+      "CreationKitPrefs",
+      "Datafiles",
+      "Eargrub",
+      "Eggmund",
+      "FLST",
+      "frml",
+      "Heatleech",
+      "Heatleeches",
+      "Hypercatalyst",
+      "Immunostimulant",
+      "Indicite",
+      "Injestible",
+      "Isocentered",
+      "keyw",
+      "LVLI",
+      "polytextile",
+      "Rothicite",
+      "SFCK",
+      "SMRUNamespace1",
+      "SMRUNamespace2",
+      "Spidroin",
+      "Spriggit",
+      "steamapps",
+      "STWTS",
+      "Taiyo",
+      "Tasine",
+      "Terrormorphs",
+      "Tetrafluorides",
+      "Trilobyte",
+      "Veryl",
+      "Vytinium",
+      "Yorghan"
+    ]
+  }
 }

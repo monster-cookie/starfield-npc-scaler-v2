@@ -1,6 +1,8 @@
 # Scale The World
 
-## Version 1.1.11
-* Compatibility with Venworks Faction Overhaul v2.0.6 or newer. Factions is now a required mod. 
-* Moved game settings to RTFP like I did with Factions. RTFP is now an optional requirement. 
-* As we found out with factions screwing with aggression settings breaks quests so reverting that in the encounter NPC records. 
+## Version 3.0.0
+* Converting to SFCK and Xbox compatibility
+* Also used latest CK compatible Spriggit for the conversion form xedit and to merge in the parts of MCS we need. This is highly experimental.
+* Using a stripped down internal copy of Modular NPC Creation System (MCS)
+
+NOTE: Do not upgrade if an existing user this will require a new game though a new NGP universe MIGHT work. 

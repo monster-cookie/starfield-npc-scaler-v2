@@ -1,0 +1,70 @@
+name: Spriggit (Disassemble game data to YAML)
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+###############################################################################
+# CONFIG: Update these for this repository
+###############################################################################
+env:
+  # Datafiles is a comma separated array of strings so is entered weird like: datafile1.esm,datafile2.esp,datafile3.esl
+  DATAFILES: Venworks-ScaleTheWorld.esp
+
+jobs:
+  spriggit-disassembletoyaml:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'
+          dotnet-quality: 'ga'
+
+      - name: Install Needed Tools
+        run: |
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> ~/.bashrc
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          brew update
+          brew install gh
+          brew install 7zip
+  
+      - name: Get latest spriggit from GitHub
+        shell: bash
+        run: |
+          gh release download -O ${{ runner.tool_cache }}/spriggit.zip -p 'SpriggitLinuxCLI.zip' -R Mutagen-Modding/Spriggit
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Install Spriggit
+        shell: bash
+        run: |
+          mkdir ${{ runner.tool_cache }}/spriggit
+          7z x ${{ runner.tool_cache }}/spriggit.zip -o${{ runner.tool_cache }}/spriggit
+          chmod +x ${{ runner.tool_cache }}/spriggit/Spriggit.CLI
+
+      - name: Spriggit - Extract ESP to Yaml
+        shell: bash
+        run: |
+          IFS=',' read -r -a parsedDatafilesArray <<< "${{ env.DATAFILES }}"
+          for df in ${parsedDatafilesArray[@]}
+          do
+            ${{ runner.tool_cache }}/spriggit/Spriggit.CLI serialize --InputPath "Source/Database/${df}" --OutputPath "Source/Spriggit/${df}" --GameRelease Starfield --PackageName Spriggit.Yaml
+          done
+
+      - name: Commit Spriggit
+        if: ${{ success() }}
+        continue-on-error: true
+        shell: bash
+        run: |
+          git config --global user.name 'Quarter Onion Games Actions Handler'
+          git config --global user.email 'qogci@quarteroniongames.com'
+          git remote set-url origin https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}
+          git commit -am "Automated Spriggit Update for all module datafiles"
+          git push
