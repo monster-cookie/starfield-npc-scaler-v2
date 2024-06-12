@@ -1,0 +1,146 @@
+FormKey: 11DDB8:Starfield.esm
+EditorID: EncStarborn07
+ObjectBounds:
+  First: -0.31000048, -0.31000048, -4.7683716E-07
+  Second: 0.31000048, 0.31000048, 1.8000004
+ODTY: 0
+Flags:
+- Female
+- Respawn
+- AutoCalcStats
+XpValueOffset: 170
+Level:
+  MutagenObjectType: PcLevelMult
+  LevelMult: 1.1
+CalcMinLevel: 75
+CalcMaxLevel: 999
+DispositionBase: 35
+UseTemplateActors: 32565
+DeathItem: 27025F:Starfield.esm
+Voice: 018ED9:Starfield.esm
+DefaultTemplate: 2956D3:Starfield.esm
+TemplateActors:
+  TraitTemplate: 2956D3:Starfield.esm
+  FactionsTemplate: 2956D3:Starfield.esm
+  AiDataTemplate: 2956D3:Starfield.esm
+  AiPackagesTemplate: 2956D3:Starfield.esm
+  InventoryTemplate: 2956D3:Starfield.esm
+  ScriptTemplate: 2956D3:Starfield.esm
+  DefPackListTemplate: 2956D3:Starfield.esm
+  AttackDataTemplate: 2956D3:Starfield.esm
+  KeywordsTemplate: 2956D3:Starfield.esm
+  Unknown1: 2956D3:Starfield.esm
+  Unknown2: 2956D3:Starfield.esm
+Race: 00347D:Starfield.esm
+ActorEffect:
+- 02E551:Starfield.esm
+- 0367A8:Starfield.esm
+- 138560:Starfield.esm
+- 18B81F:Starfield.esm
+- 23AF03:Starfield.esm
+- 23AF08:Starfield.esm
+- 23AF0A:Starfield.esm
+- 23AF0D:Starfield.esm
+CombatOverridePackageList: 0102ED:Starfield.esm
+Perks:
+- Perk: 12A089:Starfield.esm
+  Rank: 1
+Properties:
+- ActorValue: 0002C2:Starfield.esm
+- ActorValue: 0002C3:Starfield.esm
+  Value: 5
+- ActorValue: 0002C4:Starfield.esm
+- ActorValue: 0002C5:Starfield.esm
+  Value: 5
+- ActorValue: 0002C6:Starfield.esm
+- ActorValue: 0002C7:Starfield.esm
+  Value: 5
+- ActorValue: 0002C8:Starfield.esm
+- ActorValue: 0002D4:Starfield.esm
+  Value: 1290
+- ActorValue: 0002D5:Starfield.esm
+  Value: 50
+- ActorValue: 0002DA:Starfield.esm
+  Value: 100
+- ActorValue: 0002CC:Starfield.esm
+  Value: 15
+- ActorValue: 0002CD:Starfield.esm
+  Value: 45
+- ActorValue: 000385:Starfield.esm
+  Value: 100
+- ActorValue: 0002EB:Starfield.esm
+  Value: 195
+- ActorValue: 000392:Starfield.esm
+  Value: 195
+- ActorValue: 0002E3:Starfield.esm
+  Value: 195
+Confidence: Foolhardy
+EnergyLevel: 50
+Responsibility: NoCrime
+Assistance: HelpsFriendsAndAllies
+UnknownAIDT: 1
+RDSAs:
+- UnknownInt: 2
+  UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0E7E:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt: 1
+  UnknownInt2: 6
+  UnknownLink1: 090311:Starfield.esm
+  UnknownInt3: 34920
+  UnknownLink5: 090313:Starfield.esm
+  UnknownFloat5: 2
+  UnknownLink7: 0F0EF4:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt2: 6
+  UnknownLink1: 090311:Starfield.esm
+  UnknownInt3: 34920
+  UnknownLink5: 090313:Starfield.esm
+  UnknownFloat5: 2
+  UnknownLink7: 0F0EAF:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt: 2
+  UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CB8:Starfield.esm
+  UnknownLink3: 215CB9:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt: 1
+  UnknownInt2: 6
+  UnknownInt3: 34827
+  UnknownLink2: 215CBA:Starfield.esm
+  UnknownLink3: 215CBB:Starfield.esm
+  UnknownLink5: 090313:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt2: 6
+  UnknownInt3: 34827
+  UnknownLink2: 215CBD:Starfield.esm
+  UnknownLink3: 215CBC:Starfield.esm
+  UnknownLink5: 090313:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+Class: 010B2F:Starfield.esm
+Name:
+  TargetLanguage: English
+  Value: Starborn Adjudicator
+CalculatedHealth: 270
+CalculatedActionPoints: 100
+GearedUpWeapons: 1
+Unused: 43
+CombatStyle: 270265:Starfield.esm
+NAM5: 0xFF00
+HeightMin: 1
+HeightMax: 1
+Weight: {}
+SpaceOutfit: 27025C:Starfield.esm
+DefaultPackageList: 2C55CA:Starfield.esm
+Tints: []
+MorphBlends:
+- BlendName: female_eu_md2_Neck
+  Intensity: 0.1
+SkinToneIndex: 0
+Pronoun: Unspecified

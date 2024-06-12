@@ -1,0 +1,136 @@
+FormKey: 0CA11A:Starfield.esm
+EditorID: EncRobotModelS01_CrimsonFleet
+ObjectBounds:
+  First: -0.55246174, -1.0104787, -4.7683716E-07
+  Second: 0.55246174, 0.8869324, 1.6147089
+ODTY: 0
+Flags:
+- Respawn
+- AutoCalcStats
+- 0x100
+XpValueOffset: 15
+Level:
+  MutagenObjectType: PcLevelMult
+  LevelMult: 0.8
+CalcMinLevel: 1
+CalcMaxLevel: 999
+DispositionBase: 35
+UseTemplateActors: 32570
+Factions:
+- Faction: 010B30:Starfield.esm
+DeathItem: 25D996:Starfield.esm
+Voice: 2BCA58:Starfield.esm
+DefaultTemplate: 2D01DA:Starfield.esm
+TemplateActors:
+  StatsTemplate: 2D01DA:Starfield.esm
+  SpellListTemplate: 2D01DA:Starfield.esm
+  AiDataTemplate: 2D01DA:Starfield.esm
+  AiPackagesTemplate: 2D01DA:Starfield.esm
+  InventoryTemplate: 2D01DA:Starfield.esm
+  ScriptTemplate: 2D01DA:Starfield.esm
+  DefPackListTemplate: 2D01DA:Starfield.esm
+  AttackDataTemplate: 2D01DA:Starfield.esm
+  KeywordsTemplate: 2D01DA:Starfield.esm
+  Unknown1: 2D01DA:Starfield.esm
+  Unknown2: 2D01DA:Starfield.esm
+Race: 0130F0:Starfield.esm
+Skin: 01FC52:Starfield.esm
+AttackRace: 0130F0:Starfield.esm
+CombatOverridePackageList: 0102ED:Starfield.esm
+Properties:
+- ActorValue: 0002DA:Starfield.esm
+  Value: 100
+- ActorValue: 0002D5:Starfield.esm
+  Value: 50
+- ActorValue: 0002D4:Starfield.esm
+  Value: 310
+- ActorValue: 0002C8:Starfield.esm
+- ActorValue: 0002C7:Starfield.esm
+- ActorValue: 0002C6:Starfield.esm
+- ActorValue: 0002C5:Starfield.esm
+- ActorValue: 0002C4:Starfield.esm
+- ActorValue: 0002C3:Starfield.esm
+- ActorValue: 0002C2:Starfield.esm
+- ActorValue: 0002E3:Starfield.esm
+  Value: 130
+- ActorValue: 2102C3:Starfield.esm
+  Value: 0.55
+NativeTerminal: 1AE420:Starfield.esm
+Confidence: Foolhardy
+EnergyLevel: 50
+Responsibility: NoCrime
+Assistance: HelpsAllies
+UnknownAIDT: 1
+RDSAs:
+- UnknownInt: 2
+  UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0E7E:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt: 1
+  UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0EF4:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt2: 6
+  UnknownInt3: 32864
+  UnknownFloat5: 2
+  UnknownLink7: 0F0EAF:Starfield.esm
+  UnknownFloat6: 1
+- UnknownInt: 3
+  UnknownInt2: 6
+  UnknownInt3: 32768
+  UnknownFloat2: 30
+  UnknownFloat3: 40
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CBD:Starfield.esm
+  UnknownLink3: 215CBC:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt: 1
+  UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CBA:Starfield.esm
+  UnknownLink3: 215CBB:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+- UnknownInt: 2
+  UnknownInt2: 6
+  UnknownInt3: 32771
+  UnknownLink2: 215CB8:Starfield.esm
+  UnknownLink3: 215CB9:Starfield.esm
+  UnknownFloat5: 2
+  UnknownFloat6: 1
+ObjectTemplates:
+- IsEditorOnly: True
+  Includes:
+  - Mod: 2928CF:Starfield.esm
+    DontUseAll: True
+  - Mod: 2928D1:Starfield.esm
+    DontUseAll: True
+  - Mod: 2AB1CC:Starfield.esm
+    AttachPointIndex: 1
+    DontUseAll: True
+Class: 010B2F:Starfield.esm
+Name:
+  TargetLanguage: English
+  Value: Crimson Fleet Robot Model S
+CalculatedHealth: 20
+GearedUpWeapons: 1
+CombatStyle: 2AB1CE:Starfield.esm
+NAM5: 0xFF00
+HeightMin: 1
+HeightMax: 1
+Weight:
+  Thin: 0.4235
+  Muscular: 0.1329
+  Fat: 0.4435
+DefaultPackageList: 26F689:Starfield.esm
+Tints: []
+SkinToneIndex: 0
+Pronoun: Unspecified

@@ -1,0 +1,17 @@
+SpriggitSource:
+  PackageName: Spriggit.Yaml.Starfield
+  Version: 0.22.0
+ModKey: ScaleTheWorldTheSequel.esm
+GameRelease: Starfield
+ModHeader:
+  Flags:
+  - Master
+  Stats:
+    NumRecords: 315
+    NextFormID: 2160
+  Author: ''
+  MasterReferences:
+  - Master: Starfield.esm
+  - Master: BlueprintShips-Starfield.esm
+  - Master: VenpiCore.esm
+  - Master: VenworksFactionOverhaul.esm

@@ -1,0 +1,60 @@
+FormKey: 024FFD:Starfield.esm
+EditorID: EncMiningTurret06
+ObjectBounds:
+  First: -0.78350717, -1.0742266, -4.7683716E-07
+  Second: 0.78350717, 1.0742266, 1.5113677
+ODTY: 0
+Flags:
+- Respawn
+- AutoCalcStats
+XpValueOffset: 115
+Level:
+  MutagenObjectType: PcLevelMult
+  LevelMult: 1.25
+CalcMinLevel: 100
+CalcMaxLevel: 999
+DispositionBase: 35
+UseTemplateActors: 32765
+DeathItem: 3EC047:Starfield.esm
+DefaultTemplate: 024FF6:Starfield.esm
+Race: 1CC9BC:Starfield.esm
+Skin: 1C0AD9:Starfield.esm
+CombatOverridePackageList: 0102ED:Starfield.esm
+Properties:
+- ActorValue: 0002DA:Starfield.esm
+  Value: 100
+- ActorValue: 0002D5:Starfield.esm
+  Value: 50
+- ActorValue: 0002C3:Starfield.esm
+- ActorValue: 0002C2:Starfield.esm
+  Value: 4
+- ActorValue: 0002D4:Starfield.esm
+  Value: 2020
+- ActorValue: 0002E3:Starfield.esm
+  Value: 415
+- ActorValue: 0002EB:Starfield.esm
+  Value: 415
+- ActorValue: 2102C3:Starfield.esm
+  Value: 9.44
+NativeTerminal: 1AE416:Starfield.esm
+Aggression: VeryAggressive
+Confidence: Foolhardy
+EnergyLevel: 50
+Responsibility: NoCrime
+Assistance: HelpsFriendsAndAllies
+Class: 123E22:Starfield.esm
+FarAwayModelDistance: 200
+GearedUpWeapons: 1
+Unused: 60
+CombatStyle: 024FFE:Starfield.esm
+NAM5: 0xFF00
+HeightMin: 1
+HeightMax: 1
+Weight:
+  Thin: 0.5
+  Muscular: 0.5
+InheritsSoundsFrom: 07A9AE:Starfield.esm
+DefaultPackageList: 31B5B3:Starfield.esm
+Tints: []
+SkinToneIndex: 0
+Pronoun: Unspecified
