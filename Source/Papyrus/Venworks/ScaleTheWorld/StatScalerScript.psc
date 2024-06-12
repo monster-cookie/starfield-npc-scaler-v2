@@ -1,6 +1,7 @@
 ScriptName Venworks:ScaleTheWorld:StatScalerScript extends ActiveMagicEffect
 
 Import Venworks:Shared:Logging
+Import Venworks:Shared:Constants
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
@@ -30,7 +31,7 @@ GlobalVariable Property VWKS_STW_Preset_Apocalypse_Base Auto Const Mandatory
 ;;; Properties
 ;;;
 Keyword Property VWKS_STW_Scaled Auto Const Mandatory
-VPI_SharedObjectManager:DifficultyPresets Property EnumDifficultyPresets Auto
+DifficultyPresets Property EnumDifficultyPresets Auto
 
 ActorValue Property Health Auto Const Mandatory
 ActorValue Property DamageResist Auto Const Mandatory
@@ -57,7 +58,7 @@ Keyword Property CombatNPC_Legendary Auto Const Mandatory
 
 LeveledItem Property LL_Loot_Legendary_Human Auto Const Mandatory
 LeveledItem Property LL_Contraband_Any Auto Const Mandatory
-MiscObject Property Contraband_VaRuunHereticPamphlets Auto Const Mandatory
+MiscObject Property Contraband_VaruunHereticPamphlets Auto Const Mandatory
 Potion Property Chem_Aurora Auto Const Mandatory
 
 Keyword Property ActorTypeLegendary Auto Const Mandatory
@@ -86,7 +87,7 @@ Event OnEffectStart(ObjectReference akTarget, Actor akCaster, MagicEffect akBase
     Return
   EndIf
 
-  EnumDifficultyPresets = VPI_SharedObjectManager.GetEnumDifficultyPresets()
+  EnumDifficultyPresets = new DifficultyPresets
 
   Myself = akTarget
   RealMe = akTarget.GetSelfAsActor()
@@ -133,7 +134,7 @@ Event OnEffectStart(ObjectReference akTarget, Actor akCaster, MagicEffect akBase
     HandleStatScaling(EnumDifficultyPresets.Nightmare)
   ElseIF (VWKS_STW_ActivePreset.GetValueInt() == EnumDifficultyPresets.Apocalypse)
     ;; Apocalypse preset is active
-    Log(ModName, "Venworks:ScaleTheWorld:StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the apocolypse preset scaling.", 0, DebugEnabled.GetValueInt())
+    Log(ModName, "Venworks:ScaleTheWorld:StatScalerScript", "OnEffectStart",  Myself + "> is a " + RealMe.GetRace() + " and applying the apocalypse preset scaling.", 0, DebugEnabled.GetValueInt())
     HandleStatScaling(EnumDifficultyPresets.Apocalypse)
   EndIf
 EndEvent
@@ -352,14 +353,14 @@ Function HandleStatScaling(Int preset)
   Float playerAttackDamageMult = Player.GetValue(AttackDamageMult)
   Float myAttackDamageMult = RealMe.GetValue(AttackDamageMult)
 
-  int encounterlevel = RealMe.CalculateEncounterLevel(Game.GetDifficulty())
+  int encounterLevel = RealMe.CalculateEncounterLevel(Game.GetDifficulty())
 
   ; DebugLevelScaling("INITIAL")
 
   Float npcScalingAdjustmentToPlayer = GetScalingFactorForDifficulty(preset)
 
-  string message = "\n\n -=-=-=-=-= STAT DEBUG (" + Myself + ") =-=-=-=-=-\n\n"
-  message += "I'm a " + GetNPCType() + " NPC with a race of " + RealMe.GetRace() + " and a calculated a stat adjustment factor of " + npcScalingAdjustmentToPlayer + ".\n"
+  string debugMessage = "\n\n -=-=-=-=-= STAT DEBUG (" + Myself + ") =-=-=-=-=-\n\n"
+  debugMessage += "I'm a " + GetNPCType() + " NPC with a race of " + RealMe.GetRace() + " and a calculated a stat adjustment factor of " + npcScalingAdjustmentToPlayer + ".\n"
 
   If (RealMe.HasKeyword(ActorTypeLegendary))
     ;;
@@ -379,45 +380,45 @@ Function HandleStatScaling(Int preset)
     ;; Handle Loot Injection
     RealMe.AddItem(LL_Loot_Legendary_Human as Form, 1, true)
     If (RealMe.HasKeyword(ActorTypePirate) && Game.GetDieRollSuccess(30, 1, 100, -1, -1))
-      message += "I'm a miniboss pirate so injecting 1 random contraband item.\n"
+      debugMessage += "I'm a miniboss pirate so injecting 1 random contraband item.\n"
       RealMe.AddItem(LL_Contraband_Any as Form, 1, true)
     ElseIf (RealMe.HasKeyword(ActorTypeZealot) && Game.GetDieRollSuccess(30, 1, 100, -1, -1))
-      message += "I'm a miniboss zealot so injecting 0-3 random Va'Ruun Pamphlet item(s).\n"
-      RealMe.AddItem(Contraband_VaRuunHereticPamphlets as Form, Utility.RandomInt(0, 3), true)
+      debugMessage += "I'm a miniboss zealot so injecting 0-3 random Va'Ruun Pamphlet item(s).\n"
+      RealMe.AddItem(Contraband_VaruunHereticPamphlets as Form, Utility.RandomInt(0, 3), true)
     ElseIf (RealMe.HasKeyword(ActorTypeGang) && Game.GetDieRollSuccess(30, 1, 100, -1, -1))
-      message += "I'm a miniboss gang member so injecting 0-6 aurora item(s).\n"
+      debugMessage += "I'm a miniboss gang member so injecting 0-6 aurora item(s).\n"
       RealMe.AddItem(Chem_Aurora as Form, Utility.RandomInt(0, 6), true)
     EndIf
   ElseIf(RealMe.HasKeyword(ActorTypePirate) && Game.GetDieRollSuccess(30, 1, 100, -1, -1))
-    message += "I'm a " + GetNPCType() + " pirate so injecting 1 random contraband item.\n"
+    debugMessage += "I'm a " + GetNPCType() + " pirate so injecting 1 random contraband item.\n"
     RealMe.AddItem(LL_Contraband_Any as Form, 1, true)
   ElseIf(RealMe.HasKeyword(ActorTypeZealot) && Game.GetDieRollSuccess(30, 1, 100, -1, -1))
-    message += "I'm a " + GetNPCType() + " zealot so injecting 0-3 random Va'Ruun Pamphlet item(s).\n"
-    RealMe.AddItem(Contraband_VaRuunHereticPamphlets as Form, Utility.RandomInt(0, 3), true)
+    debugMessage += "I'm a " + GetNPCType() + " zealot so injecting 0-3 random Va'Ruun Pamphlet item(s).\n"
+    RealMe.AddItem(Contraband_VaruunHereticPamphlets as Form, Utility.RandomInt(0, 3), true)
   ElseIf(RealMe.HasKeyword(ActorTypeGang) && Game.GetDieRollSuccess(30, 1, 100, -1, -1))
-    message += "I'm a " + GetNPCType() + " gang member so injecting 0-6 aurora item(s).\n"
+    debugMessage += "I'm a " + GetNPCType() + " gang member so injecting 0-6 aurora item(s).\n"
     RealMe.AddItem(Chem_Aurora as Form, Utility.RandomInt(0, 6), true)
   EndIf
 
   int scaledHealth = Math.Round(playerHealth * npcScalingAdjustmentToPlayer)
   RealMe.SetValue(Health, scaledHealth)
-  message += "Adjusting my Health to " + scaledHealth + " from " + myHealth + " using a scalig factor of " + npcScalingAdjustmentToPlayer + " against the player's " + playerHealth + " health.\n"
+  debugMessage += "Adjusting my Health to " + scaledHealth + " from " + myHealth + " using a scaling factor of " + npcScalingAdjustmentToPlayer + " against the player's " + playerHealth + " health.\n"
 
   int scaledDamageResist = Math.Round(playerDamageResist * npcScalingAdjustmentToPlayer)
   RealMe.SetValue(DamageResist, scaledDamageResist)
-  message += "Adjusting my Damage Resist stat to " + scaledDamageResist + " from " + myDamageResist + " using a scalig factor of " + npcScalingAdjustmentToPlayer + " against the player's " + playerDamageResist + " damage resist.\n"
+  debugMessage += "Adjusting my Damage Resist stat to " + scaledDamageResist + " from " + myDamageResist + " using a scaling factor of " + npcScalingAdjustmentToPlayer + " against the player's " + playerDamageResist + " damage resist.\n"
 
   int scaledEnergyResist = Math.Round(playerEnergyResist * npcScalingAdjustmentToPlayer)
   RealMe.SetValue(EnergyResist, scaledEnergyResist)
-  message += "Adjusting my Energy Resist stat to " + scaledEnergyResist + " from " + myEnergyResist + " using a scalig factor of " + npcScalingAdjustmentToPlayer + " against the player's " + playerEnergyResist + " energy resist.\n"
+  debugMessage += "Adjusting my Energy Resist stat to " + scaledEnergyResist + " from " + myEnergyResist + " using a scaling factor of " + npcScalingAdjustmentToPlayer + " against the player's " + playerEnergyResist + " energy resist.\n"
 
   int scaledEMDamageResist = Math.Round(playerEMDamageResist * npcScalingAdjustmentToPlayer)
   RealMe.SetValue(ElectromagneticDamageResist, scaledEMDamageResist)
-  message += "Adjusting my EM Damage Resist stat to " + scaledEMDamageResist + " from " + myEMDamageResist + " using a scalig factor of " + npcScalingAdjustmentToPlayer  + " against the player's " + playerEMDamageResist + " EM damage resist.\n"
+  debugMessage += "Adjusting my EM Damage Resist stat to " + scaledEMDamageResist + " from " + myEMDamageResist + " using a scaling factor of " + npcScalingAdjustmentToPlayer  + " against the player's " + playerEMDamageResist + " EM damage resist.\n"
 
   Float scaledCriticalHitChance = Math.Round(playerCriticalHitChance * npcScalingAdjustmentToPlayer)
   RealMe.SetValue(CriticalHitChance, scaledCriticalHitChance)
-  message += "Adjusting my EM Damage Resist stat to " + scaledCriticalHitChance + " from " + myCriticalHitChance + " using a scalig factor of " + npcScalingAdjustmentToPlayer  + " against the player's " + playerCriticalHitChance + " EM damage resist.\n"
+  debugMessage += "Adjusting my EM Damage Resist stat to " + scaledCriticalHitChance + " from " + myCriticalHitChance + " using a scaling factor of " + npcScalingAdjustmentToPlayer  + " against the player's " + playerCriticalHitChance + " EM damage resist.\n"
 
 
   ;; These can't scale with the factor they do too much damage
@@ -433,13 +434,13 @@ Function HandleStatScaling(Int preset)
     scaledAttackDamageMult = 1.50
     scaledCriticalHitDamageMult = 1.25
   EndIf
-  message += "Adjusting my attack multiplier to " + scaledAttackDamageMult + " from " + myAttackDamageMult + " against the player's " + playerAttackDamageMult + ".\n"
+  debugMessage += "Adjusting my attack multiplier to " + scaledAttackDamageMult + " from " + myAttackDamageMult + " against the player's " + playerAttackDamageMult + ".\n"
   RealMe.SetValue(AttackDamageMult, scaledAttackDamageMult)
-  message += "Adjusting my critical damage multiplier to " + scaledCriticalHitDamageMult + " from " + myCriticalHitDamageMult + " against the player's " + playerCriticalHitDamageMult + ".\n"
+  debugMessage += "Adjusting my critical damage multiplier to " + scaledCriticalHitDamageMult + " from " + myCriticalHitDamageMult + " against the player's " + playerCriticalHitDamageMult + ".\n"
   RealMe.SetValue(CriticalHitDamageMult, scaledCriticalHitDamageMult)
 
-  message += "\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n\n"
-  Log(ModName, "Venworks:ScaleTheWorld:StatScalerScript", "HandleStatScaling", message, 0, DebugEnabled.GetValueInt())
+  debugMessage += "\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n\n"
+  Log(ModName, "Venworks:ScaleTheWorld:StatScalerScript", "HandleStatScaling", debugMessage, 0, DebugEnabled.GetValueInt())
   DebugLevelScaling("FINAL")
 EndFunction
 
@@ -447,8 +448,8 @@ EndFunction
 Function DebugLevelScaling(String scalingState)
   int playerLevel = Player.GetLevel()
   int myLevel = RealMe.GetLeveledActorBase().GetLevel()
-  string message = "\n\n ********** STAT DEBUG (" + scalingState +  "-" + Myself + ") ********** \n\n"
-  message += "Scaling for a player of level " + playerLevel + " and my level is " + myLevel + ".\n"
+  string debugMessage = "\n\n ********** STAT DEBUG (" + scalingState +  "-" + Myself + ") ********** \n\n"
+  debugMessage += "Scaling for a player of level " + playerLevel + " and my level is " + myLevel + ".\n"
 
   int playerHealth = Player.GetValueInt(Health)
   int myHealth = RealMe.GetValueInt(Health)
@@ -478,28 +479,28 @@ Function DebugLevelScaling(String scalingState)
   Float playerAttackDamageMult = Player.GetValue(AttackDamageMult)
   Float myAttackDamageMult = RealMe.GetValue(AttackDamageMult)
 
-  int encounterlevel = RealMe.CalculateEncounterLevel(Game.GetDifficulty())
+  int encounterLevel = RealMe.CalculateEncounterLevel(Game.GetDifficulty())
 
-  message += "Current stats (Encounter Level " + encounterlevel +"):\n"
-  message += "My/Player Level: " + myLevel + "/" + playerLevel + ".\n"
-  message += "My/Player Health: " + myHealth + "/" + playerHealth + ".\n"
+  debugMessage += "Current stats (Encounter Level " + encounterLevel +"):\n"
+  debugMessage += "My/Player Level: " + myLevel + "/" + playerLevel + ".\n"
+  debugMessage += "My/Player Health: " + myHealth + "/" + playerHealth + ".\n"
   
-  message += "My/Player Damage Resist: " + myDamageResist + " | " + playerDamageResist + ".\n"
-  message += "My/Player Energy Resist: " + myEnergyResist + " | " + playerEnergyResist + ".\n"
-  message += "My/Player EM Resist: " + myEMDamageResist + " | " + playerEMDamageResist + ".\n"
+  debugMessage += "My/Player Damage Resist: " + myDamageResist + " | " + playerDamageResist + ".\n"
+  debugMessage += "My/Player Energy Resist: " + myEnergyResist + " | " + playerEnergyResist + ".\n"
+  debugMessage += "My/Player EM Resist: " + myEMDamageResist + " | " + playerEMDamageResist + ".\n"
 
-  message += "My/Player Radiation Resist: " + myRadiationResist + " | " + playerRadiationResist + ".\n"
-  message += "My/Player Corrosive Resist: " + myCorrosiveResist + " | " + playerCorrosiveResist + ".\n"
-  message += "My/Player Airborne Resist: " + myAirborneResist + " | " + playerAirborneResist + ".\n"
-  message += "My/Player Thermal Resist: " + myThermalResist + " | " + playerThermalResist + ".\n"
+  debugMessage += "My/Player Radiation Resist: " + myRadiationResist + " | " + playerRadiationResist + ".\n"
+  debugMessage += "My/Player Corrosive Resist: " + myCorrosiveResist + " | " + playerCorrosiveResist + ".\n"
+  debugMessage += "My/Player Airborne Resist: " + myAirborneResist + " | " + playerAirborneResist + ".\n"
+  debugMessage += "My/Player Thermal Resist: " + myThermalResist + " | " + playerThermalResist + ".\n"
 
-  message += "My/Player Reflect Damage: " + myReflectDamage + " | " + playerReflectDamage + ".\n"
-  message += "My/Player Critical Hit Chance: " + myCriticalHitChance + " | " + playerCriticalHitChance + ".\n"
-  message += "My/Player Critical Hit Damage Multiplier: " + myCriticalHitDamageMult + " | " + playerCriticalHitDamageMult + ".\n"
-  message += "My/Player Attack Damage Multiplier: " + myAttackDamageMult + " | " + playerAttackDamageMult + ".\n"
+  debugMessage += "My/Player Reflect Damage: " + myReflectDamage + " | " + playerReflectDamage + ".\n"
+  debugMessage += "My/Player Critical Hit Chance: " + myCriticalHitChance + " | " + playerCriticalHitChance + ".\n"
+  debugMessage += "My/Player Critical Hit Damage Multiplier: " + myCriticalHitDamageMult + " | " + playerCriticalHitDamageMult + ".\n"
+  debugMessage += "My/Player Attack Damage Multiplier: " + myAttackDamageMult + " | " + playerAttackDamageMult + ".\n"
 
-  message += "\n************************************************************\n\n"
-  Log(ModName, "Venworks:ScaleTheWorld:StatScalerScript", "DebugLevelScaling-" + scalingState, message, 0, DebugEnabled.GetValueInt())
+  debugMessage += "\n************************************************************\n\n"
+  Log(ModName, "Venworks:ScaleTheWorld:StatScalerScript", "DebugLevelScaling-" + scalingState, debugMessage, 0, DebugEnabled.GetValueInt())
 EndFunction
 
 String Function GetNPCType()

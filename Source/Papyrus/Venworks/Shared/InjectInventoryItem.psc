@@ -21,9 +21,9 @@ Form Property ItemToInject Auto Const Mandatory
 ;;; Events
 ;;;
 Event OnQuestInit()
-  VPI_Debug.DebugMessage(ModName, "Venworks:Shared:InjectInventoryItem", "OnQuestInit", "OnQuestInit triggered.", 0, DebugEnabled.GetValueInt())
+  Log(ModName, "Venworks:Shared:InjectInventoryItem", "OnQuestInit", "OnQuestInit triggered.", 0, DebugEnabled.GetValueInt())
   If PlayerRef.GetItemCount(ItemToInject) <= 0
     PlayerRef.AddItem(ItemToInject, 1, false)
-    VPI_Debug.DebugMessage(ModName, "Venworks:Shared:InjectInventoryItem", "OnQuestInit", "Item added to player inventory.", 0, DebugEnabled.GetValueInt())
+    Log(ModName, "Venworks:Shared:InjectInventoryItem", "OnQuestInit", "Item added to player inventory.", 0, DebugEnabled.GetValueInt())
   EndIf
 EndEvent
