@@ -18,12 +18,17 @@ GlobalVariable Property VWKS_STW_EasterEggMode_Critter Auto Const Mandatory
 ;;;
 ;;; Properties
 ;;;
-Actor Property PlayerRef Auto
-Form Property VWKS_STW_ConfigTerminal Auto
-Message Property VWKS_STW_ConfigTerminal_MainMenu Auto
-Message Property VWKS_STW_ConfigTerminal_ActivePreset Auto
-Message Property VWKS_STW_ConfigTerminal_ConfigureEasterEggs Auto
-DifficultyPresets Property EnumDifficultyPresets Auto
+Actor Property PlayerRef Auto Const Mandatory
+Form Property VWKS_STW_ConfigTerminal Auto Const Mandatory
+Message Property VWKS_STW_ConfigTerminal_MainMenu Auto Const Mandatory
+Message Property VWKS_STW_ConfigTerminal_ActivePreset Auto Const Mandatory
+Message Property VWKS_STW_ConfigTerminal_ConfigureEasterEggs Auto Const Mandatory
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Variables
+;;;
+DifficultyPresets EnumDifficultyPresets
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
