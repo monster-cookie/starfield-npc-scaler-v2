@@ -2,10 +2,10 @@ FormKey: 00080F:Venworks-ScaleTheWorld.esp
 EditorID: VWKS_STW_InteractionApplier_Effect
 VirtualMachineAdapter:
   Scripts:
-  - Name: VPI_ApplySpellToTarget
+  - Name: Venworks:Shared:ApplySpellToTarget
     Properties:
     - MutagenObjectType: ScriptObjectProperty
-      Name: Venpi_DebugEnabled
+      Name: VWKS_STW_DebugEnabled
       Object: 003001:Venworks-ScaleTheWorld.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: AbilityToApply

@@ -2,7 +2,7 @@ FormKey: 000807:Venworks-ScaleTheWorld.esp
 EditorID: VWKS_STW_ConfigTerminal
 VirtualMachineAdapter:
   Scripts:
-  - Name: VWKS_STW_ConfigTerminalScript
+  - Name: Venworks:ScaleTheWorld:ConfigTerminalScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: VWKS_STW_ConfigTerminal
@@ -23,7 +23,7 @@ VirtualMachineAdapter:
       Name: VWKS_STW_Enabled
       Object: 000806:Venworks-ScaleTheWorld.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: Venpi_DebugEnabled
+      Name: DebugEnabled
       Object: 003001:Venworks-ScaleTheWorld.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: VWKS_STW_ConfigTerminal_ActivePreset
@@ -32,8 +32,8 @@ VirtualMachineAdapter:
       Name: VWKS_STW_ConfigTerminal_ConfigureEasterEggs
       Object: 000863:Venworks-ScaleTheWorld.esp
     - MutagenObjectType: ScriptStringProperty
-      Name: Venpi_ModName
-      Data: ScaleTheWorldTheSequel
+      Name: ModName
+      Data: ScaleTheWorld
 Archetype:
   MutagenObjectType: MagicEffectArchetype
   Type: Script

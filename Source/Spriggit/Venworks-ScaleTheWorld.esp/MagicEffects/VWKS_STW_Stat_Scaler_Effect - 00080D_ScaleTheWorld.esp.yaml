@@ -2,7 +2,7 @@ FormKey: 00080D:Venworks-ScaleTheWorld.esp
 EditorID: VWKS_STW_Stat_Scaler_Effect
 VirtualMachineAdapter:
   Scripts:
-  - Name: VWKS_STW_StatScalerScript
+  - Name: Venworks:ScaleTheWorld:StatScalerScript
     Properties:
     - MutagenObjectType: ScriptObjectProperty
       Name: ActorTypeLegendary
@@ -53,7 +53,7 @@ VirtualMachineAdapter:
       Name: VWKS_STW_Scaled
       Object: 000810:Venworks-ScaleTheWorld.esp
     - MutagenObjectType: ScriptObjectProperty
-      Name: Venpi_DebugEnabled
+      Name: DebugEnabled
       Object: 003001:Venworks-ScaleTheWorld.esp
     - MutagenObjectType: ScriptObjectProperty
       Name: VWKS_STW_Enabled
@@ -131,8 +131,8 @@ VirtualMachineAdapter:
       Name: Chem_Aurora
       Object: 2C5884:Starfield.esm
     - MutagenObjectType: ScriptStringProperty
-      Name: Venpi_ModName
-      Data: ScaleTheWorldTheSequel
+      Name: ModName
+      Data: ScaleTheWorld
 Name:
   TargetLanguage: English
   Value: ActorStatScalingEffect
