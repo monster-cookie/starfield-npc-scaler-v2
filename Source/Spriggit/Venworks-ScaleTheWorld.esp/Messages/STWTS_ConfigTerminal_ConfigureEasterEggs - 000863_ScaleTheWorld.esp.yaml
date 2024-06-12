@@ -1,0 +1,34 @@
+FormKey: 000863:Venworks-ScaleTheWorld.esp
+EditorID: STWTS_ConfigTerminal_ConfigureEasterEggs
+Description:
+  TargetLanguage: English
+  Value: ''
+Name:
+  TargetLanguage: English
+  Value: Configure Enabled Easter Eggs
+Flags:
+- MessageBox
+BNAM: 4294967295
+MenuButtons:
+- Text:
+    TargetLanguage: English
+    Value: Return to previous menu
+- Text:
+    TargetLanguage: English
+    Value: Enable Critter Overlords
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      FirstParameter: 000844:Venworks-ScaleTheWorld.esp
+- Text:
+    TargetLanguage: English
+    Value: Disable Critter Overlords
+  Conditions:
+  - MutagenObjectType: ConditionFloat
+    Unknown1: 0x000000
+    Data:
+      MutagenObjectType: GetGlobalValueConditionData
+      FirstParameter: 000844:Venworks-ScaleTheWorld.esp
+    ComparisonValue: 1

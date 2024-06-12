@@ -4,14 +4,9 @@ SpriggitSource:
 ModKey: Venworks-ScaleTheWorld.esp
 GameRelease: Starfield
 ModHeader:
-  Flags:
-  - Master
   Stats:
     NumRecords: 315
-    NextFormID: 2160
-  Author: ''
+    NextFormID: 3002
+  Author: 'Venworks'
   MasterReferences:
   - Master: Starfield.esm
-  - Master: BlueprintShips-Starfield.esm
-  - Master: VenpiCore.esm
-  - Master: VenworksFactionOverhaul.esm
