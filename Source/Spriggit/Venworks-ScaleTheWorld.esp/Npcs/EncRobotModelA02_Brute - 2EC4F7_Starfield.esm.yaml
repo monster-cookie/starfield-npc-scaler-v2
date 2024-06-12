@@ -1,5 +1,6 @@
 FormKey: 2EC4F7:Starfield.esm
 EditorID: EncRobotModelA02_Brute
+FormVersion: 559
 ODTY: 0
 Flags:
 - Respawn
@@ -97,6 +98,7 @@ RDSAs:
   UnknownFloat5: 2
   UnknownFloat6: 1
 Class: 010B2F:Starfield.esm
+CalculatedHealth: 560
 GearedUpWeapons: 1
 Unused: 186
 CombatStyle: 34CC6F:Starfield.esm

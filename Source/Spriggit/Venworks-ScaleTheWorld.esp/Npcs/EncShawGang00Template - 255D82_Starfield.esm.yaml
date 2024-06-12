@@ -1,5 +1,6 @@
 FormKey: 255D82:Starfield.esm
 EditorID: EncShawGang00Template
+FormVersion: 559
 ObjectBounds:
   First: -0.31000048, -0.31000048, -4.7683716E-07
   Second: 0.31000048, 0.31000048, 1.8000004
@@ -74,8 +75,8 @@ Class: 1CD0A9:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Shaw Gang
-CalculatedHealth: 120
-CalculatedActionPoints: 100
+CalculatedHealth: 70
+CalculatedActionPoints: 50
 GearedUpWeapons: 1
 Unused: 43
 HeadParts:
@@ -156,123 +157,123 @@ Tints:
   TintColor: '#1AC81F18'
   TintIntensity: 64
 FaceDialPositions:
-- Index: 24
-  Position: 0.26
-- Index: 25
-  Position: -0.42
-- Index: 27
-  Position: -0.03
-- Index: 28
-  Position: -0.16938688
 - Index: 29
   Position: -0.38
-- Index: 31
-  Position: -0.81
-- Index: 32
-  Position: -0.69
-- Index: 35
-  Position: 0.7
-- Index: 36
-  Position: 0.11026935
-- Index: 37
-  Position: 0.33
-- Index: 39
-  Position: -0.19443835
-- Index: 51
-  Position: 0.74
-- Index: 58
-  Position: -0.326601
-- Index: 60
-  Position: -0.72
-- Index: 63
-  Position: -0.51
-- Index: 64
-  Position: -0.18077843
-- Index: 65
-  Position: 0.66
-- Index: 67
-  Position: -0.06246451
-- Index: 68
-  Position: -0.49539328
-- Index: 69
-  Position: 0.009865159
-- Index: 70
-  Position: -0.41090715
 - Index: 71
   Position: -0.2307155
-- Index: 73
-  Position: 0.12
-- Index: 74
-  Position: 0.61
-- Index: 75
-  Position: -0.46
-- Index: 76
-  Position: -0.040746104
-- Index: 77
-  Position: -0.42406034
-- Index: 78
-  Position: -0.27095792
-- Index: 79
-  Position: -0.105985515
-- Index: 80
-  Position: -0.05409857
-- Index: 83
-  Position: 0.19397862
-- Index: 84
-  Position: -0.101886265
-- Index: 85
-  Position: -0.107039966
-- Index: 86
-  Position: 0.3217956
-- Index: 87
-  Position: -0.020208854
+- Index: 58
+  Position: -0.326601
+- Index: 39
+  Position: -0.19443835
+- Index: 31
+  Position: -0.81
+- Index: 37
+  Position: 0.33
 - Index: 88
   Position: 0.74
+- Index: 78
+  Position: -0.27095792
+- Index: 51
+  Position: 0.74
+- Index: 35
+  Position: 0.7
+- Index: 67
+  Position: -0.06246451
+- Index: 25
+  Position: -0.42
+- Index: 65
+  Position: 0.66
+- Index: 60
+  Position: -0.72
+- Index: 87
+  Position: -0.020208854
+- Index: 27
+  Position: -0.03
+- Index: 77
+  Position: -0.42406034
+- Index: 70
+  Position: -0.41090715
+- Index: 80
+  Position: -0.05409857
+- Index: 28
+  Position: -0.16938688
 - Index: 89
   Position: 0.35
+- Index: 36
+  Position: 0.11026935
+- Index: 68
+  Position: -0.49539328
+- Index: 79
+  Position: -0.105985515
+- Index: 24
+  Position: 0.26
+- Index: 69
+  Position: 0.009865159
+- Index: 84
+  Position: -0.101886265
+- Index: 32
+  Position: -0.69
+- Index: 63
+  Position: -0.51
+- Index: 83
+  Position: 0.19397862
+- Index: 76
+  Position: -0.040746104
+- Index: 74
+  Position: 0.61
+- Index: 73
+  Position: 0.12
+- Index: 75
+  Position: -0.46
+- Index: 64
+  Position: -0.18077843
+- Index: 86
+  Position: 0.3217956
+- Index: 85
+  Position: -0.107039966
 MorphBlends:
-- BlendName: male_af_md1_Mouth
-  Intensity: 0.37
-- BlendName: male_af_ol1_Eyes
-  Intensity: 0.55
-- BlendName: male_af_ol1_Nose
-  Intensity: 0.48
-- BlendName: male_as_md1_Cheeks
-  Intensity: 0.11981049
-- BlendName: male_as_md1_Chin
-  Intensity: 0.05620454
-- BlendName: male_as_md1_Ears
-  Intensity: 0.19032937
+- BlendName: male_as_yo1_Neck
+  Intensity: 0.16751401
+- BlendName: male_as_yo1_Nose
+  Intensity: 0.036179055
 - BlendName: male_as_md1_Forehead
   Intensity: 0.26121908
-- BlendName: male_as_md1_Jaw
-  Intensity: 0.17823173
+- BlendName: male_as_md1_Ears
+  Intensity: 0.19032937
+- BlendName: male_as_md1_Chin
+  Intensity: 0.05620454
+- BlendName: male_af_ol1_Nose
+  Intensity: 0.48
+- BlendName: male_af_ol1_Eyes
+  Intensity: 0.55
+- BlendName: male_af_md1_Mouth
+  Intensity: 0.37
 - BlendName: male_as_md1_Mouth
   Intensity: 0.325179
 - BlendName: male_as_md1_Neck
   Intensity: 0.22248599
 - BlendName: male_as_md1_Nose
   Intensity: 0.06382094
-- BlendName: male_as_yo1_Cheeks
-  Intensity: 0.17847452
+- BlendName: male_as_yo1_Jaw
+  Intensity: 0.1559854
+- BlendName: male_as_md1_Jaw
+  Intensity: 0.17823173
 - BlendName: male_as_yo1_Chin
   Intensity: 0.15012614
 - BlendName: male_as_yo1_Ears
   Intensity: 0.14967063
 - BlendName: male_as_yo1_Forehead
   Intensity: 0.24123694
-- BlendName: male_as_yo1_Jaw
-  Intensity: 0.1559854
-- BlendName: male_as_yo1_Mouth
-  Intensity: 0.2609543
-- BlendName: male_as_yo1_Neck
-  Intensity: 0.16751401
-- BlendName: male_as_yo1_Nose
-  Intensity: 0.036179055
-- BlendName: male_eu_ol1_Ears
-  Intensity: 0.66
+- BlendName: male_as_yo1_Cheeks
+  Intensity: 0.17847452
+- BlendName: male_as_md1_Cheeks
+  Intensity: 0.11981049
 - BlendName: male_eu_ol1_Neck
   Intensity: 0.61
+- BlendName: male_eu_ol1_Ears
+  Intensity: 0.66
+- BlendName: male_as_yo1_Mouth
+  Intensity: 0.2609543
 SkinToneIndex: 0
 HairColor: DirtyBlonde
 FacialHairColor: DirtyBlonde

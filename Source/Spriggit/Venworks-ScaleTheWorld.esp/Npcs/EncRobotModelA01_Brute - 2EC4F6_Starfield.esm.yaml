@@ -1,5 +1,6 @@
 FormKey: 2EC4F6:Starfield.esm
 EditorID: EncRobotModelA01_Brute
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: SoundTagComponent
@@ -111,6 +112,7 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Robot Model A Brute
+CalculatedHealth: 270
 GearedUpWeapons: 1
 Unused: 63
 CombatStyle: 34CC6F:Starfield.esm

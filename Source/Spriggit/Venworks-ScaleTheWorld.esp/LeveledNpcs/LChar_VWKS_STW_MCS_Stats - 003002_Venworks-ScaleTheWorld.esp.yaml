@@ -1,129 +1,170 @@
 FormKey: 003002:Venworks-ScaleTheWorld.esp
 EditorID: LChar_VWKS_STW_MCS_Stats
-FormVersion: 557
+FormVersion: 559
 ODTY: 0
 Entries:
 - Level: 1
+  Unused: 19903
   Reference: 004000:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 5
+  Unused: 19903
   Reference: 004001:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 10
+  Unused: 19903
   Reference: 004002:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 15
+  Unused: 19903
   Reference: 004003:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 20
+  Unused: 19903
   Reference: 004004:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 25
+  Unused: 19903
   Reference: 004005:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 30
+  Unused: 19903
   Reference: 004006:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 35
+  Unused: 19903
   Reference: 004007:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 40
+  Unused: 19903
   Reference: 004008:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 45
+  Unused: 19903
   Reference: 004009:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 50
+  Unused: 19903
   Reference: 004010:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 55
+  Unused: 19903
   Reference: 004011:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 60
+  Unused: 19903
   Reference: 004012:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 65
+  Unused: 19903
   Reference: 004013:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 70
+  Unused: 19903
   Reference: 004014:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 75
+  Unused: 19903
   Reference: 004015:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 80
+  Unused: 19903
   Reference: 004016:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 85
+  Unused: 19903
   Reference: 004017:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 90
+  Unused: 19903
   Reference: 004018:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 95
+  Unused: 19903
   Reference: 004019:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 100
+  Unused: 19903
   Reference: 004020:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 105
+  Unused: 19903
   Reference: 004021:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 110
+  Unused: 19903
   Reference: 004022:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 115
+  Unused: 19903
   Reference: 004023:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 120
+  Unused: 19903
   Reference: 004024:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 125
+  Unused: 19903
   Reference: 004025:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 130
+  Unused: 19903
   Reference: 004026:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 135
+  Unused: 19903
   Reference: 004027:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 140
+  Unused: 19903
   Reference: 004028:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 145
+  Unused: 19903
   Reference: 004029:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 150
+  Unused: 19903
   Reference: 004030:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 155
+  Unused: 19903
   Reference: 004031:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 160
+  Unused: 19903
   Reference: 004032:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 165
+  Unused: 19903
   Reference: 004033:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 170
+  Unused: 19903
   Reference: 004034:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 175
+  Unused: 19903
   Reference: 004035:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 180
+  Unused: 19903
   Reference: 004036:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 185
+  Unused: 19903
   Reference: 004037:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 190
+  Unused: 19903
   Reference: 004038:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 195
+  Unused: 19903
   Reference: 004039:Venworks-ScaleTheWorld.esp
   Count: 1
 - Level: 200
+  Unused: 19903
   Reference: 004040:Venworks-ScaleTheWorld.esp
   Count: 1
 Model:

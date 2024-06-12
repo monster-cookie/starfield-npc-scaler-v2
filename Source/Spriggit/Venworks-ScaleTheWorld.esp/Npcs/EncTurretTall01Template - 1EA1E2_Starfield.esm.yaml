@@ -1,5 +1,6 @@
 FormKey: 1EA1E2:Starfield.esm
 EditorID: EncTurretTall01Template
+FormVersion: 559
 ObjectBounds:
   First: -0.4978376, -0.4065881, -4.7683716E-07
   Second: 0.4978376, 0.46624044, 1.4222577
@@ -73,7 +74,7 @@ RDSAs:
   UnknownFloat5: 2
   UnknownFloat6: 1
 Class: 123E22:Starfield.esm
-CalculatedHealth: 60
+CalculatedHealth: 90
 CalculatedActionPoints: 100
 FarAwayModelDistance: 200
 GearedUpWeapons: 1

@@ -1,5 +1,6 @@
 FormKey: 324D08:Starfield.esm
 EditorID: EncTerrormorphElder11
+FormVersion: 559
 ObjectBounds:
   First: -1.0963905, -1.8038719, -4.7211023E-07
   Second: 1.0963905, 1.2088753, 2.195177
@@ -53,7 +54,7 @@ Properties:
 - ActorValue: 2102C3:Starfield.esm
   Value: 6.16
 Confidence: Foolhardy
-EnergyLevel: 100
+EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsFriendsAndAllies
 UnknownAIDT: 1
@@ -78,12 +79,12 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Terrormorph Anomaly
-CalculatedHealth: 2145
+CalculatedHealth: 20520
 GearedUpWeapons: 1
 CombatStyle: 2B2292:Starfield.esm
 NAM5: 0xFF00
-HeightMin: 0.9
-HeightMax: 1.4
+HeightMin: 1.1
+HeightMax: 1.7
 Weight:
   Thin: 0.3333
   Muscular: 0.3333

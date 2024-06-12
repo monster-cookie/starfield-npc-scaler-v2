@@ -1,5 +1,6 @@
 FormKey: 1EA1E3:Starfield.esm
 EditorID: EncTurretQuad01Template
+FormVersion: 559
 ObjectBounds:
   First: -0.4978376, -0.4065881, -4.7683716E-07
   Second: 0.4978376, 0.46624044, 1.4222577
@@ -44,18 +45,18 @@ Perks:
 - Perk: 1504FC:Starfield.esm
   Rank: 1
 Properties:
-- ActorValue: 0002C2:Starfield.esm
-  Value: 4
-- ActorValue: 0002C3:Starfield.esm
-- ActorValue: 0002D4:Starfield.esm
-  Value: 70
-- ActorValue: 0002D5:Starfield.esm
-  Value: 50
 - ActorValue: 0002DA:Starfield.esm
   Value: 100
-- ActorValue: 0002E3:Starfield.esm
-  Value: 130
+- ActorValue: 0002D5:Starfield.esm
+  Value: 50
+- ActorValue: 0002C3:Starfield.esm
+- ActorValue: 0002C2:Starfield.esm
+  Value: 4
+- ActorValue: 0002D4:Starfield.esm
+  Value: 70
 - ActorValue: 0002EB:Starfield.esm
+  Value: 130
+- ActorValue: 0002E3:Starfield.esm
   Value: 130
 - ActorValue: 2102C3:Starfield.esm
   Value: 0.55
@@ -73,7 +74,7 @@ RDSAs:
   UnknownFloat5: 2
   UnknownFloat6: 1
 Class: 123E22:Starfield.esm
-CalculatedHealth: 60
+CalculatedHealth: 90
 CalculatedActionPoints: 100
 FarAwayModelDistance: 200
 GearedUpWeapons: 1

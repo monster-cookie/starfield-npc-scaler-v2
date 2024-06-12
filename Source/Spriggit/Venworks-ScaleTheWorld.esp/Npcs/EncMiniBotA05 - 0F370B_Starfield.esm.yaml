@@ -1,5 +1,6 @@
 FormKey: 0F370B:Starfield.esm
 EditorID: EncMiniBotA05
+FormVersion: 559
 ObjectBounds:
   First: -0.591797, -0.3623047, 0
   Second: 0.59179676, 1.0341797, 1.2373047
@@ -43,6 +44,7 @@ EnergyLevel: 50
 Responsibility: NoCrime
 Assistance: HelpsAllies
 Class: 002F64:Starfield.esm
+CalculatedHealth: 1570
 GearedUpWeapons: 1
 CombatStyle: 343C02:Starfield.esm
 NAM5: 0xFF00

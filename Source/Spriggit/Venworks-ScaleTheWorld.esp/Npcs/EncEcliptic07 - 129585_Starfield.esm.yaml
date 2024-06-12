@@ -1,5 +1,6 @@
 FormKey: 129585:Starfield.esm
 EditorID: EncEcliptic07
+FormVersion: 559
 ObjectBounds:
   First: -0.31000048, -0.31000048, -4.7683716E-07
   Second: 0.31000048, 0.31000048, 1.8000004
@@ -116,8 +117,8 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Ecliptic Warmonger
-CalculatedHealth: 565
-CalculatedActionPoints: 100
+CalculatedHealth: 2065
+CalculatedActionPoints: 50
 GearedUpWeapons: 1
 Unused: 43
 HeadParts:
@@ -196,94 +197,94 @@ Tints:
   TintColor: '#00000000'
   TintIntensity: 50
 FaceDialPositions:
-- Index: 24
-  Position: 0.83
-- Index: 27
-  Position: 0.91
-- Index: 31
-  Position: -0.7
-- Index: 32
-  Position: -0.72
-- Index: 35
-  Position: -0.98
-- Index: 37
-  Position: 0.59
-- Index: 39
-  Position: 0.04
-- Index: 53
-  Position: 0.41
 - Index: 58
   Position: 0.61
-- Index: 60
-  Position: -0.75
-- Index: 63
-  Position: 0.05
-- Index: 67
-  Position: -1
-- Index: 68
-  Position: -0.13
-- Index: 73
-  Position: -0.5
-- Index: 74
-  Position: 0.38
-- Index: 75
-  Position: -0.3
-- Index: 76
-  Position: 0.33
+- Index: 39
+  Position: 0.04
+- Index: 31
+  Position: -0.7
+- Index: 37
+  Position: 0.59
 - Index: 78
   Position: -0.42
+- Index: 35
+  Position: -0.98
+- Index: 53
+  Position: 0.41
+- Index: 60
+  Position: -0.75
+- Index: 87
+  Position: -0.03
+- Index: 27
+  Position: 0.91
+- Index: 68
+  Position: -0.13
 - Index: 79
   Position: 0.38
-- Index: 83
-  Position: 0.77
+- Index: 24
+  Position: 0.83
 - Index: 84
   Position: 0.28
 - Index: 85
   Position: -0.43
+- Index: 63
+  Position: 0.05
 - Index: 86
   Position: 0.56
-- Index: 87
-  Position: -0.03
+- Index: 83
+  Position: 0.77
+- Index: 76
+  Position: 0.33
+- Index: 74
+  Position: 0.38
+- Index: 75
+  Position: -0.3
+- Index: 73
+  Position: -0.5
+- Index: 32
+  Position: -0.72
+- Index: 67
+  Position: -1
 FaceMorphs:
 - Index: 14
   MorphGroups:
-  - MorphGroup: Cheeks
-    BlendIntensity: 0.40400183
-  - MorphGroup: Chin
-    BlendIntensity: 0.055075947
-  - MorphGroup: Ears
-    BlendIntensity: 0.35273004
-  - MorphGroup: Eyes
-    BlendIntensity: 0.86706847
   - MorphGroup: Forehead
     BlendIntensity: 0.863615
-  - MorphGroup: Jaw
-    BlendIntensity: 0.9839529
-  - MorphGroup: Mouth
-    BlendIntensity: 0.8620115
   - MorphGroup: Neck
     BlendIntensity: 0.9693899
   - MorphGroup: Nose
     BlendIntensity: 0.8449312
+  - MorphGroup: Ears
+    BlendIntensity: 0.35273004
+  - MorphGroup: Jaw
+    BlendIntensity: 0.9839529
+  - MorphGroup: Eyes
+    BlendIntensity: 0.86706847
+  - MorphGroup: Mouth
+    BlendIntensity: 0.8620115
+  - MorphGroup: Cheeks
+    BlendIntensity: 0.40400183
+  - MorphGroup: Chin
+    BlendIntensity: 0.055075947
 MorphBlends:
-- BlendName: male_eu_ol1_Cheeks
-  Intensity: 0.40400183
 - BlendName: male_eu_ol1_Chin
   Intensity: 0.055075947
 - BlendName: male_eu_ol1_Ears
   Intensity: 0.35273004
-- BlendName: male_eu_ol1_Eyes
-  Intensity: 0.86706847
-- BlendName: male_eu_ol1_Forehead
-  Intensity: 0.863615
 - BlendName: male_eu_ol1_Jaw
   Intensity: 0.9839529
 - BlendName: male_eu_ol1_Mouth
   Intensity: 0.8620115
-- BlendName: male_eu_ol1_Neck
-  Intensity: 0.9693899
+- BlendName: male_eu_ol1_Cheeks
+  Intensity: 0.40400183
 - BlendName: male_eu_ol1_Nose
   Intensity: 0.8449312
+- BlendName: male_eu_ol1_Forehead
+  Intensity: 0.863615
+- BlendName: male_eu_ol1_Eyes
+  Intensity: 0.86706847
+- BlendName: male_eu_ol1_Neck
+  Intensity: 0.9693899
 SkinToneIndex: 0
 HairColor: Brown
 EyebrowColor: Brown

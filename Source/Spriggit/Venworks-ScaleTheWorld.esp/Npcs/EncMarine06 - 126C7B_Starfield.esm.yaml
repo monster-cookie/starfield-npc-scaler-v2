@@ -1,5 +1,6 @@
 FormKey: 126C7B:Starfield.esm
 EditorID: EncMarine06
+FormVersion: 559
 ObjectBounds:
   First: -0.31000048, -0.31000048, -4.7683716E-07
   Second: 0.31000048, 0.31000048, 1.8000004
@@ -72,8 +73,8 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: UC Marine Major
-CalculatedHealth: 270
-CalculatedActionPoints: 100
+CalculatedHealth: 1370
+CalculatedActionPoints: 50
 GearedUpWeapons: 1
 Unused: 43
 HeadParts:
@@ -139,148 +140,148 @@ Tints:
   TintColor: '#00000000'
   TintIntensity: 4
 FaceDialPositions:
-- Index: 24
-  Position: -0.13
-- Index: 25
-  Position: -0.01
-- Index: 27
-  Position: 0.17
-- Index: 31
-  Position: -0.4
-- Index: 35
-  Position: -0.47
-- Index: 36
-  Position: -0.66
-- Index: 37
-  Position: -0.37
-- Index: 51
-  Position: 0.23
-- Index: 60
-  Position: -0.67
-- Index: 63
-  Position: -0.36
-- Index: 64
-  Position: -0.28
-- Index: 67
-  Position: -0.62
-- Index: 68
-  Position: -0.26
-- Index: 69
-  Position: 0.28
-- Index: 70
-  Position: 0.75
 - Index: 71
   Position: 0.82
-- Index: 74
-  Position: -0.24
-- Index: 75
-  Position: 0.44
 - Index: 76
   Position: -0.51
-- Index: 79
-  Position: 0.29
-- Index: 83
-  Position: 1
-- Index: 84
-  Position: 0.5
-- Index: 85
-  Position: 0.78
-- Index: 86
-  Position: 0.4
-- Index: 87
-  Position: -0.48
+- Index: 31
+  Position: -0.4
+- Index: 37
+  Position: -0.37
 - Index: 88
   Position: -0.36
+- Index: 51
+  Position: 0.23
+- Index: 35
+  Position: -0.47
+- Index: 67
+  Position: -0.62
+- Index: 25
+  Position: -0.01
+- Index: 60
+  Position: -0.67
+- Index: 87
+  Position: -0.48
+- Index: 27
+  Position: 0.17
+- Index: 70
+  Position: 0.75
 - Index: 89
   Position: -0.42
+- Index: 36
+  Position: -0.66
+- Index: 68
+  Position: -0.26
+- Index: 79
+  Position: 0.29
+- Index: 24
+  Position: -0.13
+- Index: 84
+  Position: 0.5
+- Index: 63
+  Position: -0.36
+- Index: 74
+  Position: -0.24
+- Index: 85
+  Position: 0.78
+- Index: 83
+  Position: 1
+- Index: 75
+  Position: 0.44
+- Index: 64
+  Position: -0.28
+- Index: 86
+  Position: 0.4
+- Index: 69
+  Position: 0.28
 FaceMorphs:
-- Index: 9
-  MorphGroups:
-  - MorphGroup: Jaw
-    BlendIntensity: 0.24949495
 - Index: 12
   MorphGroups:
-  - MorphGroup: Cheeks
-    BlendIntensity: 0.81
-  - MorphGroup: Chin
-    BlendIntensity: 1
-  - MorphGroup: Ears
-    BlendIntensity: 1
-  - MorphGroup: Eyes
-    BlendIntensity: 0.18
   - MorphGroup: Forehead
     BlendIntensity: 0.151008
-  - MorphGroup: Jaw
-    BlendIntensity: 0.35
-  - MorphGroup: Mouth
-    BlendIntensity: 0.49
   - MorphGroup: Neck
     BlendIntensity: 1
   - MorphGroup: Nose
     BlendIntensity: 0.65
+  - MorphGroup: Ears
+    BlendIntensity: 1
+  - MorphGroup: Jaw
+    BlendIntensity: 0.35
+  - MorphGroup: Eyes
+    BlendIntensity: 0.18
+  - MorphGroup: Mouth
+    BlendIntensity: 0.49
+  - MorphGroup: Cheeks
+    BlendIntensity: 0.81
+  - MorphGroup: Chin
+    BlendIntensity: 1
+- Index: 9
+  MorphGroups:
+  - MorphGroup: Jaw
+    BlendIntensity: 0.24949495
 - Index: 14
   MorphGroups:
-  - MorphGroup: Eyes
-    BlendIntensity: 0.2
-  - MorphGroup: Forehead
-    BlendIntensity: 0.1768
   - MorphGroup: Nose
     BlendIntensity: 0.35
-- Index: 42
-  MorphGroups:
   - MorphGroup: Forehead
-    BlendIntensity: 0.192192
-  - MorphGroup: Jaw
-    BlendIntensity: 0.40050504
+    BlendIntensity: 0.1768
+  - MorphGroup: Eyes
+    BlendIntensity: 0.2
 - Index: 44
   MorphGroups:
-  - MorphGroup: Cheeks
-    BlendIntensity: 0.19
   - MorphGroup: Forehead
     BlendIntensity: 0.48
+  - MorphGroup: Cheeks
+    BlendIntensity: 0.19
+- Index: 42
+  MorphGroups:
+  - MorphGroup: Jaw
+    BlendIntensity: 0.40050504
+  - MorphGroup: Forehead
+    BlendIntensity: 0.192192
 MorphBlends:
-- BlendName: male_af_md1_Jaw
-  Intensity: 0.24949495
-- BlendName: male_af_yo1_Forehead
-  Intensity: 0.192192
-- BlendName: male_af_yo1_Jaw
-  Intensity: 0.40050504
-- BlendName: male_as_ol1_Cheeks
-  Intensity: 0.33
-- BlendName: male_as_ol1_Forehead
-  Intensity: 0.48
-- BlendName: male_as_ol1_Mouth
-  Intensity: 0.21
-- BlendName: male_as_ol1_Nose
-  Intensity: 0.36
-- BlendName: male_as_yo1_Eyes
-  Intensity: 0.37767586
-- BlendName: male_eu_md2_Cheeks
-  Intensity: 0.65
-- BlendName: male_eu_md2_Chin
-  Intensity: 1
-- BlendName: male_eu_md2_Ears
-  Intensity: 1
-- BlendName: male_eu_md2_Eyes
-  Intensity: 0.06962913
-- BlendName: male_eu_md2_Forehead
-  Intensity: 0.151008
-- BlendName: male_eu_md2_Jaw
-  Intensity: 0.35
-- BlendName: male_eu_md2_Mouth
-  Intensity: 0.16
-- BlendName: male_eu_md2_Neck
-  Intensity: 1
-- BlendName: male_eu_ol1_Eyes
-  Intensity: 0.32
-- BlendName: male_eu_ol1_Forehead
-  Intensity: 0.1768
 - BlendName: male_eu_ol1_Nose
   Intensity: 0.43
 - BlendName: male_eu_yo1_Eyes
   Intensity: 0.23269501
 - BlendName: male_eu_yo1_Mouth
   Intensity: 0.306125
+- BlendName: male_eu_md2_Jaw
+  Intensity: 0.35
+- BlendName: male_as_ol1_Mouth
+  Intensity: 0.21
+- BlendName: male_as_yo1_Eyes
+  Intensity: 0.37767586
+- BlendName: male_as_ol1_Nose
+  Intensity: 0.36
+- BlendName: male_af_yo1_Jaw
+  Intensity: 0.40050504
+- BlendName: male_eu_ol1_Forehead
+  Intensity: 0.1768
+- BlendName: male_eu_ol1_Eyes
+  Intensity: 0.32
+- BlendName: male_eu_md2_Neck
+  Intensity: 1
+- BlendName: male_eu_md2_Mouth
+  Intensity: 0.16
+- BlendName: male_af_md1_Jaw
+  Intensity: 0.24949495
+- BlendName: male_eu_md2_Forehead
+  Intensity: 0.151008
+- BlendName: male_eu_md2_Eyes
+  Intensity: 0.06962913
+- BlendName: male_eu_md2_Ears
+  Intensity: 1
+- BlendName: male_eu_md2_Chin
+  Intensity: 1
+- BlendName: male_eu_md2_Cheeks
+  Intensity: 0.65
+- BlendName: male_af_yo1_Forehead
+  Intensity: 0.192192
+- BlendName: male_as_ol1_Forehead
+  Intensity: 0.48
+- BlendName: male_as_ol1_Cheeks
+  Intensity: 0.33
 SkinToneIndex: 1
 HairColor: Brown
 FacialHairColor: Brown

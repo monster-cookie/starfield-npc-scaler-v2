@@ -1,5 +1,6 @@
 FormKey: 10478B:Starfield.esm
 EditorID: EncAceles08
+FormVersion: 559
 ODTY: 0
 Flags:
 - AutoCalcStats
@@ -74,12 +75,12 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Aceles
-CalculatedHealth: 2145
+CalculatedHealth: 7870
 GearedUpWeapons: 1
 CombatStyle: 2B2292:Starfield.esm
 NAM5: 0xFF00
-HeightMin: 0.9
-HeightMax: 0.9
+HeightMin: 0.8
+HeightMax: 1.1
 Weight:
   Thin: 0.3333
   Muscular: 0.3333

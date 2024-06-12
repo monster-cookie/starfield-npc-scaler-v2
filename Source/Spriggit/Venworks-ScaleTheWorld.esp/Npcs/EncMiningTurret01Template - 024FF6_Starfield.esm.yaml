@@ -1,5 +1,6 @@
 FormKey: 024FF6:Starfield.esm
 EditorID: EncMiningTurret01Template
+FormVersion: 559
 ObjectBounds:
   First: -0.78350717, -1.0742266, -4.7683716E-07
   Second: 0.78350717, 1.0742266, 1.5113677
@@ -68,7 +69,7 @@ Name:
 ShortName:
   TargetLanguage: English
   Value: Turret
-CalculatedHealth: 60
+CalculatedHealth: 720
 CalculatedActionPoints: 100
 FarAwayModelDistance: 200
 GearedUpWeapons: 1

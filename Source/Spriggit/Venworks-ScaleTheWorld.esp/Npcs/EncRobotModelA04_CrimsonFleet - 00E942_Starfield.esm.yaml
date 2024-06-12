@@ -1,5 +1,6 @@
 FormKey: 00E942:Starfield.esm
 EditorID: EncRobotModelA04_CrimsonFleet
+FormVersion: 559
 ObjectBounds:
   First: -0.45000046, -0.47801596, -4.7683716E-07
   Second: 0.45000046, 0.42198497, 1.738061
@@ -104,6 +105,7 @@ ObjectTemplates:
 - IsEditorOnly: True
   Default: True
 Class: 010B2F:Starfield.esm
+CalculatedHealth: 1145
 GearedUpWeapons: 1
 CombatStyle: 34CC6F:Starfield.esm
 NAM5: 0xFF00

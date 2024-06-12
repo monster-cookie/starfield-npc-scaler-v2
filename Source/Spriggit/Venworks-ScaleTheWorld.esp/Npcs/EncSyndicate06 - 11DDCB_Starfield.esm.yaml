@@ -1,5 +1,6 @@
 FormKey: 11DDCB:Starfield.esm
 EditorID: EncSyndicate06
+FormVersion: 559
 ObjectBounds:
   First: -0.31000048, -0.31000048, -4.7683716E-07
   Second: 0.31000048, 0.31000048, 1.8000004
@@ -114,8 +115,8 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Syndicate Kingpin
-CalculatedHealth: 270
-CalculatedActionPoints: 100
+CalculatedHealth: 1835
+CalculatedActionPoints: 50
 GearedUpWeapons: 1
 Unused: 43
 HeadParts:
@@ -152,56 +153,56 @@ Tints:
 FaceDialPositions:
 - Index: 24
   Position: 1
-- Index: 35
-  Position: -1
-- Index: 54
-  Position: 1
-- Index: 69
-  Position: 0.74
 - Index: 70
   Position: 0.59
-- Index: 71
-  Position: 1
 - Index: 76
   Position: 0.53
+- Index: 71
+  Position: 1
+- Index: 54
+  Position: 1
+- Index: 35
+  Position: -1
+- Index: 69
+  Position: 0.74
 FaceMorphs:
 - Index: 40
   MorphGroups:
-  - MorphGroup: Cheeks
-    BlendIntensity: 0.3531152
-  - MorphGroup: Chin
-    BlendIntensity: 0.47810486
-  - MorphGroup: Ears
-    BlendIntensity: 0.46465507
-  - MorphGroup: Eyes
-    BlendIntensity: 0.3718863
   - MorphGroup: Forehead
     BlendIntensity: 0.09201352
-  - MorphGroup: Jaw
-    BlendIntensity: 0.7843538
-  - MorphGroup: Mouth
-    BlendIntensity: 0.7129874
   - MorphGroup: Neck
     BlendIntensity: 0.590773
   - MorphGroup: Nose
     BlendIntensity: 0.32377592
+  - MorphGroup: Ears
+    BlendIntensity: 0.46465507
+  - MorphGroup: Jaw
+    BlendIntensity: 0.7843538
+  - MorphGroup: Eyes
+    BlendIntensity: 0.3718863
+  - MorphGroup: Mouth
+    BlendIntensity: 0.7129874
+  - MorphGroup: Cheeks
+    BlendIntensity: 0.3531152
+  - MorphGroup: Chin
+    BlendIntensity: 0.47810486
 MorphBlends:
-- BlendName: male_af_ol1_Chin
-  Intensity: 0.47810486
-- BlendName: male_af_ol1_Ears
-  Intensity: 0.46465507
-- BlendName: male_af_ol1_Forehead
-  Intensity: 0.09201352
-- BlendName: male_af_ol1_Jaw
-  Intensity: 0.7843538
-- BlendName: male_af_ol1_Neck
-  Intensity: 0.590773
-- BlendName: male_as_md1_Eyes
-  Intensity: 1
-- BlendName: male_eu_md2_Cheeks
-  Intensity: 1
 - BlendName: male_eu_md2_Nose
   Intensity: 0.17
+- BlendName: male_eu_md2_Cheeks
+  Intensity: 1
+- BlendName: male_as_md1_Eyes
+  Intensity: 1
+- BlendName: male_af_ol1_Neck
+  Intensity: 0.590773
+- BlendName: male_af_ol1_Jaw
+  Intensity: 0.7843538
+- BlendName: male_af_ol1_Forehead
+  Intensity: 0.09201352
+- BlendName: male_af_ol1_Ears
+  Intensity: 0.46465507
+- BlendName: male_af_ol1_Chin
+  Intensity: 0.47810486
 SkinToneIndex: 0
 EyeColor: Green
 Pronoun: Unspecified
