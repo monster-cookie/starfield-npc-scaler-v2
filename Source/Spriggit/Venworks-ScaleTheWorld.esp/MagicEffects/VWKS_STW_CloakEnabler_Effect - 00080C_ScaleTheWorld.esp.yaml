@@ -1,0 +1,12 @@
+FormKey: 00080C:Venworks-ScaleTheWorld.esp
+EditorID: VWKS_STW_CloakEnabler_Effect
+Name:
+  TargetLanguage: English
+  Value: CloakEffect
+Archetype:
+  MutagenObjectType: MagicEffectCloakArchetype
+  Association: 00080E:Venworks-ScaleTheWorld.esp
+Flags:
+- NoHitEvent
+- HideInUI
+Unknown: 0x00000000000000000000000000000000000000000000

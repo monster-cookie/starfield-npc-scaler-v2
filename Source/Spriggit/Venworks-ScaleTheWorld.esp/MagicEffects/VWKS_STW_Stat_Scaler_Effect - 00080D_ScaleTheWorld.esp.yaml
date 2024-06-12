@@ -1,0 +1,147 @@
+FormKey: 00080D:Venworks-ScaleTheWorld.esp
+EditorID: VWKS_STW_Stat_Scaler_Effect
+VirtualMachineAdapter:
+  Scripts:
+  - Name: VWKS_STW_StatScalerScript
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeLegendary
+      Object: 0C1F54:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: AttackDamageMult
+      Object: 000357:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CriticalHitChance
+      Object: 0002DD:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CriticalHitDamageMult
+      Object: 00039C:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: DamageResist
+      Object: 0002E3:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ElectromagneticDamageResist
+      Object: 000392:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: EnergyResist
+      Object: 0002EB:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ENV_Resist_Airborne
+      Object: 248D31:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ENV_Resist_Corrosive
+      Object: 248D30:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ENV_Resist_Radiation
+      Object: 248D2F:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ENV_Resist_Thermal
+      Object: 248D32:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Health
+      Object: 0002D4:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LegendaryAliasQuest
+      Object: 0308F5:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ReflectDamage
+      Object: 00035F:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_Scaled
+      Object: 000810:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 003001:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_Enabled
+      Object: 000806:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_ActivePreset
+      Object: 000870:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_EasterEggMode_Critter
+      Object: 000844:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_ChanceToSpawn_Easy
+      Object: 00085D:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_ChanceToSpawn_Hard
+      Object: 00085E:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_ChanceToSpawn_MiniBoss
+      Object: 00085F:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_ChanceToSpawn_Legendary
+      Object: 000812:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_Preset_Story_Base
+      Object: 000864:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_Preset_Easy_Base
+      Object: 000865:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_Preset_Normal_Base
+      Object: 000866:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_Preset_Hard_Base
+      Object: 000867:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_Preset_Nightmare_Base
+      Object: 000868:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: VWKS_STW_Preset_Apocalypse_Base
+      Object: 000869:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeGang
+      Object: 000861:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypePirate
+      Object: 000860:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ActorTypeZealot
+      Object: 000862:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CombatNPC_Easy
+      Object: 00086C:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CombatNPC_Normal
+      Object: 00086D:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CombatNPC_Hard
+      Object: 00086E:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CombatNPC_Miniboss
+      Object: 00086B:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: CombatNPC_Legendary
+      Object: 00086F:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LL_Loot_Legendary_Human
+      Object: 0C1F58:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: LL_Contraband_Any
+      Object: 150EE5:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Contraband_VaRuunHereticPamphlets
+      Object: 15567D:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Chem_Aurora
+      Object: 2C5884:Starfield.esm
+    - MutagenObjectType: ScriptStringProperty
+      Name: Venpi_ModName
+      Data: ScaleTheWorldTheSequel
+Name:
+  TargetLanguage: English
+  Value: ActorStatScalingEffect
+Archetype:
+  MutagenObjectType: MagicEffectArchetype
+  Type: Script
+Flags:
+- NoHitEvent
+- HideInUI
+- NoHitEffect
+- NoDeathDispel
+Unknown: 0x00000000000000000000000000000000000000000000

@@ -1,0 +1,14 @@
+FormKey: 003003:Venworks-ScaleTheWorld.esp
+EditorID: VWKS_STW_MCS_ScalingLevel
+FormVersion: 557
+Name:
+  TargetLanguage: English
+  Value: Scaling Level
+Context: This is the winning stat NPC chosen from the leveled NPC list
+Abbreviation:
+  TargetLanguage: English
+  Value: SCLVL
+DefaultValue: 1
+Flags:
+- DefaultToOne
+Type: Variable

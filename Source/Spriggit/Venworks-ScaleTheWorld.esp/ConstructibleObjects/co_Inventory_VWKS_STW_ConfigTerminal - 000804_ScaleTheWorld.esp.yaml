@@ -1,0 +1,23 @@
+FormKey: 000804:Venworks-ScaleTheWorld.esp
+EditorID: co_Inventory_VWKS_STW_ConfigTerminal
+Description:
+  TargetLanguage: English
+  Value: Scale the World Configuration Terminal
+WorkbenchKeyword: 0AA209:Starfield.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Data:
+    MutagenObjectType: GetItemCountConditionData
+    RunOnType: Reference
+    Reference: 000014:Starfield.esm
+    FirstParameter: 000805:Venworks-ScaleTheWorld.esp
+ConstructableComponents:
+- Component: 0057C7:Starfield.esm
+  Count: 1
+CreatedObject: 000805:Venworks-ScaleTheWorld.esp
+AmountProduced: 1
+LearnMethod: DefaultOrConditions
+Categories:
+- 2E2F2D:Starfield.esm
+RECF: 0

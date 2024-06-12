@@ -1,0 +1,14 @@
+FormKey: 00080B:Venworks-ScaleTheWorld.esp
+EditorID: VWKS_STW_CloakEnabler_Ability
+Name:
+  TargetLanguage: English
+  Value: CloakAbility
+Description:
+  TargetLanguage: English
+  Value: ''
+Type:
+- Ability
+Effects:
+- BaseEffect: 00080C:Venworks-ScaleTheWorld.esp
+  Data:
+    Magnitude: 1500

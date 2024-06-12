@@ -1,6 +1,95 @@
-New Form IDs
+# New Form IDs
 
-- 003000:ScaleTheWorld.esp (STWTS_Config_Terminal_Rotation)
+## New Misc Records
+- 003000:Venworks-ScaleTheWorld.esp (STWTS_Config_Terminal_Rotation)
   - Was 000803:VenpiCore.esm
-- 003001:ScaleTheWorld.esp (STWTS_DebugEnabled)
+- 003001:Venworks-ScaleTheWorld.esp (STWTS_DebugEnabled)
   - Was 000800:VenpiCore.esm
+- 003002:Venworks-ScaleTheWorld.esp (LChar_STWTS_MCS_Stats)
+  - Was 000931:VenworksFactionOverhaul.esm
+- 003003:Venworks-ScaleTheWorld.esp (STWTS_MCS_ScalingLevel)
+  - Was 000808:QOG-MCS.esp
+
+## New NPC Records
+- 004000:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L001)
+  - Was 000809:QOG-MCS.esp
+- 004001:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L005)
+  - Was 000806:QOG-MCS.esp
+- 004002:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L010)
+  - Was 000807:QOG-MCS.esp
+- 004003:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L015)
+  - Was 00080D:QOG-MCS.esp
+- 004004:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L020)
+  - Was 00080E:QOG-MCS.esp
+- 004005:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L025)
+  - Was 00080F:QOG-MCS.esp
+- 004006:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L030)
+  - Was 000810:QOG-MCS.esp
+- 004007:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L035)
+  - Was 000811:QOG-MCS.esp
+- 004008:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L040)
+  - Was 000812:QOG-MCS.esp
+- 004009:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L045)
+  - Was 000814:QOG-MCS.esp
+- 004010:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L050)
+  - Was 000815:QOG-MCS.esp
+- 004011:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L055)
+  - Was 000816:QOG-MCS.esp
+- 004012:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L060)
+  - Was 000817:QOG-MCS.esp
+- 004013:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L065)
+  - Was 00081E:QOG-MCS.esp
+- 004014:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L070)
+  - Was 00081F:QOG-MCS.esp
+- 004015:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L075)
+  - Was 000820:QOG-MCS.esp
+- 004016:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L080)
+  - Was 000821:QOG-MCS.esp
+- 004017:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L085)
+  - Was 000822:QOG-MCS.esp
+- 004018:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L090)
+  - Was 000825:QOG-MCS.esp
+- 004019:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L095)
+  - Was 000826:QOG-MCS.esp
+- 004020:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L100)
+  - Was 000827:QOG-MCS.esp
+- 004021:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L105)
+  - Was 000828:QOG-MCS.esp
+- 004022:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L110)
+  - Was 000829:QOG-MCS.esp
+- 004023:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L115)
+  - Was 00082A:QOG-MCS.esp
+- 004024:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L120)
+  - Was 00082B:QOG-MCS.esp
+- 004025:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L125)
+  - Was 00082C:QOG-MCS.esp
+- 004026:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L130)
+  - Was 00082D:QOG-MCS.esp
+- 004027:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L135)
+  - Was 00082E:QOG-MCS.esp
+- 004028:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L140)
+  - Was 00082F:QOG-MCS.esp
+- 004029:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L145)
+  - Was 000830:QOG-MCS.esp
+- 004030:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L150)
+  - Was 000831:QOG-MCS.esp
+- 004031:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L155)
+  - Was 000832:QOG-MCS.esp
+- 004032:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L160)
+  - Was 000833:QOG-MCS.esp
+- 004033:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L165)
+  - Was 000834:QOG-MCS.esp
+- 004034:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L170)
+  - Was 000835:QOG-MCS.esp
+- 004035:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L175)
+  - Was 000836:QOG-MCS.esp
+- 004036:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L180)
+  - Was 000837:QOG-MCS.esp
+- 004037:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L185)
+  - Was 000838:QOG-MCS.esp
+- 004038:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L190)
+  - Was 000839:QOG-MCS.esp
+- 004039:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L195)
+  - Was 00083A:QOG-MCS.esp
+- 004040:Venworks-ScaleTheWorld.esp (STWTS_MCS_Template_Stats_L200)
+  - Was 00083B:QOG-MCS.esp

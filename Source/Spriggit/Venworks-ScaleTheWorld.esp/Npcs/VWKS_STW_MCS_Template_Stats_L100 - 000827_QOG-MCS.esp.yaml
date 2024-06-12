@@ -1,0 +1,70 @@
+FormKey: 004020:Venworks-ScaleTheWorld.esp
+EditorID: VWKS_STW_MCS_Template_Stats_L100
+FormVersion: 557
+ODTY: 0
+XpValueOffset: 100
+Level:
+  MutagenObjectType: NpcLevel
+  Level: 100
+CalcMinLevel: 100
+CalcMaxLevel: 999
+DispositionBase: 35
+Race: 00347D:Starfield.esm
+Properties:
+- ActorValue: 0002C2:Starfield.esm
+  Value: 5
+- ActorValue: 0002C3:Starfield.esm
+  Value: 5
+- ActorValue: 0002C4:Starfield.esm
+  Value: 5
+- ActorValue: 0002C5:Starfield.esm
+  Value: 5
+- ActorValue: 0002C6:Starfield.esm
+  Value: 5
+- ActorValue: 0002C7:Starfield.esm
+  Value: 5
+- ActorValue: 0002C8:Starfield.esm
+  Value: 5
+- ActorValue: 0002D4:Starfield.esm
+  Value: 1000
+- ActorValue: 0002D5:Starfield.esm
+  Value: 50
+- ActorValue: 0002DA:Starfield.esm
+  Value: 100
+- ActorValue: 0002CC:Starfield.esm
+  Value: 15
+- ActorValue: 0002CD:Starfield.esm
+  Value: 45
+- ActorValue: 000385:Starfield.esm
+  Value: 100
+- ActorValue: 0002E3:Starfield.esm
+  Value: 100
+- ActorValue: 0002EB:Starfield.esm
+  Value: 100
+- ActorValue: 000392:Starfield.esm
+  Value: 100
+- ActorValue: 248D31:Starfield.esm
+  Value: 10
+- ActorValue: 248D30:Starfield.esm
+  Value: 10
+- ActorValue: 248D2F:Starfield.esm
+  Value: 10
+- ActorValue: 248D32:Starfield.esm
+  Value: 10
+- ActorValue: 003003:Venworks-ScaleTheWorld.esp
+  Value: 100
+Confidence: Average
+EnergyLevel: 50
+Responsibility: NoCrime
+Class: 010B2F:Starfield.esm
+CalculatedHealth: 1020
+CalculatedActionPoints: 50
+GearedUpWeapons: 1
+Unused: 255
+NAM5: 0xFF00
+HeightMin: 1
+HeightMax: 1
+Weight: {}
+Tints: []
+SkinToneIndex: 0
+Pronoun: Unspecified

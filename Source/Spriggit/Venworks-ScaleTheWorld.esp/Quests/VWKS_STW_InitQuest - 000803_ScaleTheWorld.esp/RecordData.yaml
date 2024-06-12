@@ -1,0 +1,43 @@
+FormKey: 000803:Venworks-ScaleTheWorld.esp
+EditorID: VWKS_STW_InitQuest
+VirtualMachineAdapter:
+  Scripts:
+  - Name: VPI_Inject_InventoryItem
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 003001:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: ItemToInject
+      Object: 000805:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptStringProperty
+      Name: Venpi_ModName
+      Data: ScaleTheWorldTheSequel
+  - Name: VPI_Inject_SpellToPlayer
+    Properties:
+    - MutagenObjectType: ScriptObjectProperty
+      Name: Venpi_DebugEnabled
+      Object: 003001:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptObjectProperty
+      Name: PlayerRef
+      Object: 000014:Starfield.esm
+    - MutagenObjectType: ScriptObjectProperty
+      Name: SpellToEnable
+      Object: 00080B:Venworks-ScaleTheWorld.esp
+    - MutagenObjectType: ScriptStringProperty
+      Name: Venpi_ModName
+      Data: ScaleTheWorldTheSequel
+  Script:
+    Name: ''
+Name:
+  TargetLanguage: English
+  Value: Scale The World Init Quest
+Data:
+  Flags:
+  - StartGameEnabled
+  - StartsEnabled
+  Unused: 0x000000
+UnusedConditions: []
