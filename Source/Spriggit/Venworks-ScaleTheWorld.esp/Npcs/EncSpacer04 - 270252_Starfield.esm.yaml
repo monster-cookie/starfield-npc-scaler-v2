@@ -1,5 +1,6 @@
 FormKey: 270252:Starfield.esm
 EditorID: EncSpacer04
+FormVersion: 559
 ObjectBounds:
   First: -0.31000048, -0.31000048, -4.7683716E-07
   Second: 0.31000048, 0.31000048, 1.8000004
@@ -118,8 +119,8 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Spacer Scum
-CalculatedHealth: 175
-CalculatedActionPoints: 100
+CalculatedHealth: 375
+CalculatedActionPoints: 50
 GearedUpWeapons: 1
 Unused: 43
 CombatStyle: 2C562D:Starfield.esm

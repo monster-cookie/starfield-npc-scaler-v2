@@ -1,5 +1,6 @@
 FormKey: 129581:Starfield.esm
 EditorID: EncSpacer07
+FormVersion: 559
 ObjectBounds:
   First: -0.31000048, -0.31000048, -4.7683716E-07
   Second: 0.31000048, 0.31000048, 1.8000004
@@ -118,8 +119,8 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Spacer Savage
-CalculatedHealth: 380
-CalculatedActionPoints: 100
+CalculatedHealth: 1380
+CalculatedActionPoints: 50
 GearedUpWeapons: 1
 Unused: 43
 CombatStyle: 2C562D:Starfield.esm

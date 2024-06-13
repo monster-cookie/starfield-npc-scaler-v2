@@ -1,5 +1,6 @@
 FormKey: 2C7C8A:Starfield.esm
 EditorID: EncRobotModelA01Template
+FormVersion: 559
 ObjectBounds:
   First: -0.45000046, -0.47801596, -4.7683716E-07
   Second: 0.45000046, 0.42198497, 1.738061
@@ -100,7 +101,7 @@ Name:
 LongName:
   TargetLanguage: English
   Value: Robots
-CalculatedHealth: 305
+CalculatedHealth: 270
 GearedUpWeapons: 1
 CombatStyle: 0187B6:Starfield.esm
 NAM5: 0xFF00

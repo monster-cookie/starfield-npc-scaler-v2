@@ -1,5 +1,6 @@
 FormKey: 2956D3:Starfield.esm
 EditorID: EncStarborn01Template
+FormVersion: 559
 ObjectBounds:
   First: -0.31000048, -0.31000048, -4.7683716E-07
   Second: 0.31000048, 0.31000048, 1.8000004
@@ -130,7 +131,7 @@ Name:
 LongName:
   TargetLanguage: English
   Value: Starborn
-CalculatedHealth: 40
+CalculatedHealth: 590
 CalculatedActionPoints: 50
 GearedUpWeapons: 1
 Unused: 43

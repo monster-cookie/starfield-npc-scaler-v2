@@ -1,5 +1,6 @@
 FormKey: 2EC549:Starfield.esm
 EditorID: EncRobotModelA07_Brute
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: SoundTagComponent
@@ -100,6 +101,7 @@ RDSAs:
   UnknownFloat5: 2
   UnknownFloat6: 1
 Class: 010B2F:Starfield.esm
+CalculatedHealth: 2650
 GearedUpWeapons: 1
 Unused: 222
 CombatStyle: 34CC6F:Starfield.esm

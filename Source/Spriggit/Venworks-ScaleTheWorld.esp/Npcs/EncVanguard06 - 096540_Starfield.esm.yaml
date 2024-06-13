@@ -1,5 +1,6 @@
 FormKey: 096540:Starfield.esm
 EditorID: EncVanguard06
+FormVersion: 559
 ObjectBounds:
   First: -0.31000048, -0.31000048, -4.7683716E-07
   Second: 0.31000048, 0.31000048, 1.8000004
@@ -46,21 +47,21 @@ Properties:
 - ActorValue: 0002C7:Starfield.esm
   Value: 5
 - ActorValue: 0002C8:Starfield.esm
+- ActorValue: 0002CC:Starfield.esm
+  Value: 15
+- ActorValue: 0002CD:Starfield.esm
+  Value: 45
 - ActorValue: 0002D4:Starfield.esm
   Value: 390
 - ActorValue: 0002D5:Starfield.esm
   Value: 50
 - ActorValue: 0002DA:Starfield.esm
   Value: 100
-- ActorValue: 0002CC:Starfield.esm
-  Value: 15
-- ActorValue: 0002CD:Starfield.esm
-  Value: 45
+- ActorValue: 0002E3:Starfield.esm
+  Value: 75
 - ActorValue: 0002EB:Starfield.esm
   Value: 75
 - ActorValue: 000392:Starfield.esm
-  Value: 75
-- ActorValue: 0002E3:Starfield.esm
   Value: 75
 Aggression: Aggressive
 Confidence: Brave
@@ -74,21 +75,21 @@ Name:
 LongName:
   TargetLanguage: English
   Value: UC Vanguard
-CalculatedHealth: 270
-CalculatedActionPoints: 100
+CalculatedHealth: 1390
+CalculatedActionPoints: 50
 GearedUpWeapons: 1
 Unused: 43
 HeadParts:
-- 012201:Starfield.esm
-- 012202:Starfield.esm
-- 012203:Starfield.esm
+- 15B029:Starfield.esm
 - 0317AE:Starfield.esm
 - 0317AF:Starfield.esm
 - 0640B8:Starfield.esm
-- 078273:Starfield.esm
-- 15B029:Starfield.esm
-- 3A4765:Starfield.esm
+- 012203:Starfield.esm
 - 3BE58F:Starfield.esm
+- 3A4765:Starfield.esm
+- 012202:Starfield.esm
+- 012201:Starfield.esm
+- 078273:Starfield.esm
 CombatStyle: 2C5629:Starfield.esm
 NAM5: 0xFF00
 HeightMin: 1
@@ -171,88 +172,88 @@ Tints:
   TintColor: '#00000000'
   TintIntensity: 17
 FaceDialPositions:
-- Index: 26
-  Position: 0.17
-- Index: 35
-  Position: 0.66
-- Index: 36
-  Position: 0.18
-- Index: 38
-  Position: -0.53
-- Index: 40
-  Position: 0.1
-- Index: 42
-  Position: -0.55
-- Index: 43
-  Position: 0.32
-- Index: 45
-  Position: 0.02
-- Index: 47
-  Position: 0.23
-- Index: 48
-  Position: 0.12
+- Index: 78
+  Position: -0.27
 - Index: 51
   Position: -0.69
-- Index: 52
-  Position: 0.34
+- Index: 35
+  Position: 0.66
+- Index: 40
+  Position: 0.1
 - Index: 53
   Position: -0.96
 - Index: 55
   Position: 0.38
+- Index: 42
+  Position: -0.55
+- Index: 77
+  Position: 0.39
+- Index: 48
+  Position: 0.12
+- Index: 38
+  Position: -0.53
+- Index: 45
+  Position: 0.02
+- Index: 47
+  Position: 0.23
+- Index: 36
+  Position: 0.18
+- Index: 52
+  Position: 0.34
+- Index: 70
+  Position: -0.34
+- Index: 75
+  Position: 0.33
+- Index: 26
+  Position: 0.17
 - Index: 61
   Position: 0.46
 - Index: 65
   Position: -0.32
 - Index: 67
   Position: -0.54
-- Index: 70
-  Position: -0.34
-- Index: 75
-  Position: 0.33
-- Index: 77
-  Position: 0.39
-- Index: 78
-  Position: -0.27
+- Index: 43
+  Position: 0.32
 FaceMorphs:
 - Index: 1
   MorphGroups:
-  - MorphGroup: Cheeks
-    BlendIntensity: 0.7325856
-  - MorphGroup: Chin
-    BlendIntensity: 0.8295242
+  - MorphGroup: Forehead
+    BlendIntensity: 0.04632144
+  - MorphGroup: Neck
+    BlendIntensity: 0.38611212
+  - MorphGroup: Jaw
+    BlendIntensity: 0.25201982
   - MorphGroup: Ears
     BlendIntensity: 0.25168595
   - MorphGroup: Eyes
     BlendIntensity: 0.99737734
-  - MorphGroup: Forehead
-    BlendIntensity: 0.04632144
-  - MorphGroup: Jaw
-    BlendIntensity: 0.25201982
+  - MorphGroup: Chin
+    BlendIntensity: 0.8295242
   - MorphGroup: Mouth
     BlendIntensity: 0.49873677
-  - MorphGroup: Neck
-    BlendIntensity: 0.38611212
   - MorphGroup: Nose
     BlendIntensity: 0.07673797
+  - MorphGroup: Cheeks
+    BlendIntensity: 0.7325856
 MorphBlends:
-- BlendName: female_eu_md2_Cheeks
-  Intensity: 0.7325856
-- BlendName: female_eu_md2_Chin
-  Intensity: 0.8295242
-- BlendName: female_eu_md2_Ears
-  Intensity: 0.25168595
-- BlendName: female_eu_md2_Eyes
-  Intensity: 0.99737734
-- BlendName: female_eu_md2_Forehead
-  Intensity: 0.04632144
 - BlendName: female_eu_md2_Jaw
   Intensity: 0.25201982
 - BlendName: female_eu_md2_Mouth
   Intensity: 0.49873677
+- BlendName: female_eu_md2_Chin
+  Intensity: 0.8295242
+- BlendName: female_eu_md2_Forehead
+  Intensity: 0.04632144
 - BlendName: female_eu_md2_Neck
   Intensity: 0.38611212
+- BlendName: female_eu_md2_Eyes
+  Intensity: 0.99737734
+- BlendName: female_eu_md2_Cheeks
+  Intensity: 0.7325856
 - BlendName: female_eu_md2_Nose
   Intensity: 0.07673797
+- BlendName: female_eu_md2_Ears
+  Intensity: 0.25168595
 SkinToneIndex: 0
 HairColor: Platinum
 EyebrowColor: Black

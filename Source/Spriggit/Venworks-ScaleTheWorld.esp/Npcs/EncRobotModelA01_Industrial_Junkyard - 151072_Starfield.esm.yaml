@@ -1,5 +1,6 @@
 FormKey: 151072:Starfield.esm
 EditorID: EncRobotModelA01_Industrial_Junkyard
+FormVersion: 559
 ObjectBounds:
   First: -0.45000046, -0.47801596, -4.7683716E-07
   Second: 0.45000046, 0.42198497, 1.738061
@@ -107,6 +108,7 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Industrial Robot Model A
+CalculatedHealth: 270
 GearedUpWeapons: 1
 CombatStyle: 0187B6:Starfield.esm
 NAM5: 0xFF00

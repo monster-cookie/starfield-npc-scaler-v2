@@ -1,5 +1,6 @@
 FormKey: 2BCFF7:Starfield.esm
 EditorID: EncTurretShort08
+FormVersion: 559
 ObjectBounds:
   First: -0.4978376, -0.4065881, -4.7683716E-07
   Second: 0.4978376, 0.46624044, 1.4222577
@@ -56,6 +57,8 @@ Name:
 ShortName:
   TargetLanguage: English
   Value: Turret
+CalculatedHealth: 1440
+CalculatedActionPoints: 100
 FarAwayModelDistance: 200
 GearedUpWeapons: 1
 CombatStyle: 0E60AF:Starfield.esm

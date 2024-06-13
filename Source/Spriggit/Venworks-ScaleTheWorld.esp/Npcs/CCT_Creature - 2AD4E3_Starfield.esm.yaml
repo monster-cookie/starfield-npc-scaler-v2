@@ -1,15 +1,14 @@
 FormKey: 2AD4E3:Starfield.esm
 EditorID: CCT_Creature
+FormVersion: 559
 ObjectBounds:
   First: -0.568331, -0.34793854, 0
   Second: 0.56833076, 0.9931723, 1.1882429
 ODTY: 0
-Flags:
-- AutoCalcStats
-XpValueOffset: 50
+XpValueOffset: 5
 Level:
-  MutagenObjectType: PcLevelMult
-  LevelMult: 1
+  MutagenObjectType: NpcLevel
+  Level: 1
 CalcMinLevel: 1
 CalcMaxLevel: 999
 DispositionBase: 35
@@ -35,23 +34,39 @@ Perks:
   Rank: 1
 Properties:
 - ActorValue: 0002C2:Starfield.esm
+  Value: 1
 - ActorValue: 0002C3:Starfield.esm
-  Value: 5
+  Value: 1
 - ActorValue: 0002C4:Starfield.esm
+  Value: 1
 - ActorValue: 0002C5:Starfield.esm
+  Value: 1
 - ActorValue: 0002C6:Starfield.esm
+  Value: 1
 - ActorValue: 0002C7:Starfield.esm
+  Value: 1
 - ActorValue: 0002C8:Starfield.esm
+  Value: 1
 - ActorValue: 0002D4:Starfield.esm
   Value: 50
 - ActorValue: 0002D5:Starfield.esm
+  Value: 50
 - ActorValue: 0002DA:Starfield.esm
-  Value: 110
+  Value: 100
+- ActorValue: 0002CC:Starfield.esm
+  Value: 15
+- ActorValue: 0002CD:Starfield.esm
+  Value: 45
+- ActorValue: 000385:Starfield.esm
+  Value: 100
 - ActorValue: 0002E3:Starfield.esm
-  Value: 75
-- ActorValue: 2102C3:Starfield.esm
-  Value: 0.25
-- ActorValue: 22A2B6:Starfield.esm
+- ActorValue: 0002EB:Starfield.esm
+- ActorValue: 000392:Starfield.esm
+- ActorValue: 248D31:Starfield.esm
+- ActorValue: 248D30:Starfield.esm
+- ActorValue: 248D2F:Starfield.esm
+- ActorValue: 248D32:Starfield.esm
+- ActorValue: 003003:Venworks-ScaleTheWorld.esp
   Value: 1
 Confidence: Brave
 EnergyLevel: 50
@@ -128,10 +143,11 @@ AttachParentSlots:
 ObjectTemplates:
 - IsEditorOnly: True
   Default: True
-Class: 1CD0A9:Starfield.esm
+Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Creature Template
+CalculatedHealth: 70
 GearedUpWeapons: 1
 NAM5: 0xFF00
 HeightMin: 0.8

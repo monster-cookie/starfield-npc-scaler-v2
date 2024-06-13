@@ -1,5 +1,6 @@
 FormKey: 324CF4:Starfield.esm
 EditorID: EncTerrormorph06
+FormVersion: 559
 ObjectBounds:
   First: -1.0963905, -1.8038719, -4.7211023E-07
   Second: 1.0963905, 1.2088753, 2.195177
@@ -75,11 +76,11 @@ Class: 010B2F:Starfield.esm
 Name:
   TargetLanguage: English
   Value: Terrormorph
-CalculatedHealth: 2145
+CalculatedHealth: 5550
 GearedUpWeapons: 1
 CombatStyle: 2B2292:Starfield.esm
 NAM5: 0xFF00
-HeightMin: 0.9
+HeightMin: 1.1
 HeightMax: 1.7
 Weight:
   Thin: 0.3333

@@ -1,5 +1,6 @@
 FormKey: 0F1F00:Starfield.esm
 EditorID: EncTurretCompact03
+FormVersion: 559
 ObjectBounds:
   First: -0.4978376, -0.4065881, -4.7683716E-07
   Second: 0.4978376, 0.46624044, 1.4222577
@@ -58,6 +59,8 @@ Name:
 ShortName:
   TargetLanguage: English
   Value: Turret
+CalculatedHealth: 265
+CalculatedActionPoints: 50
 FarAwayModelDistance: 200
 GearedUpWeapons: 1
 Unused: 128

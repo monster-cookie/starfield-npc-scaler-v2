@@ -1,5 +1,6 @@
 FormKey: 0D4882:Starfield.esm
 EditorID: EncRobotModelA10_Combat
+FormVersion: 559
 ObjectBounds:
   First: -0.45000046, -0.47801596, -4.7683716E-07
   Second: 0.45000046, 0.42198497, 1.738061
@@ -103,6 +104,7 @@ RDSAs:
   UnknownFloat5: 2
   UnknownFloat6: 1
 Class: 010B2F:Starfield.esm
+CalculatedHealth: 3800
 GearedUpWeapons: 1
 CombatStyle: 34CC6F:Starfield.esm
 NAM5: 0xFF00
