@@ -30,8 +30,8 @@ GlobalVariable Property VWKS_STW_Preset_Apocalypse_Base Auto Const Mandatory
 ;;;
 ;;; Properties
 ;;;
+ObjectReference Property PlayerRef Auto Const Mandatory
 Keyword Property VWKS_STW_Scaled Auto Const Mandatory
-DifficultyPresets Property EnumDifficultyPresets Auto
 
 ActorValue Property Health Auto Const Mandatory
 ActorValue Property DamageResist Auto Const Mandatory
@@ -69,17 +69,15 @@ LegendaryAliasQuestScript Property LegendaryAliasQuest Auto Const mandatory
 ;;;
 ;;; Variables
 ;;;
-ObjectReference Property Myself Auto
-Actor Property RealMe Auto
-
-ObjectReference Property PlayerRef Auto Const Mandatory
-Actor Property Player Auto
+DifficultyPresets EnumDifficultyPresets
+ObjectReference Myself 
+Actor RealMe
+Actor Player
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Events
 ;;;
-
 Event OnEffectStart(ObjectReference akTarget, Actor akCaster, MagicEffect akBaseEffect, Float afMagnitude, Float afDuration)
   ; Log(ModName, "Venworks:ScaleTheWorld:StatScalerScript", "OnEffectStart", "OnEffectStart triggered", 0, DebugEnabled.GetValueInt())
 
