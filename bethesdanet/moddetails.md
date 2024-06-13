@@ -1,7 +1,7 @@
 # Overview
 Venworks unveils a groundbreaking implant technology poised to redefine the very nature of combat. The Quantum Adapto-Link, a marvel of cybernetic engineering, is designed to dynamically scale the world around its user, ensuring that every confrontation becomes a riveting and challenging experience. As users embrace this cutting-edge implant, the mundane boundaries of reality dissolve, replaced by a dynamic landscape that mirrors their individual skill levels. Whether engaging in hand-to-hand combat or high-tech skirmishes, the Quantum Adapto-Link guarantees an adrenaline-fueled adventure, where the thrill of the fight is only matched by the limitless possibilities of the augmented battleground. 
 
-Ok for reality, this is the combat faction stat scaler from Venpi's Dynamic Scaling with its locks removed. Like Venpi's Resize the World implant, this new implant will dynamically scale any NPC to your level. BEWARE you evil citizen/settlement murders they will have your stats and even a chance to be converted to legendary now.  
+Ok for reality, this is the combat faction stat scaler from Venpi's Dynamic Scaling with its locks removed. Like Venworks's Resize the World implant, this new implant will dynamically scale any NPC to your level. BEWARE you evil citizen/settlement murders they will have your stats and even a chance to be converted to legendary now.  
 
 ## Features
 - All NPC's stats are scaled up to the player's level and stats.
