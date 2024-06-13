@@ -234,18 +234,18 @@ FaceDialPositions:
 FaceMorphs:
 - Index: 12
   MorphGroups:
-  - MorphGroup: Forehead
-    BlendIntensity: 0.11071069
   - MorphGroup: Neck
     BlendIntensity: 0.05752288
+  - MorphGroup: Forehead
+    BlendIntensity: 0.11071069
   - MorphGroup: Jaw
     BlendIntensity: 0.08390634
   - MorphGroup: Eyes
     BlendIntensity: 0.039344277
-  - MorphGroup: Mouth
-    BlendIntensity: 0.012194867
   - MorphGroup: Nose
     BlendIntensity: 0.025893152
+  - MorphGroup: Mouth
+    BlendIntensity: 0.012194867
   - MorphGroup: Cheeks
     BlendIntensity: 0.029564666
   - MorphGroup: Chin
@@ -254,18 +254,18 @@ FaceMorphs:
     BlendIntensity: 0.03987166
 - Index: 40
   MorphGroups:
-  - MorphGroup: Forehead
-    BlendIntensity: 0.08923594
   - MorphGroup: Neck
     BlendIntensity: 0.062239245
+  - MorphGroup: Forehead
+    BlendIntensity: 0.08923594
   - MorphGroup: Jaw
     BlendIntensity: 0.025726503
   - MorphGroup: Eyes
     BlendIntensity: 0.07372586
-  - MorphGroup: Mouth
-    BlendIntensity: 0.016530354
   - MorphGroup: Nose
     BlendIntensity: 0.041282378
+  - MorphGroup: Mouth
+    BlendIntensity: 0.016530354
   - MorphGroup: Cheeks
     BlendIntensity: 0.027379606
   - MorphGroup: Chin
@@ -274,18 +274,18 @@ FaceMorphs:
     BlendIntensity: 0.098622285
 - Index: 9
   MorphGroups:
-  - MorphGroup: Forehead
-    BlendIntensity: 0.100937
   - MorphGroup: Neck
     BlendIntensity: 0.00044947257
+  - MorphGroup: Forehead
+    BlendIntensity: 0.100937
   - MorphGroup: Jaw
     BlendIntensity: 0.13521819
   - MorphGroup: Eyes
     BlendIntensity: 0.10255093
-  - MorphGroup: Mouth
-    BlendIntensity: 0.19185305
   - MorphGroup: Nose
     BlendIntensity: 0.02559222
+  - MorphGroup: Mouth
+    BlendIntensity: 0.19185305
   - MorphGroup: Cheeks
     BlendIntensity: 0.055503026
   - MorphGroup: Chin
@@ -304,18 +304,18 @@ FaceMorphs:
     BlendIntensity: 0.76
 - Index: 42
   MorphGroups:
-  - MorphGroup: Forehead
-    BlendIntensity: 0.026717214
   - MorphGroup: Neck
     BlendIntensity: 0.084179506
+  - MorphGroup: Forehead
+    BlendIntensity: 0.026717214
   - MorphGroup: Jaw
     BlendIntensity: 0.08389439
   - MorphGroup: Eyes
     BlendIntensity: 0.09661078
-  - MorphGroup: Mouth
-    BlendIntensity: 0.014333848
   - MorphGroup: Nose
     BlendIntensity: 0.028849792
+  - MorphGroup: Mouth
+    BlendIntensity: 0.014333848
   - MorphGroup: Cheeks
     BlendIntensity: 0.1208411
   - MorphGroup: Chin
@@ -324,18 +324,18 @@ FaceMorphs:
     BlendIntensity: 0.0066592656
 - Index: 46
   MorphGroups:
-  - MorphGroup: Forehead
-    BlendIntensity: 0.075034454
   - MorphGroup: Neck
     BlendIntensity: 0.10852675
+  - MorphGroup: Forehead
+    BlendIntensity: 0.075034454
   - MorphGroup: Jaw
     BlendIntensity: 0.060269035
   - MorphGroup: Eyes
     BlendIntensity: 0.04098606
-  - MorphGroup: Mouth
-    BlendIntensity: 0.019153314
   - MorphGroup: Nose
     BlendIntensity: 0.051687375
+  - MorphGroup: Mouth
+    BlendIntensity: 0.019153314
   - MorphGroup: Cheeks
     BlendIntensity: 0.022081817
   - MorphGroup: Chin
@@ -344,18 +344,18 @@ FaceMorphs:
     BlendIntensity: 0.0037640154
 - Index: 44
   MorphGroups:
-  - MorphGroup: Forehead
-    BlendIntensity: 0.014843423
   - MorphGroup: Neck
     BlendIntensity: 0.0991061
+  - MorphGroup: Forehead
+    BlendIntensity: 0.014843423
   - MorphGroup: Jaw
     BlendIntensity: 0.10404054
   - MorphGroup: Eyes
     BlendIntensity: 0.04275562
-  - MorphGroup: Mouth
-    BlendIntensity: 0.0053684805
   - MorphGroup: Nose
     BlendIntensity: 0.016561054
+  - MorphGroup: Mouth
+    BlendIntensity: 0.0053684805
   - MorphGroup: Cheeks
     BlendIntensity: 0.024335964
   - MorphGroup: Chin
@@ -364,18 +364,18 @@ FaceMorphs:
     BlendIntensity: 0.0856999
 - Index: 1
   MorphGroups:
-  - MorphGroup: Forehead
-    BlendIntensity: 0.017363794
   - MorphGroup: Neck
     BlendIntensity: 0.10269163
+  - MorphGroup: Forehead
+    BlendIntensity: 0.017363794
   - MorphGroup: Jaw
     BlendIntensity: 0.123001896
   - MorphGroup: Eyes
     BlendIntensity: 0.094026476
-  - MorphGroup: Mouth
-    BlendIntensity: 0.19056608
   - MorphGroup: Nose
     BlendIntensity: 0.050134033
+  - MorphGroup: Mouth
+    BlendIntensity: 0.19056608
   - MorphGroup: Cheeks
     BlendIntensity: 0.04410495
   - MorphGroup: Chin
@@ -383,138 +383,138 @@ FaceMorphs:
   - MorphGroup: Ears
     BlendIntensity: 0.08944606
 MorphBlends:
-- BlendName: male_af_ol1_Mouth
-  Intensity: 0.016530354
 - BlendName: male_eu_md2_Eyes
   Intensity: 0.039344277
-- BlendName: male_af_md1_Ears
-  Intensity: 0.04593681
-- BlendName: male_as_ol1_Cheeks
-  Intensity: 0.024335964
-- BlendName: male_as_ol1_Nose
-  Intensity: 0.016561054
-- BlendName: male_af_ol1_Neck
-  Intensity: 0.062239245
-- BlendName: male_eu_ol1_Mouth
-  Intensity: 0.45
-- BlendName: male_af_yo1_Nose
-  Intensity: 0.028849792
+- BlendName: male_af_md1_Jaw
+  Intensity: 0.13521819
+- BlendName: male_af_md1_Chin
+  Intensity: 0.062422805
+- BlendName: male_as_md1_Ears
+  Intensity: 0.08944606
+- BlendName: male_af_ol1_Nose
+  Intensity: 0.041282378
+- BlendName: male_af_yo1_Neck
+  Intensity: 0.084179506
 - BlendName: male_as_ol1_Jaw
   Intensity: 0.10404054
-- BlendName: male_as_ol1_Chin
-  Intensity: 0.041360795
-- BlendName: male_af_ol1_Cheeks
-  Intensity: 0.027379606
-- BlendName: male_af_md1_Forehead
-  Intensity: 0.100937
+- BlendName: male_as_yo1_Cheeks
+  Intensity: 0.022081817
+- BlendName: male_af_ol1_Mouth
+  Intensity: 0.016530354
+- BlendName: male_as_md1_Jaw
+  Intensity: 0.123001896
+- BlendName: male_as_ol1_Neck
+  Intensity: 0.0991061
+- BlendName: male_as_md1_Chin
+  Intensity: 0.10377775
+- BlendName: male_eu_ol1_Nose
+  Intensity: 0.76
+- BlendName: male_af_yo1_Mouth
+  Intensity: 0.014333848
+- BlendName: male_as_yo1_Jaw
+  Intensity: 0.060269035
+- BlendName: male_as_md1_Cheeks
+  Intensity: 0.04410495
+- BlendName: male_af_ol1_Forehead
+  Intensity: 0.08923594
+- BlendName: male_eu_md2_Nose
+  Intensity: 0.025893152
+- BlendName: male_eu_md2_Jaw
+  Intensity: 0.08390634
+- BlendName: male_as_ol1_Mouth
+  Intensity: 0.0053684805
+- BlendName: male_as_yo1_Neck
+  Intensity: 0.10852675
+- BlendName: male_af_yo1_Forehead
+  Intensity: 0.026717214
+- BlendName: male_as_yo1_Mouth
+  Intensity: 0.019153314
+- BlendName: male_as_ol1_Nose
+  Intensity: 0.016561054
+- BlendName: male_af_ol1_Eyes
+  Intensity: 0.07372586
+- BlendName: male_as_ol1_Forehead
+  Intensity: 0.014843423
+- BlendName: male_af_yo1_Ears
+  Intensity: 0.0066592656
+- BlendName: male_af_yo1_Eyes
+  Intensity: 0.09661078
+- BlendName: male_as_yo1_Forehead
+  Intensity: 0.075034454
+- BlendName: male_as_ol1_Ears
+  Intensity: 0.0856999
+- BlendName: male_as_md1_Nose
+  Intensity: 0.050134033
+- BlendName: male_as_ol1_Eyes
+  Intensity: 0.04275562
 - BlendName: male_af_yo1_Chin
   Intensity: 0.04597346
+- BlendName: male_as_yo1_Ears
+  Intensity: 0.0037640154
+- BlendName: male_af_md1_Nose
+  Intensity: 0.02559222
+- BlendName: male_as_yo1_Eyes
+  Intensity: 0.04098606
+- BlendName: male_af_yo1_Nose
+  Intensity: 0.028849792
 - BlendName: male_as_md1_Mouth
   Intensity: 0.19056608
 - BlendName: male_af_ol1_Jaw
   Intensity: 0.025726503
-- BlendName: male_as_ol1_Ears
-  Intensity: 0.0856999
-- BlendName: male_af_ol1_Chin
-  Intensity: 0.12909338
-- BlendName: male_af_md1_Mouth
-  Intensity: 0.19185305
-- BlendName: male_af_yo1_Ears
-  Intensity: 0.0066592656
-- BlendName: male_as_md1_Neck
-  Intensity: 0.10269163
-- BlendName: male_as_yo1_Forehead
-  Intensity: 0.075034454
-- BlendName: male_af_yo1_Eyes
-  Intensity: 0.09661078
-- BlendName: male_eu_md2_Jaw
-  Intensity: 0.08390634
-- BlendName: male_as_md1_Cheeks
-  Intensity: 0.04410495
-- BlendName: male_af_ol1_Eyes
-  Intensity: 0.07372586
-- BlendName: male_as_md1_Jaw
-  Intensity: 0.123001896
-- BlendName: male_as_yo1_Mouth
-  Intensity: 0.019153314
-- BlendName: male_af_yo1_Forehead
-  Intensity: 0.026717214
-- BlendName: male_af_md1_Nose
-  Intensity: 0.02559222
-- BlendName: male_as_ol1_Mouth
-  Intensity: 0.0053684805
-- BlendName: male_af_ol1_Forehead
-  Intensity: 0.08923594
-- BlendName: male_as_yo1_Neck
-  Intensity: 0.10852675
-- BlendName: male_as_ol1_Neck
-  Intensity: 0.0991061
-- BlendName: male_af_md1_Chin
-  Intensity: 0.062422805
+- BlendName: male_af_md1_Eyes
+  Intensity: 0.10255093
+- BlendName: male_af_md1_Forehead
+  Intensity: 0.100937
+- BlendName: male_as_yo1_Chin
+  Intensity: 0.08252184
 - BlendName: male_as_yo1_Nose
   Intensity: 0.051687375
-- BlendName: male_as_yo1_Jaw
-  Intensity: 0.060269035
-- BlendName: male_af_yo1_Neck
-  Intensity: 0.084179506
-- BlendName: male_as_yo1_Cheeks
-  Intensity: 0.022081817
-- BlendName: male_as_md1_Forehead
-  Intensity: 0.017363794
-- BlendName: male_af_yo1_Jaw
-  Intensity: 0.08389439
-- BlendName: male_as_yo1_Ears
-  Intensity: 0.0037640154
-- BlendName: male_as_yo1_Eyes
-  Intensity: 0.04098606
-- BlendName: male_eu_md2_Neck
-  Intensity: 0.05752288
-- BlendName: male_as_ol1_Eyes
-  Intensity: 0.04275562
+- BlendName: male_as_md1_Eyes
+  Intensity: 0.094026476
+- BlendName: male_eu_ol1_Mouth
+  Intensity: 0.45
+- BlendName: male_af_ol1_Neck
+  Intensity: 0.062239245
+- BlendName: male_eu_ol1_Eyes
+  Intensity: 0.51
+- BlendName: male_eu_md2_Ears
+  Intensity: 0.03987166
+- BlendName: male_eu_ol1_Ears
+  Intensity: 0.63
 - BlendName: male_af_yo1_Cheeks
   Intensity: 0.1208411
-- BlendName: male_eu_md2_Cheeks
-  Intensity: 0.029564666
-- BlendName: male_eu_md2_Nose
-  Intensity: 0.025893152
-- BlendName: male_eu_md2_Mouth
-  Intensity: 0.012194867
-- BlendName: male_as_ol1_Forehead
-  Intensity: 0.014843423
-- BlendName: male_as_md1_Nose
-  Intensity: 0.050134033
-- BlendName: male_af_md1_Jaw
-  Intensity: 0.13521819
 - BlendName: male_eu_md2_Chin
   Intensity: 0.020593707
 - BlendName: male_af_md1_Cheeks
   Intensity: 0.055503026
-- BlendName: male_eu_ol1_Ears
-  Intensity: 0.63
-- BlendName: male_as_md1_Chin
-  Intensity: 0.10377775
-- BlendName: male_eu_ol1_Eyes
-  Intensity: 0.51
-- BlendName: male_af_yo1_Mouth
-  Intensity: 0.014333848
-- BlendName: male_as_yo1_Chin
-  Intensity: 0.08252184
-- BlendName: male_eu_ol1_Nose
-  Intensity: 0.76
-- BlendName: male_af_md1_Eyes
-  Intensity: 0.10255093
 - BlendName: male_af_ol1_Ears
   Intensity: 0.098622285
-- BlendName: male_af_ol1_Nose
-  Intensity: 0.041282378
+- BlendName: male_eu_md2_Cheeks
+  Intensity: 0.029564666
+- BlendName: male_af_ol1_Chin
+  Intensity: 0.12909338
+- BlendName: male_as_md1_Neck
+  Intensity: 0.10269163
+- BlendName: male_af_ol1_Cheeks
+  Intensity: 0.027379606
+- BlendName: male_af_md1_Mouth
+  Intensity: 0.19185305
+- BlendName: male_af_yo1_Jaw
+  Intensity: 0.08389439
+- BlendName: male_eu_md2_Neck
+  Intensity: 0.05752288
 - BlendName: male_eu_md2_Forehead
   Intensity: 0.11071069
-- BlendName: male_eu_md2_Ears
-  Intensity: 0.03987166
-- BlendName: male_as_md1_Eyes
-  Intensity: 0.094026476
-- BlendName: male_as_md1_Ears
-  Intensity: 0.08944606
+- BlendName: male_as_ol1_Chin
+  Intensity: 0.041360795
+- BlendName: male_as_ol1_Cheeks
+  Intensity: 0.024335964
+- BlendName: male_eu_md2_Mouth
+  Intensity: 0.012194867
+- BlendName: male_as_md1_Forehead
+  Intensity: 0.017363794
+- BlendName: male_af_md1_Ears
+  Intensity: 0.04593681
 SkinToneIndex: 0
 HairColor: BlackBrown
 EyeColor: Brown

@@ -263,14 +263,14 @@ FaceDialPositions:
   Position: -0.32
 - Index: 84
   Position: 0.91
-- Index: 64
-  Position: 0.15
+- Index: 83
+  Position: 1
 - Index: 63
   Position: 0.12
 - Index: 32
   Position: 0.12
-- Index: 83
-  Position: 1
+- Index: 64
+  Position: 0.15
 - Index: 73
   Position: -0.39
 - Index: 74
@@ -337,44 +337,44 @@ FaceMorphs:
   - MorphGroup: Nose
     BlendIntensity: 0.53
 MorphBlends:
-- BlendName: male_eu_yo1_Cheeks
-  Intensity: 0.27
-- BlendName: male_eu_yo1_Chin
-  Intensity: 0.25
 - BlendName: male_eu_ol1_Jaw
   Intensity: 0.36
-- BlendName: male_eu_yo1_Ears
-  Intensity: 0.09775
-- BlendName: male_af_yo1_Eyes
-  Intensity: 0.017414166
+- BlendName: male_eu_yo1_Chin
+  Intensity: 0.25
 - BlendName: male_af_yo1_Ears
   Intensity: 0.54
-- BlendName: male_af_md1_Neck
-  Intensity: 0.73
 - BlendName: male_eu_yo1_Nose
   Intensity: 0.53
+- BlendName: male_as_md1_Jaw
+  Intensity: 0.54
+- BlendName: male_af_yo1_Eyes
+  Intensity: 0.017414166
+- BlendName: male_as_yo1_Ears
+  Intensity: 0.207
+- BlendName: male_as_md1_Eyes
+  Intensity: 0.27746612
+- BlendName: male_eu_yo1_Cheeks
+  Intensity: 0.27
 - BlendName: male_af_md1_Cheeks
   Intensity: 0.1672617
 - BlendName: male_as_yo1_Cheeks
   Intensity: 0.29
-- BlendName: male_as_md1_Jaw
-  Intensity: 0.54
-- BlendName: male_as_yo1_Ears
-  Intensity: 0.207
+- BlendName: male_af_md1_Neck
+  Intensity: 0.73
 - BlendName: male_eu_md2_Ears
   Intensity: 0.15525
 - BlendName: male_eu_md2_Eyes
   Intensity: 0.4051197
 - BlendName: male_eu_md2_Mouth
   Intensity: 0.12
-- BlendName: male_as_md1_Eyes
-  Intensity: 0.27746612
 - BlendName: male_af_yo1_Mouth
   Intensity: 0.22
-- BlendName: male_af_md1_Forehead
-  Intensity: 0.66
+- BlendName: male_eu_yo1_Ears
+  Intensity: 0.09775
 - BlendName: male_af_md1_Eyes
   Intensity: 0.27
+- BlendName: male_af_md1_Forehead
+  Intensity: 0.66
 SkinToneIndex: 0
 HairColor: DirtyBlonde
 FacialHairColor: DirtyBlonde

@@ -182,18 +182,18 @@ FaceDialPositions:
 FaceMorphs:
 - Index: 12
   MorphGroups:
-  - MorphGroup: Forehead
-    BlendIntensity: 0.151008
   - MorphGroup: Neck
     BlendIntensity: 1
+  - MorphGroup: Forehead
+    BlendIntensity: 0.151008
   - MorphGroup: Jaw
     BlendIntensity: 0.35
   - MorphGroup: Eyes
     BlendIntensity: 0.18
-  - MorphGroup: Mouth
-    BlendIntensity: 0.49
   - MorphGroup: Nose
     BlendIntensity: 0.65
+  - MorphGroup: Mouth
+    BlendIntensity: 0.49
   - MorphGroup: Cheeks
     BlendIntensity: 0.81
   - MorphGroup: Chin
@@ -227,46 +227,46 @@ FaceMorphs:
 MorphBlends:
 - BlendName: male_eu_ol1_Nose
   Intensity: 0.43
-- BlendName: male_eu_yo1_Eyes
-  Intensity: 0.23269501
-- BlendName: male_as_ol1_Cheeks
-  Intensity: 0.33
 - BlendName: male_as_ol1_Forehead
   Intensity: 0.48
-- BlendName: male_as_ol1_Mouth
-  Intensity: 0.21
+- BlendName: male_af_md1_Jaw
+  Intensity: 0.24949495
 - BlendName: male_af_yo1_Forehead
   Intensity: 0.192192
-- BlendName: male_eu_md2_Cheeks
-  Intensity: 0.65
 - BlendName: male_eu_md2_Chin
   Intensity: 1
+- BlendName: male_as_ol1_Nose
+  Intensity: 0.36
+- BlendName: male_as_ol1_Cheeks
+  Intensity: 0.33
+- BlendName: male_as_ol1_Mouth
+  Intensity: 0.21
+- BlendName: male_eu_yo1_Mouth
+  Intensity: 0.306125
+- BlendName: male_eu_md2_Forehead
+  Intensity: 0.151008
 - BlendName: male_eu_md2_Ears
   Intensity: 1
 - BlendName: male_eu_md2_Eyes
   Intensity: 0.06962913
-- BlendName: male_eu_md2_Forehead
-  Intensity: 0.151008
-- BlendName: male_af_md1_Jaw
-  Intensity: 0.24949495
 - BlendName: male_eu_md2_Mouth
   Intensity: 0.16
-- BlendName: male_eu_md2_Neck
-  Intensity: 1
+- BlendName: male_af_yo1_Jaw
+  Intensity: 0.40050504
+- BlendName: male_eu_md2_Jaw
+  Intensity: 0.35
 - BlendName: male_eu_ol1_Eyes
   Intensity: 0.32
 - BlendName: male_eu_ol1_Forehead
   Intensity: 0.1768
-- BlendName: male_af_yo1_Jaw
-  Intensity: 0.40050504
-- BlendName: male_as_ol1_Nose
-  Intensity: 0.36
 - BlendName: male_as_yo1_Eyes
   Intensity: 0.37767586
-- BlendName: male_eu_md2_Jaw
-  Intensity: 0.35
-- BlendName: male_eu_yo1_Mouth
-  Intensity: 0.306125
+- BlendName: male_eu_md2_Cheeks
+  Intensity: 0.65
+- BlendName: male_eu_yo1_Eyes
+  Intensity: 0.23269501
+- BlendName: male_eu_md2_Neck
+  Intensity: 1
 SkinToneIndex: 1
 HairColor: Brown
 FacialHairColor: Brown

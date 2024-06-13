@@ -214,37 +214,37 @@ FaceDialPositions:
 FaceMorphs:
 - Index: 1
   MorphGroups:
-  - MorphGroup: Forehead
-    BlendIntensity: 0.04632144
   - MorphGroup: Neck
     BlendIntensity: 0.38611212
-  - MorphGroup: Jaw
-    BlendIntensity: 0.25201982
-  - MorphGroup: Chin
-    BlendIntensity: 0.8295242
-  - MorphGroup: Nose
-    BlendIntensity: 0.07673797
-  - MorphGroup: Cheeks
-    BlendIntensity: 0.7325856
-  - MorphGroup: Eyes
-    BlendIntensity: 0.99737734
   - MorphGroup: Mouth
     BlendIntensity: 0.49873677
+  - MorphGroup: Nose
+    BlendIntensity: 0.07673797
+  - MorphGroup: Chin
+    BlendIntensity: 0.8295242
+  - MorphGroup: Cheeks
+    BlendIntensity: 0.7325856
+  - MorphGroup: Forehead
+    BlendIntensity: 0.04632144
+  - MorphGroup: Eyes
+    BlendIntensity: 0.99737734
   - MorphGroup: Ears
     BlendIntensity: 0.25168595
+  - MorphGroup: Jaw
+    BlendIntensity: 0.25201982
 MorphBlends:
-- BlendName: female_eu_md2_Nose
-  Intensity: 0.07673797
+- BlendName: female_eu_md2_Neck
+  Intensity: 0.38611212
 - BlendName: female_eu_md2_Cheeks
   Intensity: 0.7325856
+- BlendName: female_eu_md2_Nose
+  Intensity: 0.07673797
 - BlendName: female_eu_md2_Eyes
   Intensity: 0.99737734
 - BlendName: female_eu_md2_Forehead
   Intensity: 0.04632144
 - BlendName: female_eu_md2_Jaw
   Intensity: 0.25201982
-- BlendName: female_eu_md2_Neck
-  Intensity: 0.38611212
 - BlendName: female_eu_md2_Mouth
   Intensity: 0.49873677
 - BlendName: female_eu_md2_Chin

@@ -327,46 +327,46 @@ FaceMorphs:
   - MorphGroup: Mouth
     BlendIntensity: 0.36
 MorphBlends:
+- BlendName: male_af_md1_Nose
+  Intensity: 0.08379262
+- BlendName: male_af_yo1_Mouth
+  Intensity: 0.36
+- BlendName: male_as_yo1_Nose
+  Intensity: 0.30347502
 - BlendName: male_eu_md2_Forehead
   Intensity: 0.8
-- BlendName: male_eu_md2_Mouth
-  Intensity: 0.47
+- BlendName: male_af_md1_Eyes
+  Intensity: 0.44
 - BlendName: male_eu_md2_Nose
   Intensity: 0.2
+- BlendName: male_af_md1_Ears
+  Intensity: 0.24
 - BlendName: male_af_ol1_Nose
   Intensity: 0.39273238
-- BlendName: male_eu_ol1_Ears
-  Intensity: 0.7
-- BlendName: male_eu_md2_Jaw
-  Intensity: 1
 - BlendName: male_af_ol1_Cheeks
   Intensity: 0.75
+- BlendName: male_af_ol1_Forehead
+  Intensity: 0.2
 - BlendName: male_af_md1_Cheeks
   Intensity: 0.017142856
 - BlendName: male_eu_md2_Eyes
   Intensity: 0.045948558
+- BlendName: male_eu_md2_Jaw
+  Intensity: 1
 - BlendName: male_eu_md2_Ears
   Intensity: 0.06
-- BlendName: male_eu_md2_Chin
-  Intensity: 1
 - BlendName: male_eu_md2_Cheeks
   Intensity: 0.012857143
-- BlendName: male_as_yo1_Nose
-  Intensity: 0.30347502
 - BlendName: male_as_md1_Eyes
   Intensity: 0.07365409
-- BlendName: male_af_yo1_Mouth
-  Intensity: 0.36
-- BlendName: male_af_md1_Ears
-  Intensity: 0.24
-- BlendName: male_af_md1_Eyes
-  Intensity: 0.44
-- BlendName: male_af_md1_Nose
-  Intensity: 0.08379262
+- BlendName: male_eu_ol1_Ears
+  Intensity: 0.7
+- BlendName: male_eu_md2_Mouth
+  Intensity: 0.47
+- BlendName: male_eu_md2_Chin
+  Intensity: 1
 - BlendName: male_af_ol1_Eyes
   Intensity: 0.44039735
-- BlendName: male_af_ol1_Forehead
-  Intensity: 0.2
 SkinToneIndex: 4
 HairColor: BlackBrown
 FacialHairColor: Black

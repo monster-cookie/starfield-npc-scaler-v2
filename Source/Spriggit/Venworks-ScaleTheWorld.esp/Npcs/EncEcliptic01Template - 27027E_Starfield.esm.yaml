@@ -243,18 +243,18 @@ FaceDialPositions:
 FaceMorphs:
 - Index: 14
   MorphGroups:
-  - MorphGroup: Forehead
-    BlendIntensity: 0.863615
   - MorphGroup: Neck
     BlendIntensity: 0.9693899
+  - MorphGroup: Forehead
+    BlendIntensity: 0.863615
   - MorphGroup: Jaw
     BlendIntensity: 0.9839529
   - MorphGroup: Eyes
     BlendIntensity: 0.86706847
-  - MorphGroup: Mouth
-    BlendIntensity: 0.8620115
   - MorphGroup: Nose
     BlendIntensity: 0.8449312
+  - MorphGroup: Mouth
+    BlendIntensity: 0.8620115
   - MorphGroup: Cheeks
     BlendIntensity: 0.40400183
   - MorphGroup: Chin
@@ -262,24 +262,24 @@ FaceMorphs:
   - MorphGroup: Ears
     BlendIntensity: 0.35273004
 MorphBlends:
-- BlendName: male_eu_ol1_Chin
-  Intensity: 0.055075947
-- BlendName: male_eu_ol1_Ears
-  Intensity: 0.35273004
-- BlendName: male_eu_ol1_Jaw
-  Intensity: 0.9839529
-- BlendName: male_eu_ol1_Mouth
-  Intensity: 0.8620115
-- BlendName: male_eu_ol1_Neck
-  Intensity: 0.9693899
-- BlendName: male_eu_ol1_Eyes
-  Intensity: 0.86706847
-- BlendName: male_eu_ol1_Forehead
-  Intensity: 0.863615
 - BlendName: male_eu_ol1_Nose
   Intensity: 0.8449312
+- BlendName: male_eu_ol1_Jaw
+  Intensity: 0.9839529
+- BlendName: male_eu_ol1_Ears
+  Intensity: 0.35273004
+- BlendName: male_eu_ol1_Chin
+  Intensity: 0.055075947
+- BlendName: male_eu_ol1_Neck
+  Intensity: 0.9693899
 - BlendName: male_eu_ol1_Cheeks
   Intensity: 0.40400183
+- BlendName: male_eu_ol1_Forehead
+  Intensity: 0.863615
+- BlendName: male_eu_ol1_Eyes
+  Intensity: 0.86706847
+- BlendName: male_eu_ol1_Mouth
+  Intensity: 0.8620115
 SkinToneIndex: 0
 HairColor: Brown
 EyebrowColor: Brown

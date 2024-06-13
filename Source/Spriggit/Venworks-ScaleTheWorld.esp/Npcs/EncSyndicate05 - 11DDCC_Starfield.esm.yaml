@@ -168,25 +168,29 @@ FaceDialPositions:
 FaceMorphs:
 - Index: 40
   MorphGroups:
-  - MorphGroup: Forehead
-    BlendIntensity: 0.09201352
   - MorphGroup: Neck
     BlendIntensity: 0.590773
-  - MorphGroup: Nose
-    BlendIntensity: 0.32377592
+  - MorphGroup: Chin
+    BlendIntensity: 0.47810486
   - MorphGroup: Ears
     BlendIntensity: 0.46465507
+  - MorphGroup: Forehead
+    BlendIntensity: 0.09201352
   - MorphGroup: Jaw
     BlendIntensity: 0.7843538
   - MorphGroup: Eyes
     BlendIntensity: 0.3718863
+  - MorphGroup: Nose
+    BlendIntensity: 0.32377592
   - MorphGroup: Mouth
     BlendIntensity: 0.7129874
   - MorphGroup: Cheeks
     BlendIntensity: 0.3531152
-  - MorphGroup: Chin
-    BlendIntensity: 0.47810486
 MorphBlends:
+- BlendName: male_af_ol1_Jaw
+  Intensity: 0.7843538
+- BlendName: male_af_ol1_Chin
+  Intensity: 0.47810486
 - BlendName: male_eu_md2_Nose
   Intensity: 0.17
 - BlendName: male_eu_md2_Cheeks
@@ -195,14 +199,10 @@ MorphBlends:
   Intensity: 1
 - BlendName: male_af_ol1_Neck
   Intensity: 0.590773
-- BlendName: male_af_ol1_Jaw
-  Intensity: 0.7843538
-- BlendName: male_af_ol1_Forehead
-  Intensity: 0.09201352
 - BlendName: male_af_ol1_Ears
   Intensity: 0.46465507
-- BlendName: male_af_ol1_Chin
-  Intensity: 0.47810486
+- BlendName: male_af_ol1_Forehead
+  Intensity: 0.09201352
 SkinToneIndex: 0
 EyeColor: Green
 Pronoun: Unspecified
